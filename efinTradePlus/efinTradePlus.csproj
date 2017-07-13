@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1456BC3B-4C47-4DB8-B599-C76B40FF55FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>efinTradePlus</RootNamespace>
+    <AssemblyName>efinTradePlus</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>efinTradePlus.ico</ApplicationIcon>
+    <StartupObject>i2TradePlus.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="STIControl.i2Chart">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\STIControl.i2Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="STIControl.IntzaGrid">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\STIControl.IntzaGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="ITSNet.Common.BIZ">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\ITSNet.Common.BIZ.dll</HintPath>
+    </Reference>
+    <Reference Include="nsoftware.IPWorksSSL.Ipports">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\nsoftware.IPWorksSSL.Ipports.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSNet.Controls.XtWebBrowser">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\ITSNet.Controls.XtWebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="EO.WebBrowser">
+      <HintPath>..\..\..\OnlineAsset\efinTradePlus.Maybank_Kim_Eng_4_2_5_0\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-{FB2FFD15-C75C-45A8-ABFE-E0023EA382DA}.cs" />
+    <Compile Include="Abv9LVGLme6DnuTi2C\QG1JNMDDCVMQeEY2Tq.cs" />
+    <Compile Include="clsGraphPanel.cs" />
+    <Compile Include="clsPermission.cs" />
+    <Compile Include="clsVolumeItem.cs" />
+    <Compile Include="CSVReaderTest\CsvFileReader.cs" />
+    <Compile Include="CSVReaderTest\CsvFileWriter.cs" />
+    <Compile Include="CSVReaderTest\CSVReadWrite.cs" />
+    <Compile Include="CSVReaderTest\CsvRow.cs" />
+    <Compile Include="enumDisplayBuySell.cs" />
+    <Compile Include="enumMode.cs" />
+    <Compile Include="enumPermission.cs" />
+    <Compile Include="enumType.cs" />
+    <Compile Include="H0Lq77O6BY3J7TPsP0\YvJLC6mhiOf1L8BIOV.cs" />
+    <Compile Include="i2TradePlus\AlertItem.cs" />
+    <Compile Include="i2TradePlus\AlertItemCollection.cs" />
+    <Compile Include="i2TradePlus\AlertManager.cs" />
+    <Compile Include="i2TradePlus\AlertStockUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ApplicationInfo.cs" />
+    <Compile Include="i2TradePlus\BroadcastMessageFactory.cs" />
+    <Compile Include="i2TradePlus\BrokerAPI\KimengService.cs" />
+    <Compile Include="i2TradePlus\BrokerAPI\KimengWSResult.cs" />
+    <Compile Include="i2TradePlus\BrokerAPI\YuantaService.cs" />
+    <Compile Include="i2TradePlus\BrokerAPI\YuantaWSResult.cs" />
+    <Compile Include="i2TradePlus\BusinessService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\BusinessServiceFactory.cs" />
+    <Compile Include="i2TradePlus\BusinessTfexService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ClientBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\Controls\frmColumnEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\Controls\ucBSSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\Controls\ucSmart1Click.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\DbDataManager.cs" />
+    <Compile Include="i2TradePlus\ErrorItem.cs" />
+    <Compile Include="i2TradePlus\ExceptionManager.cs" />
+    <Compile Include="i2TradePlus\FixForm\frmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmMarketWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmStockRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmStockSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmTopBBOs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\FixForm\frmViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmAlertDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmAutoTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmBatchOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmDcaCreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmDcaItemsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmEditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmFTSCreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmFTSItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmMarketInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmMobileAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmOrderFormConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmPcPriceAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmPzCreateNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmPzItemsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmRiskControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmRiskManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmStockChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmStopDisclaimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmSystemOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmTemplateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmTradeJornal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmViewOrderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\frmViewOrderInfoTFEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\HotKeyFor.cs" />
+    <Compile Include="i2TradePlus\HotKeyManager.cs" />
+    <Compile Include="i2TradePlus\i2InfoWS.cs" />
+    <Compile Include="i2TradePlus\i2WSResult.cs" />
+    <Compile Include="i2TradePlus\Information\AccountInfo.cs" />
+    <Compile Include="i2TradePlus\Information\BBOTFEXCurrency.cs" />
+    <Compile Include="i2TradePlus\Information\IndexStat.cs" />
+    <Compile Include="i2TradePlus\Information\SeriesList.cs" />
+    <Compile Include="i2TradePlus\Information\StockList.cs" />
+    <Compile Include="i2TradePlus\Information\TFEXIndex.cs" />
+    <Compile Include="i2TradePlus\Information\UnderlyingInfo.cs" />
+    <Compile Include="i2TradePlus\IRealtimeMessage.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByInstrumentCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByInstrumentCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByListCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByListCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByOptionsListCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestBidOfferByOptionsListCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestProjected_TFEXCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\BestProjected_TFEXCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\Get5BidOfferTFEXCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\Get5BidOfferTFEXCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetChartImageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetChartImageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetGoldSpotCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetGoldSpotCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetSwitchAccountInfoTFEXCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetSwitchAccountInfoTFEXCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetTotalMarketValueInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\GetTotalMarketValueInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadMktStatusCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadMktStatusCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadSETindexCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadSETindexCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadTFEXInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\LoadTFEXInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SendTFEXCancelOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SendTFEXCancelOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SendTFEXNewOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SendTFEXNewOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesByPricePageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesByPricePageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSaleByPriceCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSaleByPriceCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSaleByTimeCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSaleByTimeCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesStateCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesStateCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSumaryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\SeriesSumaryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\StockInPlayADCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\StockInPlayADCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\StockInPlayCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\StockInPlayCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXBoardcastMessageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXBoardcastMessageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXTopActiveBBOCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXTopActiveBBOCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXTopActiveBBO_MyPortCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TFEXTopActiveBBO_MyPortCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TopBBOTFEXadCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TopBBOTFEXadCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TopBBOTFEXCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\TopBBOTFEXCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomerCreditOnSendBoxCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomerCreditOnSendBoxCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersAllCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersAllCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersCreditCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersCreditCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomersInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomer_RiskManagementCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewCustomer_RiskManagementCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderByOrderNoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderByOrderNoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderDealDataCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderDealDataCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderTransactionCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\ViewOrderTransactionCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWSTFEX\WriteLogCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestBidOfferCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestBidOfferCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestOpenPriceCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestOpenPriceCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestProjectedCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BestProjectedCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BoardcastMessageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\BoardcastMessageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ChangeCustomerPasswordCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ChangeCustomerPasswordCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ChangeTraderPasswordCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ChangeTraderPasswordCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ClearEfinSessionCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ClearEfinSessionCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\CountOrderCancelForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\CountOrderCancelForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\DeleteStockNicknameCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\DeleteStockNicknameCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\DeleteStockNicknameExtraCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\DeleteStockNicknameExtraCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\Get5BidOfferCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\Get5BidOfferCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetAlertLogByGroupCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetAlertLogByGroupCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetAlertLogCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetAlertLogCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetBrokerMarginVolumeCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetBrokerMarginVolumeCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetChartImageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetChartImageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetCometInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetCometInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetDataForSmartClickCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetDataForSmartClickCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetHolidayCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetHolidayCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetMainInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetMainInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetMyPortSymbolListCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetMyPortSymbolListCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetOrderFor1ClickCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetOrderFor1ClickCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortAlertItemsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortAlertItemsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortEquityCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortEquityCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortfolioStatAllStockCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortfolioStatAllStockCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortfolioStatByStockCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetPortfolioStatByStockCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetSetIndexChartImageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetSetIndexChartImageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetStockAlertItemsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetStockAlertItemsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetStockIndicatorCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetStockIndicatorCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetSwitchAccountInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetSwitchAccountInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetTunnelCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetTunnelCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetTunnelConfigCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetTunnelConfigCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUrlClientCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUrlClientCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUserAlertCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUserAlertCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUserConfigForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\GetUserConfigForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IndustryStatCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IndustryStatCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IntradayChartCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IntradayChartCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IntradayIndexChartCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\IntradayIndexChartCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\InvestorTypeCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\InvestorTypeCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadAllInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadAllInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadAllInformationIsoddCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadAllInformationIsoddCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadMarketInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadMarketInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadOddLotInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadOddLotInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockNicknameCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockNicknameCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockNicknameExtraCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LoadStockNicknameExtraCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LogoutADCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\LogoutCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\MarketIndicatorCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\MarketIndicatorCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\MarketStatusCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\MarketStatusCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\NAVAdjustmentCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\NAVAdjustmentCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\NAVChartCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\NAVChartCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ReloadSETIndexInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ReloadSETIndexInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaleByPriceCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaleByPriceCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaleByTime2CompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaleByTime2CompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SavePortAlertCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SavePortAlertCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SavePushAccountCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SavePushAccountCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockAlertCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockAlertCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockNicknameCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockNicknameCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockNicknameExtraCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockNicknameExtraCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockThresholdCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveStockThresholdCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveSummaryMarketDataCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveSummaryMarketDataCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserAlert2CompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserAlert2CompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserAlertCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserAlertCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigAllCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigAllCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserConfigForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SaveUserEfinForwardCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SectorStatCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SectorStatCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SectorStatForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SectorStatForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendAutoTradeCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendAutoTradeCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendCancelOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendCancelOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendCancelOrder_AfterCloseFwCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendCancelOrder_AfterCloseFwCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendEditOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendEditOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendHeartBeat2CompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendHeartBeat2CompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendNewOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendNewOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendPushMessageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\SendPushMessageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockByPricePageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockByPricePageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockChartCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockChartCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockHistDataCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockHistDataCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockHistoryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockHistoryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockInPlayCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockInPlayCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockStatForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockStatForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockThresholdInformationCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StockThresholdInformationCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StopOrderCheckDisclaimerCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StopOrderCheckDisclaimerCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StopOrderRegisterCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\StopOrderRegisterCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBOCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBOCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_BenefitCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_BenefitCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_CMPRCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_CMPRCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_DWCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_DWCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_MyPortCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_MyPortCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_NewsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_NewsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_SectorCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_SectorCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_TurnOverCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_TurnOverCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_WarrantCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveBBO_WarrantCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopActiveCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopBBOadCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopBBOadCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopBBOCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\TopBBOCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\UserAuthenCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\UserAuthenCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyAlertManagerCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyAlertManagerCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderFwCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderFwCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderMktCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyOrderMktCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyPincode2CompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\VerifyPincode2CompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeDCAItemsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeDCAItemsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeFTSItemsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeFTSItemsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradePzItemsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradePzItemsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeTransCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewAutoTradeTransCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewBAMessageCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewBAMessageCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerByStockForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerByStockForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerCreditOnSendBoxCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerCreditOnSendBoxCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerCreditOnSendBox_FreewillCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomerCreditOnSendBox_FreewillCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomersInfoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomersInfoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_BetaAnalysisCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_BetaAnalysisCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmByDealIDCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmByDealIDCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmByStockCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmByStockCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmSummaryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ConfirmSummaryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_CreditPositionCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_CreditPositionCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_FScoreAnalysisCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_FScoreAnalysisCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_MobileReportAllCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_MobileReportAllCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_OrdersConfirmsCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_OrdersConfirmsCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ProjectedProfitLossCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_ProjectedProfitLossCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RealizeProfitLossCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RealizeProfitLossCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RiskManagementCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RiskManagementCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RiskManagement_SaveValueCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_RiskManagement_SaveValueCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_SummaryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewCustomer_SummaryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewNewsHeaderCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewNewsHeaderCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewNewsStoryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewNewsStoryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOddlotCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOddlotCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderByOrderNoCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderByOrderNoCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderDealDataCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderDealDataCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderDealDataHistoryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderDealDataHistoryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderHistoryCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderHistoryCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderInfo_AfterCloseFwCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderInfo_AfterCloseFwCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrdersForDumpCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrdersForDumpCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderTransactionCompletedEventArgs.cs" />
+    <Compile Include="i2TradePlus\ITSNetBusinessWS\ViewOrderTransactionCompletedEventHandler.cs" />
+    <Compile Include="i2TradePlus\ITSNetWS.cs" />
+    <Compile Include="i2TradePlus\KeepErrorMode.cs" />
+    <Compile Include="i2TradePlus\MainFixedTemplate.cs" />
+    <Compile Include="i2TradePlus\MessageTPmodulo.cs" />
+    <Compile Include="i2TradePlus\MyColor.cs" />
+    <Compile Include="i2TradePlus\MyDataHelper.cs" />
+    <Compile Include="i2TradePlus\MyDataSet\AlertCustomerExpressionDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\MyDataSet\ApplicationInfoDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\MyDataSet\OrderQueueDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\MyDataSet\TemplateDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\MyDataSet\UserWorkingProfileDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\PasswordEntryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\Program.cs" />
+    <Compile Include="i2TradePlus\Properties\Resources.cs" />
+    <Compile Include="i2TradePlus\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="i2TradePlus\SymbolLinkSource.cs" />
+    <Compile Include="i2TradePlus\Templates\FormProperties.cs" />
+    <Compile Include="i2TradePlus\Templates\TemplateManager.cs" />
+    <Compile Include="i2TradePlus\Templates\TemplatePropeties.cs" />
+    <Compile Include="i2TradePlus\Templates\TemplateView.cs" />
+    <Compile Include="i2TradePlus\TemplateTreeMenus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucBids.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucBroadcastMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucIndexBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucOrderStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucSendNewOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucTickerSlide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\ucViewOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\User_Control\ucMarketStateBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\Utilities.cs" />
+    <Compile Include="i2TradePlus\WebProxy\FeedsWebProxy.cs" />
+    <Compile Include="i2TradePlus\WebProxy\Https.cs" />
+    <Compile Include="i2TradePlus\WebProxy\HttpsSSLServerAuthenticationEventArgs.cs" />
+    <Compile Include="i2TradePlus\WebProxy\TransferEventArgs.cs" />
+    <Compile Include="i2TradePlus\WebServiceFactory.cs" />
+    <Compile Include="i2TradePlus\WindowsForms\frmCleanPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="i2TradePlus\WindowsForms\frmTickerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemByStock.cs" />
+    <Compile Include="ITSNet\Wins\Controls\LoadingCircleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="l44aQKc1Lh51KTBnlp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TunnelInfo.cs" />
+    <Compile Include="ucVolumeAtPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VolumeGraphItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.SplashForm.resources" />
+    <EmbeddedResource Include="efinTradePlus.exe.licenses" />
+    <EmbeddedResource Include="efinTradePlus.g.resources" />
+    <EmbeddedResource Include="i2TradePlus\AlertStockUC.resources" />
+    <EmbeddedResource Include="i2TradePlus\ClientBaseForm.resources" />
+    <EmbeddedResource Include="i2TradePlus\Controls\frmColumnEditor.resources" />
+    <EmbeddedResource Include="i2TradePlus\Controls\ucBSSetting.resources" />
+    <EmbeddedResource Include="i2TradePlus\Controls\ucSmart1Click.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmBrowser.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmMarketWatch.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmPortfolio.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmStockRanking.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmStockSummary.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmTopBBOs.resources" />
+    <EmbeddedResource Include="i2TradePlus\FixForm\frmViewOrder.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmAlertDetail.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmAutoTrade.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmBatchOrder.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmDcaCreateNew.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmDcaItemsInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmEditOrder.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmFTSCreateNew.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmFTSItemInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmLogIn.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmMain.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmMarketInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmMobileAlert.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmOrderFormConfirm.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmPcPriceAlert.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmPzCreateNew.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmPzItemsInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmRiskControl.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmRiskManagement.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmSplash.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmStockChart.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmStopDisclaimer.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmSystemOption.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmTemplateInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmTradeJornal.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmViewOrderInfo.resources" />
+    <EmbeddedResource Include="i2TradePlus\frmViewOrderInfoTFEX.resources" />
+    <EmbeddedResource Include="i2TradePlus\PasswordEntryUC.resources" />
+    <EmbeddedResource Include="i2TradePlus\Properties\Resources.resources" />
+    <EmbeddedResource Include="i2TradePlus\TemplateTreeMenus.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucBids.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucBroadcastMessage.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucIndexBox.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucOrderStat.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucSendNewOrder.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucTickerSlide.resources" />
+    <EmbeddedResource Include="i2TradePlus\ucViewOrder.resources" />
+    <EmbeddedResource Include="i2TradePlus\User_Control\ucMarketStateBox.resources" />
+    <EmbeddedResource Include="i2TradePlus\WindowsForms\frmCleanPort.resources" />
+    <EmbeddedResource Include="i2TradePlus\WindowsForms\frmTickerSetting.resources" />
+    <EmbeddedResource Include="ucVolumeAtPrice.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="i2TradePlus\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
