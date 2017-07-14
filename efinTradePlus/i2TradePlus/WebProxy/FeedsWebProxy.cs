@@ -109,150 +109,108 @@ namespace i2TradePlus.WebProxy
 		// Token: 0x1400000F RID: 15
 		// (add) Token: 0x0600035C RID: 860 RVA: 0x0003B1C0 File Offset: 0x000395C0
 		// (remove) Token: 0x0600035D RID: 861 RVA: 0x0003B1E8 File Offset: 0x000395E8
+        internal FeedsWebProxy.OnDataInHandler _OnDataIN;
 		internal event FeedsWebProxy.OnDataInHandler OnDataIN
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnDataIN = (FeedsWebProxy.OnDataInHandler)Delegate.Combine(this.OnDataIN, value);
+                this._OnDataIN += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnDataIN = (FeedsWebProxy.OnDataInHandler)Delegate.Remove(this.OnDataIN, value);
+                this._OnDataIN -= value;
 			}
 		}
 
 		// Token: 0x14000010 RID: 16
 		// (add) Token: 0x0600035E RID: 862 RVA: 0x0003B210 File Offset: 0x00039610
 		// (remove) Token: 0x0600035F RID: 863 RVA: 0x0003B238 File Offset: 0x00039638
+        internal FeedsWebProxy.OnErrorHandler _OnError;
 		internal event FeedsWebProxy.OnErrorHandler OnError
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnError = (FeedsWebProxy.OnErrorHandler)Delegate.Combine(this.OnError, value);
+                this.OnError += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnError = (FeedsWebProxy.OnErrorHandler)Delegate.Remove(this.OnError, value);
+                this._OnError -= value;
 			}
 		}
 
 		// Token: 0x14000011 RID: 17
 		// (add) Token: 0x06000360 RID: 864 RVA: 0x0003B260 File Offset: 0x00039660
 		// (remove) Token: 0x06000361 RID: 865 RVA: 0x0003B288 File Offset: 0x00039688
+        internal EventHandler _OnGettingHttp;
 		internal event EventHandler OnGettingHttp
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnGettingHttp = (EventHandler)Delegate.Combine(this.OnGettingHttp, value);
+                this._OnGettingHttp += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnGettingHttp = (EventHandler)Delegate.Remove(this.OnGettingHttp, value);
+                this._OnGettingHttp -= value;
 			}
 		}
 
 		// Token: 0x14000012 RID: 18
 		// (add) Token: 0x06000362 RID: 866 RVA: 0x0003B2B0 File Offset: 0x000396B0
 		// (remove) Token: 0x06000363 RID: 867 RVA: 0x0003B2D8 File Offset: 0x000396D8
+        internal EventHandler _OnGettedHttp;
 		internal event EventHandler OnGettedHttp
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnGettedHttp = (EventHandler)Delegate.Combine(this.OnGettedHttp, value);
+                this._OnGettedHttp += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnGettedHttp = (EventHandler)Delegate.Remove(this.OnGettedHttp, value);
+                this._OnGettedHttp -= value;
 			}
 		}
 
 		// Token: 0x14000013 RID: 19
 		// (add) Token: 0x06000364 RID: 868 RVA: 0x0003B300 File Offset: 0x00039700
 		// (remove) Token: 0x06000365 RID: 869 RVA: 0x0003B328 File Offset: 0x00039728
+        internal EventHandler _OnStarted;
 		internal event EventHandler OnStarted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnStarted = (EventHandler)Delegate.Combine(this.OnStarted, value);
+                this._OnStarted += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnStarted = (EventHandler)Delegate.Remove(this.OnStarted, value);
+                this._OnStarted -= value;
 			}
 		}
 
 		// Token: 0x14000014 RID: 20
 		// (add) Token: 0x06000366 RID: 870 RVA: 0x0003B350 File Offset: 0x00039750
 		// (remove) Token: 0x06000367 RID: 871 RVA: 0x0003B378 File Offset: 0x00039778
+        internal EventHandler _OnStoped;
 		internal event EventHandler OnStoped
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnStoped = (EventHandler)Delegate.Combine(this.OnStoped, value);
+                this._OnStoped += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnStoped = (EventHandler)Delegate.Remove(this.OnStoped, value);
+                this._OnStoped -= value;
 			}
 		}
 
@@ -359,9 +317,9 @@ namespace i2TradePlus.WebProxy
 						this._dataInQueue.Clear();
 					}
 				}
-				if (this.OnStoped != null)
+				if (this._OnStoped != null)
 				{
-					this.OnStoped(this, EventArgs.Empty);
+					this._OnStoped(this, EventArgs.Empty);
 				}
 			}
 			catch (Exception ex)
@@ -376,7 +334,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			this.isRecv = false;
 			this._lastSeqRecv = -1;
@@ -384,9 +342,9 @@ namespace i2TradePlus.WebProxy
 			this.canConnectServer = false;
 			if (this.isServiceStarted)
 			{
-				if (this.OnError != null)
+				if (this._OnError != null)
 				{
-					this.OnError(new TransferEventArgs(ex));
+					this._OnError(new TransferEventArgs(ex));
 				}
 			}
 		}
@@ -397,7 +355,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			e.Accept = true;
 			this.sslEnabled = true;
@@ -409,7 +367,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			this.isRecv = true;
 			this._recvMessage = string.Empty;
@@ -421,7 +379,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			this._recvMessage += text;
 		}
@@ -432,7 +390,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			try
 			{
@@ -457,9 +415,9 @@ namespace i2TradePlus.WebProxy
 			catch (Exception exception)
 			{
 				this.isRecv = false;
-				if (this.OnError != null)
+				if (this._OnError != null)
 				{
-					this.OnError(new TransferEventArgs(exception));
+					this._OnError(new TransferEventArgs(exception));
 				}
 			}
 		}
@@ -470,7 +428,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			try
 			{
@@ -489,7 +447,7 @@ namespace i2TradePlus.WebProxy
 							text = this._dataInQueue.Dequeue();
 						}
 						i--;
-						if (this.OnDataIN != null)
+						if (this._OnDataIN != null)
 						{
 							string[] array = text.Split(new char[]
 							{
@@ -499,7 +457,7 @@ namespace i2TradePlus.WebProxy
 							{
 								for (int j = 0; j < array.Length; j++)
 								{
-									this.OnDataIN(array[j]);
+									this._OnDataIN(array[j]);
 								}
 							}
 						}
@@ -509,9 +467,9 @@ namespace i2TradePlus.WebProxy
 			}
 			catch (Exception exception)
 			{
-				if (this.OnError != null)
+				if (this._OnError != null)
 				{
-					this.OnError(new TransferEventArgs(exception));
+					this._OnError(new TransferEventArgs(exception));
 				}
 			}
 		}
@@ -522,7 +480,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			throw new Exception("The method or operation is not implemented.");
 		}
@@ -533,7 +491,7 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			try
 			{
@@ -559,15 +517,15 @@ namespace i2TradePlus.WebProxy
 		{
 			while (false)
 			{
-				//object arg_0A_0 = null[0];
+				//////object arg_0A_0 = null[0];
 			}
 			try
 			{
 				if (!this.isRecv)
 				{
-					if (this.OnGettingHttp != null)
+					if (this._OnGettingHttp != null)
 					{
-						this.OnGettingHttp(this, EventArgs.Empty);
+						this._OnGettingHttp(this, EventArgs.Empty);
 					}
 					this.https.Get(string.Concat(new object[]
 					{
@@ -580,10 +538,10 @@ namespace i2TradePlus.WebProxy
 					this.canConnectServer = true;
 					if (!this.isAreadySendOnStarted && this.isServiceStarted)
 					{
-						if (this.OnStarted != null)
+						if (this._OnStarted != null)
 						{
 							this.isAreadySendOnStarted = true;
-							this.OnStarted(this, EventArgs.Empty);
+							this._OnStarted(this, EventArgs.Empty);
 						}
 					}
 				}
@@ -596,17 +554,17 @@ namespace i2TradePlus.WebProxy
 				this.isAreadySendOnStarted = false;
 				if (this.isServiceStarted)
 				{
-					if (this.OnError != null)
+					if (this._OnError != null)
 					{
-						this.OnError(new TransferEventArgs(exception));
+						this._OnError(new TransferEventArgs(exception));
 					}
 				}
 			}
 			finally
 			{
-				if (this.OnGettedHttp != null)
+				if (this._OnGettedHttp != null)
 				{
-					this.OnGettedHttp(this, EventArgs.Empty);
+					this._OnGettedHttp(this, EventArgs.Empty);
 				}
 			}
 		}

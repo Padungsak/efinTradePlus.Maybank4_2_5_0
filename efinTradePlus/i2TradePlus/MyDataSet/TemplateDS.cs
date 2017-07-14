@@ -704,100 +704,73 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x14000015 RID: 21
 			// (add) Token: 0x060004DB RID: 1243 RVA: 0x00060AC8 File Offset: 0x0005EEC8
 			// (remove) Token: 0x060004DC RID: 1244 RVA: 0x00060AF0 File Offset: 0x0005EEF0
+            public TemplateDS.TemplatePropertyRowChangeEventHandler _TemplatePropertyRowChanging;
 			public event TemplateDS.TemplatePropertyRowChangeEventHandler TemplatePropertyRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowChanging = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Combine(this.TemplatePropertyRowChanging, value);
+                    this._TemplatePropertyRowChanging += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowChanging = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Remove(this.TemplatePropertyRowChanging, value);
+                    this._TemplatePropertyRowChanging -= value;
 				}
 			}
 
 			// Token: 0x14000016 RID: 22
 			// (add) Token: 0x060004DD RID: 1245 RVA: 0x00060B18 File Offset: 0x0005EF18
 			// (remove) Token: 0x060004DE RID: 1246 RVA: 0x00060B40 File Offset: 0x0005EF40
+            public TemplateDS.TemplatePropertyRowChangeEventHandler _TemplatePropertyRowChanged;
 			public event TemplateDS.TemplatePropertyRowChangeEventHandler TemplatePropertyRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowChanged = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Combine(this.TemplatePropertyRowChanged, value);
+                    this._TemplatePropertyRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowChanged = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Remove(this.TemplatePropertyRowChanged, value);
+                    this._TemplatePropertyRowChanged -= value;
 				}
 			}
 
 			// Token: 0x14000017 RID: 23
 			// (add) Token: 0x060004DF RID: 1247 RVA: 0x00060B68 File Offset: 0x0005EF68
 			// (remove) Token: 0x060004E0 RID: 1248 RVA: 0x00060B90 File Offset: 0x0005EF90
+            public TemplateDS.TemplatePropertyRowChangeEventHandler _TemplatePropertyRowDeleting;
 			public event TemplateDS.TemplatePropertyRowChangeEventHandler TemplatePropertyRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowDeleting = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Combine(this.TemplatePropertyRowDeleting, value);
+					this._TemplatePropertyRowDeleting += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowDeleting = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Remove(this.TemplatePropertyRowDeleting, value);
+                    this._TemplatePropertyRowDeleting -= value;
 				}
 			}
 
 			// Token: 0x14000018 RID: 24
 			// (add) Token: 0x060004E1 RID: 1249 RVA: 0x00060BB8 File Offset: 0x0005EFB8
 			// (remove) Token: 0x060004E2 RID: 1250 RVA: 0x00060BE0 File Offset: 0x0005EFE0
+            public TemplateDS.TemplatePropertyRowChangeEventHandler _TemplatePropertyRowDeleted;
 			public event TemplateDS.TemplatePropertyRowChangeEventHandler TemplatePropertyRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowDeleted = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Combine(this.TemplatePropertyRowDeleted, value);
+
+					this._TemplatePropertyRowDeleted += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplatePropertyRowDeleted = (TemplateDS.TemplatePropertyRowChangeEventHandler)Delegate.Remove(this.TemplatePropertyRowDeleted, value);
+                    this._TemplatePropertyRowDeleted -= value;
 				}
 			}
 
@@ -945,9 +918,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.TemplatePropertyRowChanged != null)
+				if (this._TemplatePropertyRowChanged != null)
 				{
-					this.TemplatePropertyRowChanged(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
+					this._TemplatePropertyRowChanged(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -961,9 +934,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.TemplatePropertyRowChanging != null)
+				if (this._TemplatePropertyRowChanging != null)
 				{
-					this.TemplatePropertyRowChanging(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
+					this._TemplatePropertyRowChanging(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -977,9 +950,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.TemplatePropertyRowDeleted != null)
+				if (this._TemplatePropertyRowDeleted != null)
 				{
-					this.TemplatePropertyRowDeleted(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
+					this._TemplatePropertyRowDeleted(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -993,9 +966,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.TemplatePropertyRowDeleting != null)
+				if (this._TemplatePropertyRowDeleting != null)
 				{
-					this.TemplatePropertyRowDeleting(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
+					this._TemplatePropertyRowDeleting(this, new TemplateDS.TemplatePropertyRowChangeEvent((TemplateDS.TemplatePropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -1243,100 +1216,73 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x14000019 RID: 25
 			// (add) Token: 0x060004FB RID: 1275 RVA: 0x000614A8 File Offset: 0x0005F8A8
 			// (remove) Token: 0x060004FC RID: 1276 RVA: 0x000614D0 File Offset: 0x0005F8D0
+            public TemplateDS.FormInfoRowChangeEventHandler _FormInfoRowChanging;
 			public event TemplateDS.FormInfoRowChangeEventHandler FormInfoRowChanging
 			{
-				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
-				add
-				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowChanging = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Combine(this.FormInfoRowChanging, value);
-				}
+                [MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
+                add
+                {
+                    this._FormInfoRowChanging += value;
+                }
+
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowChanging = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Remove(this.FormInfoRowChanging, value);
+                    this._FormInfoRowChanging -= value;
 				}
 			}
 
 			// Token: 0x1400001A RID: 26
 			// (add) Token: 0x060004FD RID: 1277 RVA: 0x000614F8 File Offset: 0x0005F8F8
 			// (remove) Token: 0x060004FE RID: 1278 RVA: 0x00061520 File Offset: 0x0005F920
+            public TemplateDS.FormInfoRowChangeEventHandler _FormInfoRowChanged;
 			public event TemplateDS.FormInfoRowChangeEventHandler FormInfoRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowChanged = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Combine(this.FormInfoRowChanged, value);
+                    this._FormInfoRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowChanged = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Remove(this.FormInfoRowChanged, value);
+                    this._FormInfoRowChanged -= value;
 				}
 			}
 
 			// Token: 0x1400001B RID: 27
 			// (add) Token: 0x060004FF RID: 1279 RVA: 0x00061548 File Offset: 0x0005F948
 			// (remove) Token: 0x06000500 RID: 1280 RVA: 0x00061570 File Offset: 0x0005F970
+            public TemplateDS.FormInfoRowChangeEventHandler _FormInfoRowDeleting;
 			public event TemplateDS.FormInfoRowChangeEventHandler FormInfoRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowDeleting = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Combine(this.FormInfoRowDeleting, value);
-				}
+                    this._FormInfoRowDeleting += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowDeleting = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Remove(this.FormInfoRowDeleting, value);
+                    this._FormInfoRowDeleting -= value;
 				}
 			}
 
 			// Token: 0x1400001C RID: 28
 			// (add) Token: 0x06000501 RID: 1281 RVA: 0x00061598 File Offset: 0x0005F998
 			// (remove) Token: 0x06000502 RID: 1282 RVA: 0x000615C0 File Offset: 0x0005F9C0
+            public TemplateDS.FormInfoRowChangeEventHandler _FormInfoRowDeleted;
 			public event TemplateDS.FormInfoRowChangeEventHandler FormInfoRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowDeleted = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Combine(this.FormInfoRowDeleted, value);
-				}
+                    this._FormInfoRowDeleted += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormInfoRowDeleted = (TemplateDS.FormInfoRowChangeEventHandler)Delegate.Remove(this.FormInfoRowDeleted, value);
+                    this._FormInfoRowDeleted -= value;
 				}
 			}
 
@@ -1488,9 +1434,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.FormInfoRowChanged != null)
+				if (this._FormInfoRowChanged != null)
 				{
-					this.FormInfoRowChanged(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
+					this._FormInfoRowChanged(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -1504,9 +1450,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.FormInfoRowChanging != null)
+				if (this._FormInfoRowChanging != null)
 				{
-					this.FormInfoRowChanging(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
+					this._FormInfoRowChanging(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -1520,9 +1466,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.FormInfoRowDeleted != null)
+				if (this._FormInfoRowDeleted != null)
 				{
-					this.FormInfoRowDeleted(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
+					this._FormInfoRowDeleted(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -1536,9 +1482,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.FormInfoRowDeleting != null)
+				if (this._FormInfoRowDeleting != null)
 				{
-					this.FormInfoRowDeleting(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
+					this._FormInfoRowDeleting(this, new TemplateDS.FormInfoRowChangeEvent((TemplateDS.FormInfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -1789,100 +1735,74 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x1400001D RID: 29
 			// (add) Token: 0x0600051B RID: 1307 RVA: 0x00061EE0 File Offset: 0x000602E0
 			// (remove) Token: 0x0600051C RID: 1308 RVA: 0x00061F08 File Offset: 0x00060308
+            public TemplateDS.FormPropertyRowChangeEventHandler _FormPropertyRowChanging;
 			public event TemplateDS.FormPropertyRowChangeEventHandler FormPropertyRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowChanging = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Combine(this.FormPropertyRowChanging, value);
+                    this._FormPropertyRowChanging += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowChanging = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Remove(this.FormPropertyRowChanging, value);
-				}
+                    this._FormPropertyRowChanging -= value;
+                }
 			}
 
 			// Token: 0x1400001E RID: 30
 			// (add) Token: 0x0600051D RID: 1309 RVA: 0x00061F30 File Offset: 0x00060330
 			// (remove) Token: 0x0600051E RID: 1310 RVA: 0x00061F58 File Offset: 0x00060358
+            public TemplateDS.FormPropertyRowChangeEventHandler _FormPropertyRowChanged;
 			public event TemplateDS.FormPropertyRowChangeEventHandler FormPropertyRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowChanged = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Combine(this.FormPropertyRowChanged, value);
+                    this._FormPropertyRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowChanged = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Remove(this.FormPropertyRowChanged, value);
+                    this._FormPropertyRowChanged -= value;
 				}
 			}
 
 			// Token: 0x1400001F RID: 31
 			// (add) Token: 0x0600051F RID: 1311 RVA: 0x00061F80 File Offset: 0x00060380
 			// (remove) Token: 0x06000520 RID: 1312 RVA: 0x00061FA8 File Offset: 0x000603A8
+            public TemplateDS.FormPropertyRowChangeEventHandler _FormPropertyRowDeleting;
 			public event TemplateDS.FormPropertyRowChangeEventHandler FormPropertyRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowDeleting = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Combine(this.FormPropertyRowDeleting, value);
+                    this._FormPropertyRowDeleting += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowDeleting = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Remove(this.FormPropertyRowDeleting, value);
-				}
+                    this._FormPropertyRowDeleting -= value;
+
+                }
+
 			}
 
 			// Token: 0x14000020 RID: 32
 			// (add) Token: 0x06000521 RID: 1313 RVA: 0x00061FD0 File Offset: 0x000603D0
 			// (remove) Token: 0x06000522 RID: 1314 RVA: 0x00061FF8 File Offset: 0x000603F8
+            public TemplateDS.FormPropertyRowChangeEventHandler _FormPropertyRowDeleted;
 			public event TemplateDS.FormPropertyRowChangeEventHandler FormPropertyRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowDeleted = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Combine(this.FormPropertyRowDeleted, value);
+                    this._FormPropertyRowDeleted += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormPropertyRowDeleted = (TemplateDS.FormPropertyRowChangeEventHandler)Delegate.Remove(this.FormPropertyRowDeleted, value);
+                    this._FormPropertyRowDeleted -= value;
 				}
 			}
 
@@ -2034,10 +1954,10 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.FormPropertyRowChanged != null)
+				if (this._FormPropertyRowChanged != null)
 				{
-					this.FormPropertyRowChanged(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
-				}
+					this._FormPropertyRowChanged(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
+				}   
 			}
 
 			// Token: 0x0600052E RID: 1326 RVA: 0x00062320 File Offset: 0x00060720
@@ -2050,9 +1970,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.FormPropertyRowChanging != null)
+				if (this._FormPropertyRowChanging != null)
 				{
-					this.FormPropertyRowChanging(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
+					this._FormPropertyRowChanging(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -2066,9 +1986,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.FormPropertyRowDeleted != null)
+				if (this._FormPropertyRowDeleted != null)
 				{
-					this.FormPropertyRowDeleted(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
+					this._FormPropertyRowDeleted(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -2082,9 +2002,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.FormPropertyRowDeleting != null)
+				if (this._FormPropertyRowDeleting != null)
 				{
-					this.FormPropertyRowDeleting(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
+					this._FormPropertyRowDeleting(this, new TemplateDS.FormPropertyRowChangeEvent((TemplateDS.FormPropertyRow)e.Row, e.Action));
 				}
 			}
 
@@ -2335,101 +2255,74 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x14000021 RID: 33
 			// (add) Token: 0x0600053B RID: 1339 RVA: 0x00062918 File Offset: 0x00060D18
 			// (remove) Token: 0x0600053C RID: 1340 RVA: 0x00062940 File Offset: 0x00060D40
+            public TemplateDS.FormRememberFieldRowChangeEventHandler _FormRememberFieldRowChanging;
 			public event TemplateDS.FormRememberFieldRowChangeEventHandler FormRememberFieldRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowChanging = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Combine(this.FormRememberFieldRowChanging, value);
-				}
+                    this._FormRememberFieldRowChanging += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowChanging = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Remove(this.FormRememberFieldRowChanging, value);
-				}
+                    this._FormRememberFieldRowChanging -= value;
+                }
 			}
 
 			// Token: 0x14000022 RID: 34
 			// (add) Token: 0x0600053D RID: 1341 RVA: 0x00062968 File Offset: 0x00060D68
 			// (remove) Token: 0x0600053E RID: 1342 RVA: 0x00062990 File Offset: 0x00060D90
+            public TemplateDS.FormRememberFieldRowChangeEventHandler _FormRememberFieldRowChanged;
 			public event TemplateDS.FormRememberFieldRowChangeEventHandler FormRememberFieldRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowChanged = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Combine(this.FormRememberFieldRowChanged, value);
+                    this._FormRememberFieldRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowChanged = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Remove(this.FormRememberFieldRowChanged, value);
-				}
+                    this._FormRememberFieldRowChanged -= value;
+                }
 			}
 
 			// Token: 0x14000023 RID: 35
 			// (add) Token: 0x0600053F RID: 1343 RVA: 0x000629B8 File Offset: 0x00060DB8
 			// (remove) Token: 0x06000540 RID: 1344 RVA: 0x000629E0 File Offset: 0x00060DE0
+            public TemplateDS.FormRememberFieldRowChangeEventHandler _FormRememberFieldRowDeleting;
 			public event TemplateDS.FormRememberFieldRowChangeEventHandler FormRememberFieldRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowDeleting = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Combine(this.FormRememberFieldRowDeleting, value);
-				}
+                    this._FormRememberFieldRowDeleting += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowDeleting = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Remove(this.FormRememberFieldRowDeleting, value);
-				}
+                    this._FormRememberFieldRowDeleting -= value;
+                }
 			}
 
 			// Token: 0x14000024 RID: 36
 			// (add) Token: 0x06000541 RID: 1345 RVA: 0x00062A08 File Offset: 0x00060E08
 			// (remove) Token: 0x06000542 RID: 1346 RVA: 0x00062A30 File Offset: 0x00060E30
-			public event TemplateDS.FormRememberFieldRowChangeEventHandler FormRememberFieldRowDeleted
+            public TemplateDS.FormRememberFieldRowChangeEventHandler _FormRememberFieldRowDeleted;
+            public event TemplateDS.FormRememberFieldRowChangeEventHandler FormRememberFieldRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowDeleted = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Combine(this.FormRememberFieldRowDeleted, value);
-				}
+                    this._FormRememberFieldRowDeleted += value;
+
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.FormRememberFieldRowDeleted = (TemplateDS.FormRememberFieldRowChangeEventHandler)Delegate.Remove(this.FormRememberFieldRowDeleted, value);
-				}
+                    this._FormRememberFieldRowDeleted -= value;
+                }
 			}
 
 			// Token: 0x06000543 RID: 1347 RVA: 0x00062A58 File Offset: 0x00060E58
@@ -2580,9 +2473,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.FormRememberFieldRowChanged != null)
+				if (this._FormRememberFieldRowChanged != null)
 				{
-					this.FormRememberFieldRowChanged(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
+					this._FormRememberFieldRowChanged(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
 				}
 			}
 
@@ -2596,9 +2489,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.FormRememberFieldRowChanging != null)
+				if (this._FormRememberFieldRowChanging != null)
 				{
-					this.FormRememberFieldRowChanging(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
+					this._FormRememberFieldRowChanging(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
 				}
 			}
 
@@ -2612,9 +2505,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.FormRememberFieldRowDeleted != null)
+				if (this._FormRememberFieldRowDeleted != null)
 				{
-					this.FormRememberFieldRowDeleted(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
+					this._FormRememberFieldRowDeleted(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
 				}
 			}
 
@@ -2628,9 +2521,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.FormRememberFieldRowDeleting != null)
+				if (this._FormRememberFieldRowDeleting != null)
 				{
-					this.FormRememberFieldRowDeleting(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
+					this._FormRememberFieldRowDeleting(this, new TemplateDS.FormRememberFieldRowChangeEvent((TemplateDS.FormRememberFieldRow)e.Row, e.Action));
 				}
 			}
 

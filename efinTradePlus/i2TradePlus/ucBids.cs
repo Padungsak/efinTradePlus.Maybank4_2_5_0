@@ -535,50 +535,37 @@ namespace i2TradePlus
 		// Token: 0x140000F1 RID: 241
 		// (add) Token: 0x060015A1 RID: 5537 RVA: 0x0012286C File Offset: 0x00120C6C
 		// (remove) Token: 0x060015A2 RID: 5538 RVA: 0x00122894 File Offset: 0x00120C94
+        public ucBids.OnNewStockEventHandler _OnNewStock;
 		public event ucBids.OnNewStockEventHandler OnNewStock
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnNewStock = (ucBids.OnNewStockEventHandler)Delegate.Combine(this.OnNewStock, value);
+                this._OnNewStock += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnNewStock = (ucBids.OnNewStockEventHandler)Delegate.Remove(this.OnNewStock, value);
+                this._OnNewStock -= value;
+
 			}
 		}
 
 		// Token: 0x140000F2 RID: 242
 		// (add) Token: 0x060015A3 RID: 5539 RVA: 0x001228BC File Offset: 0x00120CBC
 		// (remove) Token: 0x060015A4 RID: 5540 RVA: 0x001228E4 File Offset: 0x00120CE4
+        public ucBids.OnLinkEventHandler _OnLink;
 		public event ucBids.OnLinkEventHandler OnLink
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnLink = (ucBids.OnLinkEventHandler)Delegate.Combine(this.OnLink, value);
+				this._OnLink += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnLink = (ucBids.OnLinkEventHandler)Delegate.Remove(this.OnLink, value);
+                this._OnLink -= value;
 			}
 		}
 
@@ -1739,9 +1726,9 @@ namespace i2TradePlus
 					StockList.StockInformation stockInformation = ApplicationInfo.StockInfo[this.txtStock.Text.ToUpper()];
 					if (stockInformation.Number > 0)
 					{
-						if (this.OnNewStock != null)
+						if (this._OnNewStock != null)
 						{
-							this.OnNewStock(this, stockInformation.Symbol);
+							this._OnNewStock(this, stockInformation.Symbol);
 						}
 					}
 					else
@@ -1749,9 +1736,9 @@ namespace i2TradePlus
 						SeriesList.SeriesInformation seriesInformation = ApplicationInfo.SeriesInfo[this.txtStock.Text.ToUpper()];
 						if (seriesInformation.Symbol != string.Empty)
 						{
-							if (this.OnNewStock != null)
+							if (this._OnNewStock != null)
 							{
-								this.OnNewStock(this, seriesInformation.Symbol);
+								this._OnNewStock(this, seriesInformation.Symbol);
 							}
 						}
 						else
@@ -1761,9 +1748,9 @@ namespace i2TradePlus
 						}
 					}
 				}
-				else if (this.OnNewStock != null)
+				else if (this._OnNewStock != null)
 				{
-					this.OnNewStock(this, "");
+					this._OnNewStock(this, "");
 				}
 			}
 			catch (Exception ex)
@@ -1866,9 +1853,9 @@ namespace i2TradePlus
 					}
 					else if (e.Mouse.Button == MouseButtons.Right)
 					{
-						if (this.OnLink != null && !string.IsNullOrEmpty(e.Item.Text.ToString()))
+						if (this._OnLink != null && !string.IsNullOrEmpty(e.Item.Text.ToString()))
 						{
-							this.OnLink(this, e.Item.Text.ToString(), new Point(e.Position.X, e.Position.Y));
+							this._OnLink(this, e.Item.Text.ToString(), new Point(e.Position.X, e.Position.Y));
 						}
 					}
 				}

@@ -33,25 +33,18 @@ namespace i2TradePlus
 		// Token: 0x14000028 RID: 40
 		// (add) Token: 0x06000646 RID: 1606 RVA: 0x0006D908 File Offset: 0x0006BD08
 		// (remove) Token: 0x06000647 RID: 1607 RVA: 0x0006D930 File Offset: 0x0006BD30
+        public TemplateTreeMenus.OnOpenTemplateHandler _OnOpenTemplate;
 		public event TemplateTreeMenus.OnOpenTemplateHandler OnOpenTemplate
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnOpenTemplate = (TemplateTreeMenus.OnOpenTemplateHandler)Delegate.Combine(this.OnOpenTemplate, value);
+				this._OnOpenTemplate += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnOpenTemplate = (TemplateTreeMenus.OnOpenTemplateHandler)Delegate.Remove(this.OnOpenTemplate, value);
+                this._OnOpenTemplate -= value;
 			}
 		}
 
@@ -63,9 +56,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.OnOpenTemplate != null)
+			if (this._OnOpenTemplate != null)
 			{
-				this.OnOpenTemplate(templateName, templateGroup);
+				this._OnOpenTemplate(templateName, templateGroup);
 			}
 		}
 

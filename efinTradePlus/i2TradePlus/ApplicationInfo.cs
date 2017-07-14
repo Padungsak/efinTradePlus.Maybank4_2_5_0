@@ -977,26 +977,19 @@ namespace i2TradePlus
 		// Token: 0x14000027 RID: 39
 		// (add) Token: 0x0600060B RID: 1547 RVA: 0x00067680 File Offset: 0x00065A80
 		// (remove) Token: 0x0600060C RID: 1548 RVA: 0x000676A8 File Offset: 0x00065AA8
+        public static ApplicationInfo.OnPincodeChangedCompleteHandler _OnPincodeChanged;
 		public static event ApplicationInfo.OnPincodeChangedCompleteHandler OnPincodeChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				ApplicationInfo.OnPincodeChanged = (ApplicationInfo.OnPincodeChangedCompleteHandler)Delegate.Combine(ApplicationInfo.OnPincodeChanged, value);
+                ApplicationInfo._OnPincodeChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				ApplicationInfo.OnPincodeChanged = (ApplicationInfo.OnPincodeChangedCompleteHandler)Delegate.Remove(ApplicationInfo.OnPincodeChanged, value);
-			}
+                ApplicationInfo._OnPincodeChanged -= value;
+            }
 		}
 
 		// Token: 0x0600060D RID: 1549 RVA: 0x000676D0 File Offset: 0x00065AD0
@@ -1020,9 +1013,9 @@ namespace i2TradePlus
 				if (ApplicationInfo.UserPincodeLastEntry != pincodeEntry)
 				{
 					ApplicationInfo.UserPincodeLastEntry = pincodeEntry;
-					if (ApplicationInfo.OnPincodeChanged != null)
+					if (ApplicationInfo._OnPincodeChanged != null)
 					{
-						ApplicationInfo.OnPincodeChanged();
+						ApplicationInfo._OnPincodeChanged();
 					}
 				}
 				if (ApplicationInfo.UserPincode != string.Empty && pincodeEntry == ApplicationInfo.UserPincode)

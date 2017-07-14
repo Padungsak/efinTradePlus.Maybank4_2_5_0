@@ -20,25 +20,18 @@ namespace i2TradePlus
 		// Token: 0x140000CC RID: 204
 		// (add) Token: 0x0600141B RID: 5147 RVA: 0x0010E1A8 File Offset: 0x0010C5A8
 		// (remove) Token: 0x0600141C RID: 5148 RVA: 0x0010E1D0 File Offset: 0x0010C5D0
+        internal AlertManager.OnAlertHandler _OnAlert;
 		internal event AlertManager.OnAlertHandler OnAlert
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAlert = (AlertManager.OnAlertHandler)Delegate.Combine(this.OnAlert, value);
+                this._OnAlert += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAlert = (AlertManager.OnAlertHandler)Delegate.Remove(this.OnAlert, value);
+                this._OnAlert -= value;
 			}
 		}
 
@@ -83,7 +76,6 @@ namespace i2TradePlus
 			this.symbols = null;
 			this._bcMessages = new Queue<AlertManager.AlertBcItem>();
 			this.isMonitoring = false;
-			
 		}
 
 		// Token: 0x17000285 RID: 645
@@ -416,9 +408,9 @@ namespace i2TradePlus
 											current.AlertTime = DateTime.Now;
 											flag2 = true;
 										}
-										if (flag2 && this.OnAlert != null)
+										if (flag2 && this._OnAlert != null)
 										{
-											this.OnAlert(new AlertItem(current));
+											this._OnAlert(new AlertItem(current));
 										}
 									}
 								}

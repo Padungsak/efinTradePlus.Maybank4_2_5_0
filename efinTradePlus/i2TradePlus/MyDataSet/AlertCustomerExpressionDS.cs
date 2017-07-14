@@ -657,101 +657,73 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x140000C8 RID: 200
 			// (add) Token: 0x06001346 RID: 4934 RVA: 0x000FAD7C File Offset: 0x000F917C
 			// (remove) Token: 0x06001347 RID: 4935 RVA: 0x000FADA4 File Offset: 0x000F91A4
+            public AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler _AlertCollectionRowChanging;
 			public event AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler AlertCollectionRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowChanging = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Combine(this.AlertCollectionRowChanging, value);
-				}
+                    this._AlertCollectionRowChanging += value; 
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowChanging = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Remove(this.AlertCollectionRowChanging, value);
-				}
+                    this._AlertCollectionRowChanging -= value;
+                }
 			}
 
 			// Token: 0x140000C9 RID: 201
 			// (add) Token: 0x06001348 RID: 4936 RVA: 0x000FADCC File Offset: 0x000F91CC
 			// (remove) Token: 0x06001349 RID: 4937 RVA: 0x000FADF4 File Offset: 0x000F91F4
+            public AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler _AlertCollectionRowChanged;
 			public event AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler AlertCollectionRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowChanged = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Combine(this.AlertCollectionRowChanged, value);
+					this._AlertCollectionRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowChanged = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Remove(this.AlertCollectionRowChanged, value);
-				}
+                    this._AlertCollectionRowChanged -= value;
+                }
 			}
 
 			// Token: 0x140000CA RID: 202
 			// (add) Token: 0x0600134A RID: 4938 RVA: 0x000FAE1C File Offset: 0x000F921C
 			// (remove) Token: 0x0600134B RID: 4939 RVA: 0x000FAE44 File Offset: 0x000F9244
+            public AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler _AlertCollectionRowDeleting;
 			public event AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler AlertCollectionRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowDeleting = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Combine(this.AlertCollectionRowDeleting, value);
-				}
+                    this._AlertCollectionRowDeleting += value; 
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowDeleting = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Remove(this.AlertCollectionRowDeleting, value);
-				}
+                    this._AlertCollectionRowDeleting -= value;
+                }
 			}
 
 			// Token: 0x140000CB RID: 203
 			// (add) Token: 0x0600134C RID: 4940 RVA: 0x000FAE6C File Offset: 0x000F926C
 			// (remove) Token: 0x0600134D RID: 4941 RVA: 0x000FAE94 File Offset: 0x000F9294
+            public AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler _AlertCollectionRowDeleted;
 			public event AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler AlertCollectionRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowDeleted = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Combine(this.AlertCollectionRowDeleted, value);
-				}
+                    this._AlertCollectionRowDeleted += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.AlertCollectionRowDeleted = (AlertCustomerExpressionDS.AlertCollectionRowChangeEventHandler)Delegate.Remove(this.AlertCollectionRowDeleted, value);
-				}
+                    this._AlertCollectionRowDeleted -= value;
+                }
 			}
 
 			// Token: 0x0600134E RID: 4942 RVA: 0x000FAEBC File Offset: 0x000F92BC
@@ -937,9 +909,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.AlertCollectionRowChanged != null)
+				if (this._AlertCollectionRowChanged != null)
 				{
-					this.AlertCollectionRowChanged(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
+					this._AlertCollectionRowChanged(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
 				}
 			}
 
@@ -953,9 +925,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.AlertCollectionRowChanging != null)
+				if (this._AlertCollectionRowChanging != null)
 				{
-					this.AlertCollectionRowChanging(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
+					this._AlertCollectionRowChanging(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
 				}
 			}
 
@@ -969,9 +941,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.AlertCollectionRowDeleted != null)
+				if (this._AlertCollectionRowDeleted != null)
 				{
-					this.AlertCollectionRowDeleted(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
+					this._AlertCollectionRowDeleted(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
 				}
 			}
 
@@ -985,9 +957,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.AlertCollectionRowDeleting != null)
+				if (this._AlertCollectionRowDeleting != null)
 				{
-					this.AlertCollectionRowDeleting(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
+					this._AlertCollectionRowDeleting(this, new AlertCustomerExpressionDS.AlertCollectionRowChangeEvent((AlertCustomerExpressionDS.AlertCollectionRow)e.Row, e.Action));
 				}
 			}
 

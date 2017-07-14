@@ -249,25 +249,19 @@ namespace i2TradePlus
 		// Token: 0x140000F7 RID: 247
 		// (add) Token: 0x0600183E RID: 6206 RVA: 0x00146E24 File Offset: 0x00145224
 		// (remove) Token: 0x0600183F RID: 6207 RVA: 0x00146E4C File Offset: 0x0014524C
+        public frmMobileAlert.OnAlertClickHandler _OnAlertClick;
 		public event frmMobileAlert.OnAlertClickHandler OnAlertClick
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAlertClick = (frmMobileAlert.OnAlertClickHandler)Delegate.Combine(this.OnAlertClick, value);
+				this._OnAlertClick += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAlertClick = (frmMobileAlert.OnAlertClickHandler)Delegate.Remove(this.OnAlertClick, value);
+                this._OnAlertClick -= value;
+
 			}
 		}
 
@@ -279,9 +273,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.OnAlertClick != null)
+			if (this._OnAlertClick != null)
 			{
-				this.OnAlertClick();
+				this._OnAlertClick();
 			}
 		}
 

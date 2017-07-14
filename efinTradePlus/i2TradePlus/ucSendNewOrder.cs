@@ -1669,100 +1669,74 @@ namespace i2TradePlus
 		// Token: 0x14000037 RID: 55
 		// (add) Token: 0x06000BCF RID: 3023 RVA: 0x000D937C File Offset: 0x000D777C
 		// (remove) Token: 0x06000BD0 RID: 3024 RVA: 0x000D93A4 File Offset: 0x000D77A4
+        public ucSendNewOrder.OnAccountChangedHandler _OnAccountChanged;
 		public event ucSendNewOrder.OnAccountChangedHandler OnAccountChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAccountChanged = (ucSendNewOrder.OnAccountChangedHandler)Delegate.Combine(this.OnAccountChanged, value);
+				this._OnAccountChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnAccountChanged = (ucSendNewOrder.OnAccountChangedHandler)Delegate.Remove(this.OnAccountChanged, value);
-			}
+                this._OnAccountChanged -= value;
+            }
 		}
 
 		// Token: 0x14000038 RID: 56
 		// (add) Token: 0x06000BD1 RID: 3025 RVA: 0x000D93CC File Offset: 0x000D77CC
 		// (remove) Token: 0x06000BD2 RID: 3026 RVA: 0x000D93F4 File Offset: 0x000D77F4
+		public ucSendNewOrder.OnBoxStyleChangedHandler _OnBoxStyleChanged;
 		public event ucSendNewOrder.OnBoxStyleChangedHandler OnBoxStyleChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnBoxStyleChanged = (ucSendNewOrder.OnBoxStyleChangedHandler)Delegate.Combine(this.OnBoxStyleChanged, value);
+				this._OnBoxStyleChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnBoxStyleChanged = (ucSendNewOrder.OnBoxStyleChangedHandler)Delegate.Remove(this.OnBoxStyleChanged, value);
-			}
+			    this._OnBoxStyleChanged -= value;
+            }
 		}
 
 		// Token: 0x14000039 RID: 57
 		// (add) Token: 0x06000BD3 RID: 3027 RVA: 0x000D941C File Offset: 0x000D781C
 		// (remove) Token: 0x06000BD4 RID: 3028 RVA: 0x000D9444 File Offset: 0x000D7844
+		public ucSendNewOrder.OnResizedHandler _OnResized;
 		public event ucSendNewOrder.OnResizedHandler OnResized
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnResized = (ucSendNewOrder.OnResizedHandler)Delegate.Combine(this.OnResized, value);
+				this._OnResized += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnResized = (ucSendNewOrder.OnResizedHandler)Delegate.Remove(this.OnResized, value);
+				this._OnResized -= value;
+
 			}
 		}
 
 		// Token: 0x1400003A RID: 58
 		// (add) Token: 0x06000BD5 RID: 3029 RVA: 0x000D946C File Offset: 0x000D786C
 		// (remove) Token: 0x06000BD6 RID: 3030 RVA: 0x000D9494 File Offset: 0x000D7894
+		public ucSendNewOrder.OnResizeUpDownHandler _OnResizeUpDown;
 		public event ucSendNewOrder.OnResizeUpDownHandler OnResizeUpDown
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnResizeUpDown = (ucSendNewOrder.OnResizeUpDownHandler)Delegate.Combine(this.OnResizeUpDown, value);
+				this._OnResizeUpDown += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnResizeUpDown = (ucSendNewOrder.OnResizeUpDownHandler)Delegate.Remove(this.OnResizeUpDown, value);
+			    this._OnResizeUpDown -= value;
+
 			}
 		}
 
@@ -2367,9 +2341,9 @@ namespace i2TradePlus
 				if (base.Height != num5)
 				{
 					base.Height = num5;
-					if (this.OnResized != null)
+					if (this._OnResized != null)
 					{
-						this.OnResized();
+						this._OnResized();
 					}
 				}
 			}
@@ -3483,9 +3457,9 @@ namespace i2TradePlus
 					if (this._isActive)
 					{
 						this.SetResize();
-						if (this.OnBoxStyleChanged != null)
+						if (this._OnBoxStyleChanged != null)
 						{
-							this.OnBoxStyleChanged();
+							this._OnBoxStyleChanged();
 						}
 					}
 				}
@@ -6142,9 +6116,9 @@ namespace i2TradePlus
 						this.SetResize();
 						this.StartTimerLoadCredit();
 					}
-					if (this.OnAccountChanged != null)
+					if (this._OnAccountChanged != null)
 					{
-						this.OnAccountChanged(ApplicationInfo.AccInfo.CurrentAccount);
+						this._OnAccountChanged(ApplicationInfo.AccInfo.CurrentAccount);
 					}
 				}
 			}
@@ -6267,9 +6241,9 @@ namespace i2TradePlus
 							this.tbSeries.SelectAll();
 						}
 					}
-					if (this.OnBoxStyleChanged != null)
+					if (this._OnBoxStyleChanged != null)
 					{
-						this.OnBoxStyleChanged();
+						this._OnBoxStyleChanged();
 					}
 				}
 				catch (Exception ex)
@@ -6323,9 +6297,9 @@ namespace i2TradePlus
 					this.SetVisibleControlTfex();
 					this.SetColorBySide(this._showSideTFEX);
 				}
-				if (this.OnBoxStyleChanged != null)
+				if (this._OnBoxStyleChanged != null)
 				{
-					this.OnBoxStyleChanged();
+					this._OnBoxStyleChanged();
 				}
 			}
 			catch (Exception ex)
@@ -7868,9 +7842,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.OnResizeUpDown != null)
+			if (this._OnResizeUpDown != null)
 			{
-				this.OnResizeUpDown(true);
+				this._OnResizeUpDown(true);
 			}
 		}
 
@@ -7882,9 +7856,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.OnResizeUpDown != null)
+			if (this._OnResizeUpDown != null)
 			{
-				this.OnResizeUpDown(false);
+				this._OnResizeUpDown(false);
 			}
 		}
 

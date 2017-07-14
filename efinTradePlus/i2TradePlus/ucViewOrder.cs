@@ -781,26 +781,19 @@ namespace i2TradePlus
 		// Token: 0x14000029 RID: 41
 		// (add) Token: 0x06000687 RID: 1671 RVA: 0x00072578 File Offset: 0x00070978
 		// (remove) Token: 0x06000688 RID: 1672 RVA: 0x000725A0 File Offset: 0x000709A0
+        public ucViewOrder.OnDisplaySummaryOrdersHandler _OnDisplaySummaryOrders;
 		public event ucViewOrder.OnDisplaySummaryOrdersHandler OnDisplaySummaryOrders
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnDisplaySummaryOrders = (ucViewOrder.OnDisplaySummaryOrdersHandler)Delegate.Combine(this.OnDisplaySummaryOrders, value);
+				this._OnDisplaySummaryOrders += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnDisplaySummaryOrders = (ucViewOrder.OnDisplaySummaryOrdersHandler)Delegate.Remove(this.OnDisplaySummaryOrders, value);
-			}
+                this._OnDisplaySummaryOrders -= value;
+            }
 		}
 
 		// Token: 0x170000FA RID: 250
@@ -2456,10 +2449,10 @@ namespace i2TradePlus
 						this.UpdateToGrid(num, recordData);
 						num++;
 					}
-					if (this.OnDisplaySummaryOrders != null)
+					if (this._OnDisplaySummaryOrders != null)
 					{
 						this.UpdateDisplaySummary(this.tdsOrder.Tables["ORDERS"]);
-						this.OnDisplaySummaryOrders();
+						this._OnDisplaySummaryOrders();
 					}
 					this.intzaOrderList.Redraw();
 					if (!this.showOnMainForm)

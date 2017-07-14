@@ -641,101 +641,73 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x140000F3 RID: 243
 			// (add) Token: 0x060017FC RID: 6140 RVA: 0x00145480 File Offset: 0x00143880
 			// (remove) Token: 0x060017FD RID: 6141 RVA: 0x001454A8 File Offset: 0x001438A8
+			public OrderQueueDS.OrderRecordRowChangeEventHandler _OrderRecordRowChanging;
 			public event OrderQueueDS.OrderRecordRowChangeEventHandler OrderRecordRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowChanging = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Combine(this.OrderRecordRowChanging, value);
-				}
+                    this._OrderRecordRowChanging += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowChanging = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Remove(this.OrderRecordRowChanging, value);
+                    this._OrderRecordRowChanging -= value;
 				}
 			}
 
 			// Token: 0x140000F4 RID: 244
 			// (add) Token: 0x060017FE RID: 6142 RVA: 0x001454D0 File Offset: 0x001438D0
 			// (remove) Token: 0x060017FF RID: 6143 RVA: 0x001454F8 File Offset: 0x001438F8
+			public OrderQueueDS.OrderRecordRowChangeEventHandler _OrderRecordRowChanged;
 			public event OrderQueueDS.OrderRecordRowChangeEventHandler OrderRecordRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowChanged = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Combine(this.OrderRecordRowChanged, value);
-				}
+                    this._OrderRecordRowChanged += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowChanged = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Remove(this.OrderRecordRowChanged, value);
-				}
+                    this._OrderRecordRowChanged -= value;
+                }
 			}
 
 			// Token: 0x140000F5 RID: 245
 			// (add) Token: 0x06001800 RID: 6144 RVA: 0x00145520 File Offset: 0x00143920
 			// (remove) Token: 0x06001801 RID: 6145 RVA: 0x00145548 File Offset: 0x00143948
+			public OrderQueueDS.OrderRecordRowChangeEventHandler _OrderRecordRowDeleting;
 			public event OrderQueueDS.OrderRecordRowChangeEventHandler OrderRecordRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowDeleting = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Combine(this.OrderRecordRowDeleting, value);
-				}
+                    this._OrderRecordRowDeleting += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowDeleting = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Remove(this.OrderRecordRowDeleting, value);
+                    this._OrderRecordRowDeleting -= value;
 				}
 			}
 
 			// Token: 0x140000F6 RID: 246
 			// (add) Token: 0x06001802 RID: 6146 RVA: 0x00145570 File Offset: 0x00143970
 			// (remove) Token: 0x06001803 RID: 6147 RVA: 0x00145598 File Offset: 0x00143998
+            public OrderQueueDS.OrderRecordRowChangeEventHandler _OrderRecordRowDeleted;
 			public event OrderQueueDS.OrderRecordRowChangeEventHandler OrderRecordRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowDeleted = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Combine(this.OrderRecordRowDeleted, value);
+					this._OrderRecordRowDeleted +=  value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.OrderRecordRowDeleted = (OrderQueueDS.OrderRecordRowChangeEventHandler)Delegate.Remove(this.OrderRecordRowDeleted, value);
-				}
+                    this._OrderRecordRowDeleted -= value;
+                }
 			}
 
 			// Token: 0x06001804 RID: 6148 RVA: 0x001455C0 File Offset: 0x001439C0
@@ -914,9 +886,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.OrderRecordRowChanged != null)
+				if (this._OrderRecordRowChanged != null)
 				{
-					this.OrderRecordRowChanged(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
+					this._OrderRecordRowChanged(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
 				}
 			}
 
@@ -930,9 +902,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.OrderRecordRowChanging != null)
+				if (this._OrderRecordRowChanging != null)
 				{
-					this.OrderRecordRowChanging(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
+					this._OrderRecordRowChanging(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
 				}
 			}
 
@@ -946,9 +918,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.OrderRecordRowDeleted != null)
+				if (this._OrderRecordRowDeleted != null)
 				{
-					this.OrderRecordRowDeleted(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
+					this._OrderRecordRowDeleted(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
 				}
 			}
 
@@ -962,9 +934,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.OrderRecordRowDeleting != null)
+				if (this._OrderRecordRowDeleting != null)
 				{
-					this.OrderRecordRowDeleting(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
+					this._OrderRecordRowDeleting(this, new OrderQueueDS.OrderRecordRowChangeEvent((OrderQueueDS.OrderRecordRow)e.Row, e.Action));
 				}
 			}
 

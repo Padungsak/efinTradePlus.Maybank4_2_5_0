@@ -101,50 +101,36 @@ namespace i2TradePlus.User_Control
 		// Token: 0x14000025 RID: 37
 		// (add) Token: 0x0600059A RID: 1434 RVA: 0x00065484 File Offset: 0x00063884
 		// (remove) Token: 0x0600059B RID: 1435 RVA: 0x000654AC File Offset: 0x000638AC
+        public ucMarketStateBox.SwitchMode _OnSitchMode;
 		public event ucMarketStateBox.SwitchMode OnSitchMode
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnSitchMode = (ucMarketStateBox.SwitchMode)Delegate.Combine(this.OnSitchMode, value);
+				this._OnSitchMode += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnSitchMode = (ucMarketStateBox.SwitchMode)Delegate.Remove(this.OnSitchMode, value);
+                this._OnSitchMode -= value;
 			}
 		}
 
 		// Token: 0x14000026 RID: 38
 		// (add) Token: 0x0600059C RID: 1436 RVA: 0x000654D4 File Offset: 0x000638D4
 		// (remove) Token: 0x0600059D RID: 1437 RVA: 0x000654FC File Offset: 0x000638FC
+		public ucMarketStateBox.CallAlert _OnCallAlert;
 		public event ucMarketStateBox.CallAlert OnCallAlert
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnCallAlert = (ucMarketStateBox.CallAlert)Delegate.Combine(this.OnCallAlert, value);
+				this._OnCallAlert += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.OnCallAlert = (ucMarketStateBox.CallAlert)Delegate.Remove(this.OnCallAlert, value);
+				this._OnCallAlert -= value;
 			}
 		}
 
@@ -209,9 +195,9 @@ namespace i2TradePlus.User_Control
 					ApplicationInfo.IsPushMode = true;
 					ApplicationInfo.TunnelCounter = 0;
 				}
-				if (this.OnSitchMode != null)
+				if (this._OnSitchMode != null)
 				{
-					this.OnSitchMode();
+					this._OnSitchMode();
 				}
 			}
 			catch (Exception ex)
@@ -239,11 +225,11 @@ namespace i2TradePlus.User_Control
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.OnCallAlert != null)
+			if (this._OnCallAlert != null)
 			{
 				this.alertStockControl.IsAllowBlink = false;
 				this.alertStockControl.AlterMessageCount = 0;
-				this.OnCallAlert();
+				this._OnCallAlert();
 			}
 		}
 

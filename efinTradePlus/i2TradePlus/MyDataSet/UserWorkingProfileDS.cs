@@ -598,101 +598,74 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x1400002F RID: 47
 			// (add) Token: 0x06000A9A RID: 2714 RVA: 0x000C52C4 File Offset: 0x000C36C4
 			// (remove) Token: 0x06000A9B RID: 2715 RVA: 0x000C52EC File Offset: 0x000C36EC
+            public UserWorkingProfileDS.TemplateRootsRowChangeEventHandler _TemplateRootsRowChanging;
 			public event UserWorkingProfileDS.TemplateRootsRowChangeEventHandler TemplateRootsRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowChanging = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Combine(this.TemplateRootsRowChanging, value);
+                    this._TemplateRootsRowChanging += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowChanging = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Remove(this.TemplateRootsRowChanging, value);
-				}
+                    this._TemplateRootsRowChanging -= value;
+                }
 			}
 
 			// Token: 0x14000030 RID: 48
 			// (add) Token: 0x06000A9C RID: 2716 RVA: 0x000C5314 File Offset: 0x000C3714
 			// (remove) Token: 0x06000A9D RID: 2717 RVA: 0x000C533C File Offset: 0x000C373C
+            public UserWorkingProfileDS.TemplateRootsRowChangeEventHandler _TemplateRootsRowChanged;
 			public event UserWorkingProfileDS.TemplateRootsRowChangeEventHandler TemplateRootsRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowChanged = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Combine(this.TemplateRootsRowChanged, value);
+                    this._TemplateRootsRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowChanged = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Remove(this.TemplateRootsRowChanged, value);
-				}
+                    this._TemplateRootsRowChanged -= value;
+                }
 			}
 
 			// Token: 0x14000031 RID: 49
 			// (add) Token: 0x06000A9E RID: 2718 RVA: 0x000C5364 File Offset: 0x000C3764
 			// (remove) Token: 0x06000A9F RID: 2719 RVA: 0x000C538C File Offset: 0x000C378C
+            public UserWorkingProfileDS.TemplateRootsRowChangeEventHandler _TemplateRootsRowDeleting;
 			public event UserWorkingProfileDS.TemplateRootsRowChangeEventHandler TemplateRootsRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowDeleting = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Combine(this.TemplateRootsRowDeleting, value);
+
+                    this._TemplateRootsRowDeleting += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
-				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowDeleting = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Remove(this.TemplateRootsRowDeleting, value);
+                {
+                    this._TemplateRootsRowDeleting -= value;
 				}
 			}
 
 			// Token: 0x14000032 RID: 50
 			// (add) Token: 0x06000AA0 RID: 2720 RVA: 0x000C53B4 File Offset: 0x000C37B4
 			// (remove) Token: 0x06000AA1 RID: 2721 RVA: 0x000C53DC File Offset: 0x000C37DC
+            public UserWorkingProfileDS.TemplateRootsRowChangeEventHandler _TemplateRootsRowDeleted;
 			public event UserWorkingProfileDS.TemplateRootsRowChangeEventHandler TemplateRootsRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowDeleted = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Combine(this.TemplateRootsRowDeleted, value);
-				}
+                    this._TemplateRootsRowDeleted += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateRootsRowDeleted = (UserWorkingProfileDS.TemplateRootsRowChangeEventHandler)Delegate.Remove(this.TemplateRootsRowDeleted, value);
-				}
+					 this._TemplateRootsRowDeleted -= value;
+                }
 			}
 
 			// Token: 0x06000AA2 RID: 2722 RVA: 0x000C5404 File Offset: 0x000C3804
@@ -840,9 +813,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.TemplateRootsRowChanged != null)
+				if (this._TemplateRootsRowChanged != null)
 				{
-					this.TemplateRootsRowChanged(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
+					this._TemplateRootsRowChanged(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
 				}
 			}
 
@@ -856,9 +829,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.TemplateRootsRowChanging != null)
+				if (this._TemplateRootsRowChanging != null)
 				{
-					this.TemplateRootsRowChanging(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
+					this._TemplateRootsRowChanging(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
 				}
 			}
 
@@ -872,9 +845,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.TemplateRootsRowDeleted != null)
+				if (this._TemplateRootsRowDeleted != null)
 				{
-					this.TemplateRootsRowDeleted(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
+					this._TemplateRootsRowDeleted(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
 				}
 			}
 
@@ -888,9 +861,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.TemplateRootsRowDeleting != null)
+				if (this._TemplateRootsRowDeleting != null)
 				{
-					this.TemplateRootsRowDeleting(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
+					this._TemplateRootsRowDeleting(this, new UserWorkingProfileDS.TemplateRootsRowChangeEvent((UserWorkingProfileDS.TemplateRootsRow)e.Row, e.Action));
 				}
 			}
 
@@ -1170,100 +1143,72 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x14000033 RID: 51
 			// (add) Token: 0x06000ABC RID: 2748 RVA: 0x000C5D14 File Offset: 0x000C4114
 			// (remove) Token: 0x06000ABD RID: 2749 RVA: 0x000C5D3C File Offset: 0x000C413C
+            public UserWorkingProfileDS.TemplateItemRowChangeEventHandler _TemplateItemRowChanging;
 			public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowChanging = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Combine(this.TemplateItemRowChanging, value);
-				}
+                    this._TemplateItemRowChanging += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowChanging = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Remove(this.TemplateItemRowChanging, value);
-				}
+                    this._TemplateItemRowChanging -= value;
+                }
 			}
 
 			// Token: 0x14000034 RID: 52
 			// (add) Token: 0x06000ABE RID: 2750 RVA: 0x000C5D64 File Offset: 0x000C4164
 			// (remove) Token: 0x06000ABF RID: 2751 RVA: 0x000C5D8C File Offset: 0x000C418C
-			public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowChanged
+            public UserWorkingProfileDS.TemplateItemRowChangeEventHandler _TemplateItemRowChanged;
+            public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowChanged = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Combine(this.TemplateItemRowChanged, value);
+                    this._TemplateItemRowChanged += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowChanged = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Remove(this.TemplateItemRowChanged, value);
+                    this._TemplateItemRowChanged -= value;
 				}
 			}
 
 			// Token: 0x14000035 RID: 53
 			// (add) Token: 0x06000AC0 RID: 2752 RVA: 0x000C5DB4 File Offset: 0x000C41B4
 			// (remove) Token: 0x06000AC1 RID: 2753 RVA: 0x000C5DDC File Offset: 0x000C41DC
+            public UserWorkingProfileDS.TemplateItemRowChangeEventHandler _TemplateItemRowDeleting;
 			public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowDeleting = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Combine(this.TemplateItemRowDeleting, value);
+                    this._TemplateItemRowDeleting += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowDeleting = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Remove(this.TemplateItemRowDeleting, value);
-				}
+                    this._TemplateItemRowDeleting -= value;
+                }
 			}
 
 			// Token: 0x14000036 RID: 54
 			// (add) Token: 0x06000AC2 RID: 2754 RVA: 0x000C5E04 File Offset: 0x000C4204
 			// (remove) Token: 0x06000AC3 RID: 2755 RVA: 0x000C5E2C File Offset: 0x000C422C
-			public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowDeleted
+            public UserWorkingProfileDS.TemplateItemRowChangeEventHandler _TemplateItemRowDeleted;
+            public event UserWorkingProfileDS.TemplateItemRowChangeEventHandler TemplateItemRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowDeleted = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Combine(this.TemplateItemRowDeleted, value);
+                    this._TemplateItemRowDeleted += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.TemplateItemRowDeleted = (UserWorkingProfileDS.TemplateItemRowChangeEventHandler)Delegate.Remove(this.TemplateItemRowDeleted, value);
+                    this._TemplateItemRowDeleted -= value;
 				}
 			}
 
@@ -1426,9 +1371,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.TemplateItemRowChanged != null)
+				if (this._TemplateItemRowChanged != null)
 				{
-					this.TemplateItemRowChanged(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
+					this._TemplateItemRowChanged(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
 				}
 			}
 
@@ -1442,9 +1387,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.TemplateItemRowChanging != null)
+				if (this._TemplateItemRowChanging != null)
 				{
-					this.TemplateItemRowChanging(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
+					this._TemplateItemRowChanging(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
 				}
 			}
 
@@ -1458,9 +1403,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.TemplateItemRowDeleted != null)
+				if (this._TemplateItemRowDeleted != null)
 				{
-					this.TemplateItemRowDeleted(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
+					this._TemplateItemRowDeleted(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
 				}
 			}
 
@@ -1474,9 +1419,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.TemplateItemRowDeleting != null)
+				if (this._TemplateItemRowDeleting != null)
 				{
-					this.TemplateItemRowDeleting(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
+					this._TemplateItemRowDeleting(this, new UserWorkingProfileDS.TemplateItemRowChangeEvent((UserWorkingProfileDS.TemplateItemRow)e.Row, e.Action));
 				}
 			}
 

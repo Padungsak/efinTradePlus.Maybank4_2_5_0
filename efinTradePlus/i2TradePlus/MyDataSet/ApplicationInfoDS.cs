@@ -593,101 +593,74 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x1400002A RID: 42
 			// (add) Token: 0x0600099B RID: 2459 RVA: 0x000BD4EC File Offset: 0x000BB8EC
 			// (remove) Token: 0x0600099C RID: 2460 RVA: 0x000BD514 File Offset: 0x000BB914
+            public ApplicationInfoDS.InfoRowChangeEventHandler _InfoRowChanging;
 			public event ApplicationInfoDS.InfoRowChangeEventHandler InfoRowChanging
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowChanging = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Combine(this.InfoRowChanging, value);
+                    this._InfoRowChanging += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowChanging = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Remove(this.InfoRowChanging, value);
+                    this._InfoRowChanging -= value;
 				}
 			}
 
 			// Token: 0x1400002B RID: 43
 			// (add) Token: 0x0600099D RID: 2461 RVA: 0x000BD53C File Offset: 0x000BB93C
 			// (remove) Token: 0x0600099E RID: 2462 RVA: 0x000BD564 File Offset: 0x000BB964
+            public ApplicationInfoDS.InfoRowChangeEventHandler _InfoRowChanged;
 			public event ApplicationInfoDS.InfoRowChangeEventHandler InfoRowChanged
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowChanged = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Combine(this.InfoRowChanged, value);
-				}
+                    this._InfoRowChanged += value;
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowChanged = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Remove(this.InfoRowChanged, value);
-				}
+                    this._InfoRowChanged -= value;
+                }
 			}
 
 			// Token: 0x1400002C RID: 44
 			// (add) Token: 0x0600099F RID: 2463 RVA: 0x000BD58C File Offset: 0x000BB98C
 			// (remove) Token: 0x060009A0 RID: 2464 RVA: 0x000BD5B4 File Offset: 0x000BB9B4
+            public ApplicationInfoDS.InfoRowChangeEventHandler _InfoRowDeleting;
 			public event ApplicationInfoDS.InfoRowChangeEventHandler InfoRowDeleting
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowDeleting = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Combine(this.InfoRowDeleting, value);
+                    this._InfoRowDeleting += value;
 				}
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowDeleting = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Remove(this.InfoRowDeleting, value);
+                    this._InfoRowDeleting -= value;
 				}
 			}
 
 			// Token: 0x1400002D RID: 45
 			// (add) Token: 0x060009A1 RID: 2465 RVA: 0x000BD5DC File Offset: 0x000BB9DC
 			// (remove) Token: 0x060009A2 RID: 2466 RVA: 0x000BD604 File Offset: 0x000BBA04
+            public ApplicationInfoDS.InfoRowChangeEventHandler _InfoRowDeleted;
 			public event ApplicationInfoDS.InfoRowChangeEventHandler InfoRowDeleted
 			{
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				add
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowDeleted = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Combine(this.InfoRowDeleted, value);
-				}
+
+                    this._InfoRowDeleted += value; 
+                }
 				[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 				remove
 				{
-					while (false)
-					{
-						//object arg_0A_0 = null[0];
-					}
-					this.InfoRowDeleted = (ApplicationInfoDS.InfoRowChangeEventHandler)Delegate.Remove(this.InfoRowDeleted, value);
-				}
+                    this._InfoRowDeleted -= value;
+                }
 			}
 
 			// Token: 0x060009A3 RID: 2467 RVA: 0x000BD62C File Offset: 0x000BBA2C
@@ -856,9 +829,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanged(e);
-				if (this.InfoRowChanged != null)
+				if (this._InfoRowChanged != null)
 				{
-					this.InfoRowChanged(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
+					this._InfoRowChanged(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -872,9 +845,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowChanging(e);
-				if (this.InfoRowChanging != null)
+				if (this._InfoRowChanging != null)
 				{
-					this.InfoRowChanging(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
+					this._InfoRowChanging(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -888,9 +861,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleted(e);
-				if (this.InfoRowDeleted != null)
+				if (this._InfoRowDeleted != null)
 				{
-					this.InfoRowDeleted(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
+					this._InfoRowDeleted(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
 				}
 			}
 
@@ -904,9 +877,9 @@ namespace i2TradePlus.MyDataSet
 					//object arg_0A_0 = null[0];
 				}
 				base.OnRowDeleting(e);
-				if (this.InfoRowDeleting != null)
+				if (this._InfoRowDeleting != null)
 				{
-					this.InfoRowDeleting(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
+					this._InfoRowDeleting(this, new ApplicationInfoDS.InfoRowChangeEvent((ApplicationInfoDS.InfoRow)e.Row, e.Action));
 				}
 			}
 

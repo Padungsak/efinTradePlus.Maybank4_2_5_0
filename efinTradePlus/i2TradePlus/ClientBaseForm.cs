@@ -191,200 +191,145 @@ namespace i2TradePlus
 		// Token: 0x14000001 RID: 1
 		// (add) Token: 0x06000049 RID: 73 RVA: 0x00008660 File Offset: 0x00006A60
 		// (remove) Token: 0x0600004A RID: 74 RVA: 0x00008688 File Offset: 0x00006A88
+        public ClientBaseForm.OnReActiveEventHandler _IDoReActivated;
 		public event ClientBaseForm.OnReActiveEventHandler IDoReActivated
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoReActivated = (ClientBaseForm.OnReActiveEventHandler)Delegate.Combine(this.IDoReActivated, value);
+				this._IDoReActivated += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoReActivated = (ClientBaseForm.OnReActiveEventHandler)Delegate.Remove(this.IDoReActivated, value);
+                this._IDoReActivated -= value;
 			}
 		}
 
 		// Token: 0x14000002 RID: 2
 		// (add) Token: 0x0600004B RID: 75 RVA: 0x000086B0 File Offset: 0x00006AB0
 		// (remove) Token: 0x0600004C RID: 76 RVA: 0x000086D8 File Offset: 0x00006AD8
+		public ClientBaseForm.CustomSizeChangedEventHandler _IDoCustomSizeChanged;
 		public event ClientBaseForm.CustomSizeChangedEventHandler IDoCustomSizeChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoCustomSizeChanged = (ClientBaseForm.CustomSizeChangedEventHandler)Delegate.Combine(this.IDoCustomSizeChanged, value);
+				this._IDoCustomSizeChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoCustomSizeChanged = (ClientBaseForm.CustomSizeChangedEventHandler)Delegate.Remove(this.IDoCustomSizeChanged, value);
-			}
+                this._IDoCustomSizeChanged -= value;
+            }
 		}
 
 		// Token: 0x14000003 RID: 3
 		// (add) Token: 0x0600004D RID: 77 RVA: 0x00008700 File Offset: 0x00006B00
 		// (remove) Token: 0x0600004E RID: 78 RVA: 0x00008728 File Offset: 0x00006B28
+		public ClientBaseForm.OnShownDelayEventHandler _IDoShownDelay;
 		public event ClientBaseForm.OnShownDelayEventHandler IDoShownDelay
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoShownDelay = (ClientBaseForm.OnShownDelayEventHandler)Delegate.Combine(this.IDoShownDelay, value);
+				this._IDoShownDelay += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoShownDelay = (ClientBaseForm.OnShownDelayEventHandler)Delegate.Remove(this.IDoShownDelay, value);
+                this._IDoShownDelay -= value;
 			}
 		}
 
 		// Token: 0x14000004 RID: 4
 		// (add) Token: 0x0600004F RID: 79 RVA: 0x00008750 File Offset: 0x00006B50
 		// (remove) Token: 0x06000050 RID: 80 RVA: 0x00008778 File Offset: 0x00006B78
+		public ClientBaseForm.OnFormKeyUpEventHandler _IDoMainFormKeyUp;
 		public event ClientBaseForm.OnFormKeyUpEventHandler IDoMainFormKeyUp
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoMainFormKeyUp = (ClientBaseForm.OnFormKeyUpEventHandler)Delegate.Combine(this.IDoMainFormKeyUp, value);
+				this._IDoMainFormKeyUp += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoMainFormKeyUp = (ClientBaseForm.OnFormKeyUpEventHandler)Delegate.Remove(this.IDoMainFormKeyUp, value);
+				this._IDoMainFormKeyUp -=  value;
 			}
 		}
 
 		// Token: 0x14000005 RID: 5
 		// (add) Token: 0x06000051 RID: 81 RVA: 0x000087A0 File Offset: 0x00006BA0
 		// (remove) Token: 0x06000052 RID: 82 RVA: 0x000087C8 File Offset: 0x00006BC8
+		public ClientBaseForm.OnSymbolLinkEventHandler _IDoSymbolLinked;
 		public event ClientBaseForm.OnSymbolLinkEventHandler IDoSymbolLinked
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoSymbolLinked = (ClientBaseForm.OnSymbolLinkEventHandler)Delegate.Combine(this.IDoSymbolLinked, value);
+				this._IDoSymbolLinked += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoSymbolLinked = (ClientBaseForm.OnSymbolLinkEventHandler)Delegate.Remove(this.IDoSymbolLinked, value);
+                this._IDoSymbolLinked -= value;
 			}
 		}
 
 		// Token: 0x14000006 RID: 6
 		// (add) Token: 0x06000053 RID: 83 RVA: 0x000087F0 File Offset: 0x00006BF0
 		// (remove) Token: 0x06000054 RID: 84 RVA: 0x00008818 File Offset: 0x00006C18
+		public ClientBaseForm.OnFontChangedEventHandler _IDoFontChanged;
 		public event ClientBaseForm.OnFontChangedEventHandler IDoFontChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoFontChanged = (ClientBaseForm.OnFontChangedEventHandler)Delegate.Combine(this.IDoFontChanged, value);
+				this._IDoFontChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoFontChanged = (ClientBaseForm.OnFontChangedEventHandler)Delegate.Remove(this.IDoFontChanged, value);
+                this._IDoFontChanged -= value;
+
 			}
 		}
 
 		// Token: 0x14000007 RID: 7
 		// (add) Token: 0x06000055 RID: 85 RVA: 0x00008840 File Offset: 0x00006C40
 		// (remove) Token: 0x06000056 RID: 86 RVA: 0x00008868 File Offset: 0x00006C68
+		public ClientBaseForm.OnIDoLoadDataEventHandler _IDoLoadData;
 		public event ClientBaseForm.OnIDoLoadDataEventHandler IDoLoadData
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoLoadData = (ClientBaseForm.OnIDoLoadDataEventHandler)Delegate.Combine(this.IDoLoadData, value);
+				this._IDoLoadData += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoLoadData = (ClientBaseForm.OnIDoLoadDataEventHandler)Delegate.Remove(this.IDoLoadData, value);
+                this._IDoLoadData -= value;
 			}
 		}
 
 		// Token: 0x14000008 RID: 8
 		// (add) Token: 0x06000057 RID: 87 RVA: 0x00008890 File Offset: 0x00006C90
 		// (remove) Token: 0x06000058 RID: 88 RVA: 0x000088B8 File Offset: 0x00006CB8
+		public  ClientBaseForm.OnHeaderChangedEventHandler _IDoHeaderChanged;
 		public event ClientBaseForm.OnHeaderChangedEventHandler IDoHeaderChanged
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoHeaderChanged = (ClientBaseForm.OnHeaderChangedEventHandler)Delegate.Combine(this.IDoHeaderChanged, value);
+				this._IDoHeaderChanged += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.IDoHeaderChanged = (ClientBaseForm.OnHeaderChangedEventHandler)Delegate.Remove(this.IDoHeaderChanged, value);
+				this._IDoHeaderChanged -= value;
 			}
 		}
 
@@ -408,7 +353,6 @@ namespace i2TradePlus
 			this.IsWidthChanged = false;
 			this.IsHeightChanged = false;
 			this._allControls = null;
-			
 			this.SetControl();
 		}
 
@@ -432,7 +376,6 @@ namespace i2TradePlus
 			this.IsWidthChanged = false;
 			this.IsHeightChanged = false;
 			this._allControls = null;
-			
 			this.SetControl();
 			if (!base.DesignMode)
 			{
@@ -555,9 +498,9 @@ namespace i2TradePlus
 						((SortGrid)control).Redraw();
 					}
 				}
-				if (this.IDoHeaderChanged != null)
+				if (this._IDoHeaderChanged != null)
 				{
-					this.IDoHeaderChanged();
+					this._IDoHeaderChanged();
 				}
 			}
 			catch (Exception ex)
@@ -609,9 +552,9 @@ namespace i2TradePlus
 			this.timerLoading.Enabled = false;
 			if (this.FormState != ClientBaseForm.ClientBaseFormState.Closing)
 			{
-				if (this.IDoLoadData != null)
+				if (this._IDoLoadData != null)
 				{
-					this.IDoLoadData();
+					this._IDoLoadData();
 				}
 			}
 		}
@@ -658,9 +601,9 @@ namespace i2TradePlus
 					this.isRaiseEventIDoFontChanged = true;
 					this.FormState = ClientBaseForm.ClientBaseFormState.Showed;
 					base.Bounds = ((frmMain)base.Parent).GetWorkingArea();
-					if (this.IDoShownDelay != null)
+					if (this._IDoShownDelay != null)
 					{
-						this.IDoShownDelay();
+						this._IDoShownDelay();
 					}
 				}
 				else if (this.FormState != ClientBaseForm.ClientBaseFormState.Opening)
@@ -679,7 +622,7 @@ namespace i2TradePlus
 						this.isRaiseEventIDoFontChanged = true;
 						this.IsWidthChanged = true;
 					}
-					if (this.IDoReActivated != null)
+					if (this._IDoReActivated != null)
 					{
 						Rectangle workingArea = ((frmMain)base.Parent).GetWorkingArea();
 						if (!this.IsWidthChanged)
@@ -699,7 +642,7 @@ namespace i2TradePlus
 							base.Height = workingArea.Height;
 						}
 						base.Bounds = workingArea;
-						this.IDoReActivated();
+						this._IDoReActivated();
 					}
 				}
 				this.isAllowRender = true;
@@ -737,11 +680,11 @@ namespace i2TradePlus
 					this.IsWidthChanged = (workingArea.Width > 0 && workingArea.Width != base.Width);
 					this.IsHeightChanged = (workingArea.Height > 0 && workingArea.Height != base.Height);
 					base.Bounds = workingArea;
-					if (this.IDoCustomSizeChanged != null)
+					if (this._IDoCustomSizeChanged != null)
 					{
 						if (this.IsWidthChanged || this.IsHeightChanged)
 						{
-							this.IDoCustomSizeChanged();
+							this._IDoCustomSizeChanged();
 						}
 					}
 				}
@@ -852,11 +795,11 @@ namespace i2TradePlus
 							}
 						}
 					}
-					if (this.isRaiseEventIDoFontChanged && this.IDoFontChanged != null)
+					if (this.isRaiseEventIDoFontChanged && this._IDoFontChanged != null)
 					{
 						this.IsWidthChanged = true;
 						this.IsHeightChanged = true;
-						this.IDoFontChanged();
+						this._IDoFontChanged();
 					}
 				}
 				catch (Exception ex)
@@ -969,9 +912,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.IDoMainFormKeyUp != null)
+			if (this._IDoMainFormKeyUp != null)
 			{
-				this.IDoMainFormKeyUp(e);
+				this._IDoMainFormKeyUp(e);
 			}
 		}
 
@@ -983,9 +926,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.IDoSymbolLinked != null)
+			if (this._IDoSymbolLinked != null)
 			{
-				this.IDoSymbolLinked(sender, source, newStock);
+				this._IDoSymbolLinked(sender, source, newStock);
 			}
 		}
 

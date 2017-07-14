@@ -92,25 +92,19 @@ namespace i2TradePlus
 		// Token: 0x1400002E RID: 46
 		// (add) Token: 0x06000A59 RID: 2649 RVA: 0x000C4058 File Offset: 0x000C2458
 		// (remove) Token: 0x06000A5A RID: 2650 RVA: 0x000C4080 File Offset: 0x000C2480
+        public EventHandler _AlertClick;
 		public event EventHandler AlertClick
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.AlertClick = (EventHandler)Delegate.Combine(this.AlertClick, value);
+                this._AlertClick += value;
 			}
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.AlertClick = (EventHandler)Delegate.Remove(this.AlertClick, value);
+                this._AlertClick -= value;
+
 			}
 		}
 
@@ -564,9 +558,9 @@ namespace i2TradePlus
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.AlertClick != null)
+			if (this._AlertClick != null)
 			{
-				this.AlertClick(sender, e);
+				this._AlertClick(sender, e);
 			}
 		}
 

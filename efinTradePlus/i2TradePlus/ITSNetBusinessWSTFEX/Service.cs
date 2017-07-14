@@ -96,901 +96,649 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 		// Token: 0x140000CD RID: 205
 		// (add) Token: 0x06001478 RID: 5240 RVA: 0x00116F6C File Offset: 0x0011536C
 		// (remove) Token: 0x06001479 RID: 5241 RVA: 0x00116F94 File Offset: 0x00115394
+		public LoadSETindexCompletedEventHandler _LoadSETindexCompleted;
 		public event LoadSETindexCompletedEventHandler LoadSETindexCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadSETindexCompleted = (LoadSETindexCompletedEventHandler)Delegate.Combine(this.LoadSETindexCompleted, value);
-			}
+				this._LoadSETindexCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadSETindexCompleted = (LoadSETindexCompletedEventHandler)Delegate.Remove(this.LoadSETindexCompleted, value);
-			}
+				this._LoadSETindexCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000CE RID: 206
 		// (add) Token: 0x0600147A RID: 5242 RVA: 0x00116FBC File Offset: 0x001153BC
 		// (remove) Token: 0x0600147B RID: 5243 RVA: 0x00116FE4 File Offset: 0x001153E4
+		public LoadMktStatusCompletedEventHandler _LoadMktStatusCompleted;
 		public event LoadMktStatusCompletedEventHandler LoadMktStatusCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadMktStatusCompleted = (LoadMktStatusCompletedEventHandler)Delegate.Combine(this.LoadMktStatusCompleted, value);
-			}
+				this._LoadMktStatusCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadMktStatusCompleted = (LoadMktStatusCompletedEventHandler)Delegate.Remove(this.LoadMktStatusCompleted, value);
-			}
+				this._LoadMktStatusCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000CF RID: 207
 		// (add) Token: 0x0600147C RID: 5244 RVA: 0x0011700C File Offset: 0x0011540C
 		// (remove) Token: 0x0600147D RID: 5245 RVA: 0x00117034 File Offset: 0x00115434
+		public TFEXInformationCompletedEventHandler _TFEXInformationCompleted;
 		public event TFEXInformationCompletedEventHandler TFEXInformationCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXInformationCompleted = (TFEXInformationCompletedEventHandler)Delegate.Combine(this.TFEXInformationCompleted, value);
-			}
+				this._TFEXInformationCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXInformationCompleted = (TFEXInformationCompletedEventHandler)Delegate.Remove(this.TFEXInformationCompleted, value);
-			}
+			    this._TFEXInformationCompleted -= value;
+            }
 		}
-
+        ///////////////////
 		// Token: 0x140000D0 RID: 208
 		// (add) Token: 0x0600147E RID: 5246 RVA: 0x0011705C File Offset: 0x0011545C
 		// (remove) Token: 0x0600147F RID: 5247 RVA: 0x00117084 File Offset: 0x00115484
+		public LoadTFEXInformationCompletedEventHandler _LoadTFEXInformationCompleted;
 		public event LoadTFEXInformationCompletedEventHandler LoadTFEXInformationCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadTFEXInformationCompleted = (LoadTFEXInformationCompletedEventHandler)Delegate.Combine(this.LoadTFEXInformationCompleted, value);
-			}
+				this._LoadTFEXInformationCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.LoadTFEXInformationCompleted = (LoadTFEXInformationCompletedEventHandler)Delegate.Remove(this.LoadTFEXInformationCompleted, value);
-			}
+				this._LoadTFEXInformationCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D1 RID: 209
 		// (add) Token: 0x06001480 RID: 5248 RVA: 0x001170AC File Offset: 0x001154AC
 		// (remove) Token: 0x06001481 RID: 5249 RVA: 0x001170D4 File Offset: 0x001154D4
+		public SeriesStateCompletedEventHandler _SeriesStateCompleted;
 		public event SeriesStateCompletedEventHandler SeriesStateCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesStateCompleted = (SeriesStateCompletedEventHandler)Delegate.Combine(this.SeriesStateCompleted, value);
-			}
+					this._SeriesStateCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesStateCompleted = (SeriesStateCompletedEventHandler)Delegate.Remove(this.SeriesStateCompleted, value);
-			}
+				this._SeriesStateCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D2 RID: 210
 		// (add) Token: 0x06001482 RID: 5250 RVA: 0x001170FC File Offset: 0x001154FC
 		// (remove) Token: 0x06001483 RID: 5251 RVA: 0x00117124 File Offset: 0x00115524
+		public GetTotalMarketValueInfoCompletedEventHandler _GetTotalMarketValueInfoCompleted;
 		public event GetTotalMarketValueInfoCompletedEventHandler GetTotalMarketValueInfoCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetTotalMarketValueInfoCompleted = (GetTotalMarketValueInfoCompletedEventHandler)Delegate.Combine(this.GetTotalMarketValueInfoCompleted, value);
-			}
+				this._GetTotalMarketValueInfoCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetTotalMarketValueInfoCompleted = (GetTotalMarketValueInfoCompletedEventHandler)Delegate.Remove(this.GetTotalMarketValueInfoCompleted, value);
-			}
+				this._GetTotalMarketValueInfoCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D3 RID: 211
 		// (add) Token: 0x06001484 RID: 5252 RVA: 0x0011714C File Offset: 0x0011554C
 		// (remove) Token: 0x06001485 RID: 5253 RVA: 0x00117174 File Offset: 0x00115574
+		public SeriesByPricePageCompletedEventHandler _SeriesByPricePageCompleted;
 		public event SeriesByPricePageCompletedEventHandler SeriesByPricePageCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesByPricePageCompleted = (SeriesByPricePageCompletedEventHandler)Delegate.Combine(this.SeriesByPricePageCompleted, value);
-			}
+				this._SeriesByPricePageCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesByPricePageCompleted = (SeriesByPricePageCompletedEventHandler)Delegate.Remove(this.SeriesByPricePageCompleted, value);
-			}
+				this._SeriesByPricePageCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D4 RID: 212
 		// (add) Token: 0x06001486 RID: 5254 RVA: 0x0011719C File Offset: 0x0011559C
 		// (remove) Token: 0x06001487 RID: 5255 RVA: 0x001171C4 File Offset: 0x001155C4
+		public TopBBOTFEXCompletedEventHandler _TopBBOTFEXCompleted;
 		public event TopBBOTFEXCompletedEventHandler TopBBOTFEXCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TopBBOTFEXCompleted = (TopBBOTFEXCompletedEventHandler)Delegate.Combine(this.TopBBOTFEXCompleted, value);
-			}
+				this._TopBBOTFEXCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TopBBOTFEXCompleted = (TopBBOTFEXCompletedEventHandler)Delegate.Remove(this.TopBBOTFEXCompleted, value);
-			}
+				this._TopBBOTFEXCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D5 RID: 213
 		// (add) Token: 0x06001488 RID: 5256 RVA: 0x001171EC File Offset: 0x001155EC
 		// (remove) Token: 0x06001489 RID: 5257 RVA: 0x00117214 File Offset: 0x00115614
+		public TopBBOTFEXadCompletedEventHandler _TopBBOTFEXadCompleted;
 		public event TopBBOTFEXadCompletedEventHandler TopBBOTFEXadCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TopBBOTFEXadCompleted = (TopBBOTFEXadCompletedEventHandler)Delegate.Combine(this.TopBBOTFEXadCompleted, value);
-			}
+				this._TopBBOTFEXadCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TopBBOTFEXadCompleted = (TopBBOTFEXadCompletedEventHandler)Delegate.Remove(this.TopBBOTFEXadCompleted, value);
-			}
+				this._TopBBOTFEXadCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D6 RID: 214
 		// (add) Token: 0x0600148A RID: 5258 RVA: 0x0011723C File Offset: 0x0011563C
 		// (remove) Token: 0x0600148B RID: 5259 RVA: 0x00117264 File Offset: 0x00115664
+		public TFEXTopActiveBBOCompletedEventHandler _TFEXTopActiveBBOCompleted;
 		public event TFEXTopActiveBBOCompletedEventHandler TFEXTopActiveBBOCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXTopActiveBBOCompleted = (TFEXTopActiveBBOCompletedEventHandler)Delegate.Combine(this.TFEXTopActiveBBOCompleted, value);
-			}
+				this._TFEXTopActiveBBOCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXTopActiveBBOCompleted = (TFEXTopActiveBBOCompletedEventHandler)Delegate.Remove(this.TFEXTopActiveBBOCompleted, value);
-			}
+				this._TFEXTopActiveBBOCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D7 RID: 215
 		// (add) Token: 0x0600148C RID: 5260 RVA: 0x0011728C File Offset: 0x0011568C
 		// (remove) Token: 0x0600148D RID: 5261 RVA: 0x001172B4 File Offset: 0x001156B4
+        public TFEXTopActiveBBO_MyPortCompletedEventHandler _TFEXTopActiveBBO_MyPortCompleted;
 		public event TFEXTopActiveBBO_MyPortCompletedEventHandler TFEXTopActiveBBO_MyPortCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXTopActiveBBO_MyPortCompleted = (TFEXTopActiveBBO_MyPortCompletedEventHandler)Delegate.Combine(this.TFEXTopActiveBBO_MyPortCompleted, value);
-			}
+                this._TFEXTopActiveBBO_MyPortCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXTopActiveBBO_MyPortCompleted = (TFEXTopActiveBBO_MyPortCompletedEventHandler)Delegate.Remove(this.TFEXTopActiveBBO_MyPortCompleted, value);
-			}
+                this._TFEXTopActiveBBO_MyPortCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D8 RID: 216
 		// (add) Token: 0x0600148E RID: 5262 RVA: 0x001172DC File Offset: 0x001156DC
 		// (remove) Token: 0x0600148F RID: 5263 RVA: 0x00117304 File Offset: 0x00115704
+		public BestProjected_TFEXCompletedEventHandler _BestProjected_TFEXCompleted;
 		public event BestProjected_TFEXCompletedEventHandler BestProjected_TFEXCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestProjected_TFEXCompleted = (BestProjected_TFEXCompletedEventHandler)Delegate.Combine(this.BestProjected_TFEXCompleted, value);
-			}
+                this._BestProjected_TFEXCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestProjected_TFEXCompleted = (BestProjected_TFEXCompletedEventHandler)Delegate.Remove(this.BestProjected_TFEXCompleted, value);
-			}
+                this._BestProjected_TFEXCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000D9 RID: 217
 		// (add) Token: 0x06001490 RID: 5264 RVA: 0x0011732C File Offset: 0x0011572C
 		// (remove) Token: 0x06001491 RID: 5265 RVA: 0x00117354 File Offset: 0x00115754
+		public BestBidOfferByListCompletedEventHandler _BestBidOfferByListCompleted;
 		public event BestBidOfferByListCompletedEventHandler BestBidOfferByListCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByListCompleted = (BestBidOfferByListCompletedEventHandler)Delegate.Combine(this.BestBidOfferByListCompleted, value);
-			}
+                this._BestBidOfferByListCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByListCompleted = (BestBidOfferByListCompletedEventHandler)Delegate.Remove(this.BestBidOfferByListCompleted, value);
-			}
+                this._BestBidOfferByListCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DA RID: 218
 		// (add) Token: 0x06001492 RID: 5266 RVA: 0x0011737C File Offset: 0x0011577C
 		// (remove) Token: 0x06001493 RID: 5267 RVA: 0x001173A4 File Offset: 0x001157A4
+		public BestBidOfferByInstrumentCompletedEventHandler _BestBidOfferByInstrumentCompleted;
 		public event BestBidOfferByInstrumentCompletedEventHandler BestBidOfferByInstrumentCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByInstrumentCompleted = (BestBidOfferByInstrumentCompletedEventHandler)Delegate.Combine(this.BestBidOfferByInstrumentCompleted, value);
-			}
+                this._BestBidOfferByInstrumentCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByInstrumentCompleted = (BestBidOfferByInstrumentCompletedEventHandler)Delegate.Remove(this.BestBidOfferByInstrumentCompleted, value);
-			}
+                this._BestBidOfferByInstrumentCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DB RID: 219
 		// (add) Token: 0x06001494 RID: 5268 RVA: 0x001173CC File Offset: 0x001157CC
 		// (remove) Token: 0x06001495 RID: 5269 RVA: 0x001173F4 File Offset: 0x001157F4
+		public BestBidOfferByOptionsListCompletedEventHandler _BestBidOfferByOptionsListCompleted;
 		public event BestBidOfferByOptionsListCompletedEventHandler BestBidOfferByOptionsListCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByOptionsListCompleted = (BestBidOfferByOptionsListCompletedEventHandler)Delegate.Combine(this.BestBidOfferByOptionsListCompleted, value);
-			}
+                this._BestBidOfferByOptionsListCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.BestBidOfferByOptionsListCompleted = (BestBidOfferByOptionsListCompletedEventHandler)Delegate.Remove(this.BestBidOfferByOptionsListCompleted, value);
-			}
+                this._BestBidOfferByOptionsListCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DC RID: 220
 		// (add) Token: 0x06001496 RID: 5270 RVA: 0x0011741C File Offset: 0x0011581C
 		// (remove) Token: 0x06001497 RID: 5271 RVA: 0x00117444 File Offset: 0x00115844
+		public Get5BidOfferTFEXCompletedEventHandler _Get5BidOfferTFEXCompleted;
 		public event Get5BidOfferTFEXCompletedEventHandler Get5BidOfferTFEXCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.Get5BidOfferTFEXCompleted = (Get5BidOfferTFEXCompletedEventHandler)Delegate.Combine(this.Get5BidOfferTFEXCompleted, value);
-			}
+                this._Get5BidOfferTFEXCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.Get5BidOfferTFEXCompleted = (Get5BidOfferTFEXCompletedEventHandler)Delegate.Remove(this.Get5BidOfferTFEXCompleted, value);
-			}
+                this._Get5BidOfferTFEXCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DD RID: 221
 		// (add) Token: 0x06001498 RID: 5272 RVA: 0x0011746C File Offset: 0x0011586C
 		// (remove) Token: 0x06001499 RID: 5273 RVA: 0x00117494 File Offset: 0x00115894
+		public GetChartImageCompletedEventHandler _GetChartImageCompleted;
 		public event GetChartImageCompletedEventHandler GetChartImageCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetChartImageCompleted = (GetChartImageCompletedEventHandler)Delegate.Combine(this.GetChartImageCompleted, value);
-			}
+                this._GetChartImageCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetChartImageCompleted = (GetChartImageCompletedEventHandler)Delegate.Remove(this.GetChartImageCompleted, value);
-			}
+                this._GetChartImageCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DE RID: 222
 		// (add) Token: 0x0600149A RID: 5274 RVA: 0x001174BC File Offset: 0x001158BC
 		// (remove) Token: 0x0600149B RID: 5275 RVA: 0x001174E4 File Offset: 0x001158E4
+		public GetSwitchAccountInfoTFEXCompletedEventHandler _GetSwitchAccountInfoTFEXCompleted;
 		public event GetSwitchAccountInfoTFEXCompletedEventHandler GetSwitchAccountInfoTFEXCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetSwitchAccountInfoTFEXCompleted = (GetSwitchAccountInfoTFEXCompletedEventHandler)Delegate.Combine(this.GetSwitchAccountInfoTFEXCompleted, value);
-			}
+                this._GetSwitchAccountInfoTFEXCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetSwitchAccountInfoTFEXCompleted = (GetSwitchAccountInfoTFEXCompletedEventHandler)Delegate.Remove(this.GetSwitchAccountInfoTFEXCompleted, value);
-			}
+                this._GetSwitchAccountInfoTFEXCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000DF RID: 223
 		// (add) Token: 0x0600149C RID: 5276 RVA: 0x0011750C File Offset: 0x0011590C
 		// (remove) Token: 0x0600149D RID: 5277 RVA: 0x00117534 File Offset: 0x00115934
+		public SeriesSaleByTimeCompletedEventHandler _SeriesSaleByTimeCompleted;
 		public event SeriesSaleByTimeCompletedEventHandler SeriesSaleByTimeCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSaleByTimeCompleted = (SeriesSaleByTimeCompletedEventHandler)Delegate.Combine(this.SeriesSaleByTimeCompleted, value);
-			}
+                this._SeriesSaleByTimeCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSaleByTimeCompleted = (SeriesSaleByTimeCompletedEventHandler)Delegate.Remove(this.SeriesSaleByTimeCompleted, value);
-			}
+                this._SeriesSaleByTimeCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E0 RID: 224
 		// (add) Token: 0x0600149E RID: 5278 RVA: 0x0011755C File Offset: 0x0011595C
 		// (remove) Token: 0x0600149F RID: 5279 RVA: 0x00117584 File Offset: 0x00115984
+		public SeriesSaleByPriceCompletedEventHandler _SeriesSaleByPriceCompleted;
 		public event SeriesSaleByPriceCompletedEventHandler SeriesSaleByPriceCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSaleByPriceCompleted = (SeriesSaleByPriceCompletedEventHandler)Delegate.Combine(this.SeriesSaleByPriceCompleted, value);
-			}
+                this._SeriesSaleByPriceCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSaleByPriceCompleted = (SeriesSaleByPriceCompletedEventHandler)Delegate.Remove(this.SeriesSaleByPriceCompleted, value);
-			}
+                this._SeriesSaleByPriceCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E1 RID: 225
 		// (add) Token: 0x060014A0 RID: 5280 RVA: 0x001175AC File Offset: 0x001159AC
 		// (remove) Token: 0x060014A1 RID: 5281 RVA: 0x001175D4 File Offset: 0x001159D4
+		public StockInPlayCompletedEventHandler _StockInPlayCompleted;
 		public event StockInPlayCompletedEventHandler StockInPlayCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.StockInPlayCompleted = (StockInPlayCompletedEventHandler)Delegate.Combine(this.StockInPlayCompleted, value);
-			}
+                this._StockInPlayCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.StockInPlayCompleted = (StockInPlayCompletedEventHandler)Delegate.Remove(this.StockInPlayCompleted, value);
-			}
+                this._StockInPlayCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E2 RID: 226
 		// (add) Token: 0x060014A2 RID: 5282 RVA: 0x001175FC File Offset: 0x001159FC
 		// (remove) Token: 0x060014A3 RID: 5283 RVA: 0x00117624 File Offset: 0x00115A24
+		public StockInPlayADCompletedEventHandler _StockInPlayADCompleted;
 		public event StockInPlayADCompletedEventHandler StockInPlayADCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.StockInPlayADCompleted = (StockInPlayADCompletedEventHandler)Delegate.Combine(this.StockInPlayADCompleted, value);
-			}
+                this._StockInPlayADCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.StockInPlayADCompleted = (StockInPlayADCompletedEventHandler)Delegate.Remove(this.StockInPlayADCompleted, value);
-			}
+                this._StockInPlayADCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E3 RID: 227
 		// (add) Token: 0x060014A4 RID: 5284 RVA: 0x0011764C File Offset: 0x00115A4C
 		// (remove) Token: 0x060014A5 RID: 5285 RVA: 0x00117674 File Offset: 0x00115A74
+		public  SeriesSumaryCompletedEventHandler _SeriesSumaryCompleted;
 		public event SeriesSumaryCompletedEventHandler SeriesSumaryCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSumaryCompleted = (SeriesSumaryCompletedEventHandler)Delegate.Combine(this.SeriesSumaryCompleted, value);
-			}
+                this._SeriesSumaryCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SeriesSumaryCompleted = (SeriesSumaryCompletedEventHandler)Delegate.Remove(this.SeriesSumaryCompleted, value);
-			}
+                this._SeriesSumaryCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E4 RID: 228
 		// (add) Token: 0x060014A6 RID: 5286 RVA: 0x0011769C File Offset: 0x00115A9C
 		// (remove) Token: 0x060014A7 RID: 5287 RVA: 0x001176C4 File Offset: 0x00115AC4
+		public TFEXBoardcastMessageCompletedEventHandler _TFEXBoardcastMessageCompleted;
 		public event TFEXBoardcastMessageCompletedEventHandler TFEXBoardcastMessageCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXBoardcastMessageCompleted = (TFEXBoardcastMessageCompletedEventHandler)Delegate.Combine(this.TFEXBoardcastMessageCompleted, value);
-			}
+                this._TFEXBoardcastMessageCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.TFEXBoardcastMessageCompleted = (TFEXBoardcastMessageCompletedEventHandler)Delegate.Remove(this.TFEXBoardcastMessageCompleted, value);
-			}
+                this._TFEXBoardcastMessageCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E5 RID: 229
 		// (add) Token: 0x060014A8 RID: 5288 RVA: 0x001176EC File Offset: 0x00115AEC
 		// (remove) Token: 0x060014A9 RID: 5289 RVA: 0x00117714 File Offset: 0x00115B14
+		public ViewOrderTransactionCompletedEventHandler _ViewOrderTransactionCompleted;
 		public event ViewOrderTransactionCompletedEventHandler ViewOrderTransactionCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderTransactionCompleted = (ViewOrderTransactionCompletedEventHandler)Delegate.Combine(this.ViewOrderTransactionCompleted, value);
-			}
+                this._ViewOrderTransactionCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderTransactionCompleted = (ViewOrderTransactionCompletedEventHandler)Delegate.Remove(this.ViewOrderTransactionCompleted, value);
-			}
+                this._ViewOrderTransactionCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E6 RID: 230
 		// (add) Token: 0x060014AA RID: 5290 RVA: 0x0011773C File Offset: 0x00115B3C
 		// (remove) Token: 0x060014AB RID: 5291 RVA: 0x00117764 File Offset: 0x00115B64
+		public ViewOrderByOrderNoCompletedEventHandler _ViewOrderByOrderNoCompleted;
 		public event ViewOrderByOrderNoCompletedEventHandler ViewOrderByOrderNoCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderByOrderNoCompleted = (ViewOrderByOrderNoCompletedEventHandler)Delegate.Combine(this.ViewOrderByOrderNoCompleted, value);
-			}
+                this._ViewOrderByOrderNoCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderByOrderNoCompleted = (ViewOrderByOrderNoCompletedEventHandler)Delegate.Remove(this.ViewOrderByOrderNoCompleted, value);
-			}
+                this._ViewOrderByOrderNoCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E7 RID: 231
 		// (add) Token: 0x060014AC RID: 5292 RVA: 0x0011778C File Offset: 0x00115B8C
 		// (remove) Token: 0x060014AD RID: 5293 RVA: 0x001177B4 File Offset: 0x00115BB4
+		public ViewCustomersCreditCompletedEventHandler _ViewCustomersCreditCompleted;
 		public event ViewCustomersCreditCompletedEventHandler ViewCustomersCreditCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersCreditCompleted = (ViewCustomersCreditCompletedEventHandler)Delegate.Combine(this.ViewCustomersCreditCompleted, value);
-			}
+                this._ViewCustomersCreditCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersCreditCompleted = (ViewCustomersCreditCompletedEventHandler)Delegate.Remove(this.ViewCustomersCreditCompleted, value);
-			}
+                this._ViewCustomersCreditCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E8 RID: 232
 		// (add) Token: 0x060014AE RID: 5294 RVA: 0x001177DC File Offset: 0x00115BDC
 		// (remove) Token: 0x060014AF RID: 5295 RVA: 0x00117804 File Offset: 0x00115C04
+		public ViewCustomersInfoCompletedEventHandler _ViewCustomersInfoCompleted;
 		public event ViewCustomersInfoCompletedEventHandler ViewCustomersInfoCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersInfoCompleted = (ViewCustomersInfoCompletedEventHandler)Delegate.Combine(this.ViewCustomersInfoCompleted, value);
-			}
+                this._ViewCustomersInfoCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersInfoCompleted = (ViewCustomersInfoCompletedEventHandler)Delegate.Remove(this.ViewCustomersInfoCompleted, value);
-			}
+                this._ViewCustomersInfoCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000E9 RID: 233
 		// (add) Token: 0x060014B0 RID: 5296 RVA: 0x0011782C File Offset: 0x00115C2C
 		// (remove) Token: 0x060014B1 RID: 5297 RVA: 0x00117854 File Offset: 0x00115C54
+		public ViewCustomersAllCompletedEventHandler _ViewCustomersAllCompleted;
 		public event ViewCustomersAllCompletedEventHandler ViewCustomersAllCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersAllCompleted = (ViewCustomersAllCompletedEventHandler)Delegate.Combine(this.ViewCustomersAllCompleted, value);
-			}
+                this._ViewCustomersAllCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomersAllCompleted = (ViewCustomersAllCompletedEventHandler)Delegate.Remove(this.ViewCustomersAllCompleted, value);
-			}
+                this._ViewCustomersAllCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000EA RID: 234
 		// (add) Token: 0x060014B2 RID: 5298 RVA: 0x0011787C File Offset: 0x00115C7C
 		// (remove) Token: 0x060014B3 RID: 5299 RVA: 0x001178A4 File Offset: 0x00115CA4
+		public ViewOrderDealDataCompletedEventHandler _ViewOrderDealDataCompleted;
 		public event ViewOrderDealDataCompletedEventHandler ViewOrderDealDataCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderDealDataCompleted = (ViewOrderDealDataCompletedEventHandler)Delegate.Combine(this.ViewOrderDealDataCompleted, value);
-			}
+                this._ViewOrderDealDataCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewOrderDealDataCompleted = (ViewOrderDealDataCompletedEventHandler)Delegate.Remove(this.ViewOrderDealDataCompleted, value);
-			}
+                this._ViewOrderDealDataCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000EB RID: 235
 		// (add) Token: 0x060014B4 RID: 5300 RVA: 0x001178CC File Offset: 0x00115CCC
 		// (remove) Token: 0x060014B5 RID: 5301 RVA: 0x001178F4 File Offset: 0x00115CF4
+		public ViewCustomerCreditOnSendBoxCompletedEventHandler _ViewCustomerCreditOnSendBoxCompleted;
 		public event ViewCustomerCreditOnSendBoxCompletedEventHandler ViewCustomerCreditOnSendBoxCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomerCreditOnSendBoxCompleted = (ViewCustomerCreditOnSendBoxCompletedEventHandler)Delegate.Combine(this.ViewCustomerCreditOnSendBoxCompleted, value);
-			}
+                this._ViewCustomerCreditOnSendBoxCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomerCreditOnSendBoxCompleted = (ViewCustomerCreditOnSendBoxCompletedEventHandler)Delegate.Remove(this.ViewCustomerCreditOnSendBoxCompleted, value);
-			}
+                this._ViewCustomerCreditOnSendBoxCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000EC RID: 236
 		// (add) Token: 0x060014B6 RID: 5302 RVA: 0x0011791C File Offset: 0x00115D1C
 		// (remove) Token: 0x060014B7 RID: 5303 RVA: 0x00117944 File Offset: 0x00115D44
+		public ViewCustomer_RiskManagementCompletedEventHandler _ViewCustomer_RiskManagementCompleted;
 		public event ViewCustomer_RiskManagementCompletedEventHandler ViewCustomer_RiskManagementCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomer_RiskManagementCompleted = (ViewCustomer_RiskManagementCompletedEventHandler)Delegate.Combine(this.ViewCustomer_RiskManagementCompleted, value);
-			}
+                this._ViewCustomer_RiskManagementCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.ViewCustomer_RiskManagementCompleted = (ViewCustomer_RiskManagementCompletedEventHandler)Delegate.Remove(this.ViewCustomer_RiskManagementCompleted, value);
-			}
+                this._ViewCustomer_RiskManagementCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000ED RID: 237
 		// (add) Token: 0x060014B8 RID: 5304 RVA: 0x0011796C File Offset: 0x00115D6C
 		// (remove) Token: 0x060014B9 RID: 5305 RVA: 0x00117994 File Offset: 0x00115D94
+		public SendTFEXNewOrderCompletedEventHandler _SendTFEXNewOrderCompleted;
 		public event SendTFEXNewOrderCompletedEventHandler SendTFEXNewOrderCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SendTFEXNewOrderCompleted = (SendTFEXNewOrderCompletedEventHandler)Delegate.Combine(this.SendTFEXNewOrderCompleted, value);
-			}
+                this._SendTFEXNewOrderCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SendTFEXNewOrderCompleted = (SendTFEXNewOrderCompletedEventHandler)Delegate.Remove(this.SendTFEXNewOrderCompleted, value);
-			}
+                this._SendTFEXNewOrderCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000EE RID: 238
 		// (add) Token: 0x060014BA RID: 5306 RVA: 0x001179BC File Offset: 0x00115DBC
 		// (remove) Token: 0x060014BB RID: 5307 RVA: 0x001179E4 File Offset: 0x00115DE4
+		public SendTFEXCancelOrderCompletedEventHandler _SendTFEXCancelOrderCompleted;
 		public event SendTFEXCancelOrderCompletedEventHandler SendTFEXCancelOrderCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SendTFEXCancelOrderCompleted = (SendTFEXCancelOrderCompletedEventHandler)Delegate.Combine(this.SendTFEXCancelOrderCompleted, value);
-			}
+                this._SendTFEXCancelOrderCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.SendTFEXCancelOrderCompleted = (SendTFEXCancelOrderCompletedEventHandler)Delegate.Remove(this.SendTFEXCancelOrderCompleted, value);
-			}
+                this._SendTFEXCancelOrderCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000EF RID: 239
 		// (add) Token: 0x060014BC RID: 5308 RVA: 0x00117A0C File Offset: 0x00115E0C
 		// (remove) Token: 0x060014BD RID: 5309 RVA: 0x00117A34 File Offset: 0x00115E34
+		public WriteLogCompletedEventHandler _WriteLogCompleted;
 		public event WriteLogCompletedEventHandler WriteLogCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.WriteLogCompleted = (WriteLogCompletedEventHandler)Delegate.Combine(this.WriteLogCompleted, value);
-			}
+                this._WriteLogCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.WriteLogCompleted = (WriteLogCompletedEventHandler)Delegate.Remove(this.WriteLogCompleted, value);
-			}
+                this._WriteLogCompleted -= value;
+            }
 		}
 
 		// Token: 0x140000F0 RID: 240
 		// (add) Token: 0x060014BE RID: 5310 RVA: 0x00117A5C File Offset: 0x00115E5C
 		// (remove) Token: 0x060014BF RID: 5311 RVA: 0x00117A84 File Offset: 0x00115E84
+		public event GetGoldSpotCompletedEventHandler _GetGoldSpotCompleted;
 		public event GetGoldSpotCompletedEventHandler GetGoldSpotCompleted
 		{
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			add
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetGoldSpotCompleted = (GetGoldSpotCompletedEventHandler)Delegate.Combine(this.GetGoldSpotCompleted, value);
-			}
+                this._GetGoldSpotCompleted += value;
+            }
 			[MethodImpl(MethodImplOptions.Synchronized | MethodImplOptions.NoInlining)]
 			remove
 			{
-				while (false)
-				{
-					//object arg_0A_0 = null[0];
-				}
-				this.GetGoldSpotCompleted = (GetGoldSpotCompletedEventHandler)Delegate.Remove(this.GetGoldSpotCompleted, value);
-			}
+                this._GetGoldSpotCompleted += value;
+            }
 		}
 
 		// Token: 0x060014C0 RID: 5312 RVA: 0x00117AAC File Offset: 0x00115EAC
@@ -1040,10 +788,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.LoadSETindexCompleted != null)
+			if (this._LoadSETindexCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.LoadSETindexCompleted(this, new LoadSETindexCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._LoadSETindexCompleted(this, new LoadSETindexCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1094,10 +842,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.LoadMktStatusCompleted != null)
+			if (this._LoadMktStatusCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.LoadMktStatusCompleted(this, new LoadMktStatusCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._LoadMktStatusCompleted(this, new LoadMktStatusCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1148,10 +896,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TFEXInformationCompleted != null)
+			if (this._TFEXInformationCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TFEXInformationCompleted(this, new TFEXInformationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TFEXInformationCompleted(this, new TFEXInformationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1210,10 +958,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.LoadTFEXInformationCompleted != null)
+			if (this._LoadTFEXInformationCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.LoadTFEXInformationCompleted(this, new LoadTFEXInformationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._LoadTFEXInformationCompleted(this, new LoadTFEXInformationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1264,10 +1012,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SeriesStateCompleted != null)
+			if (this._SeriesStateCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SeriesStateCompleted(this, new SeriesStateCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SeriesStateCompleted(this, new SeriesStateCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1318,10 +1066,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.GetTotalMarketValueInfoCompleted != null)
+			if (this._GetTotalMarketValueInfoCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.GetTotalMarketValueInfoCompleted(this, new GetTotalMarketValueInfoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._GetTotalMarketValueInfoCompleted(this, new GetTotalMarketValueInfoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1382,10 +1130,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SeriesByPricePageCompleted != null)
+			if (this._SeriesByPricePageCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SeriesByPricePageCompleted(this, new SeriesByPricePageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SeriesByPricePageCompleted(this, new SeriesByPricePageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1444,10 +1192,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TopBBOTFEXCompleted != null)
+			if (this._TopBBOTFEXCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TopBBOTFEXCompleted(this, new TopBBOTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TopBBOTFEXCompleted(this, new TopBBOTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1506,10 +1254,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TopBBOTFEXadCompleted != null)
+			if (this._TopBBOTFEXadCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TopBBOTFEXadCompleted(this, new TopBBOTFEXadCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TopBBOTFEXadCompleted(this, new TopBBOTFEXadCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1568,10 +1316,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TFEXTopActiveBBOCompleted != null)
+			if (this._TFEXTopActiveBBOCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TFEXTopActiveBBOCompleted(this, new TFEXTopActiveBBOCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TFEXTopActiveBBOCompleted(this, new TFEXTopActiveBBOCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1628,10 +1376,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TFEXTopActiveBBO_MyPortCompleted != null)
+			if (this._TFEXTopActiveBBO_MyPortCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TFEXTopActiveBBO_MyPortCompleted(this, new TFEXTopActiveBBO_MyPortCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TFEXTopActiveBBO_MyPortCompleted(this, new TFEXTopActiveBBO_MyPortCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1692,10 +1440,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.BestProjected_TFEXCompleted != null)
+			if (this._BestProjected_TFEXCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.BestProjected_TFEXCompleted(this, new BestProjected_TFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._BestProjected_TFEXCompleted(this, new BestProjected_TFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1752,10 +1500,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.BestBidOfferByListCompleted != null)
+			if (this._BestBidOfferByListCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.BestBidOfferByListCompleted(this, new BestBidOfferByListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._BestBidOfferByListCompleted(this, new BestBidOfferByListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1812,10 +1560,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.BestBidOfferByInstrumentCompleted != null)
+			if (this._BestBidOfferByInstrumentCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.BestBidOfferByInstrumentCompleted(this, new BestBidOfferByInstrumentCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._BestBidOfferByInstrumentCompleted(this, new BestBidOfferByInstrumentCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1872,10 +1620,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.BestBidOfferByOptionsListCompleted != null)
+			if (this._BestBidOfferByOptionsListCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.BestBidOfferByOptionsListCompleted(this, new BestBidOfferByOptionsListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._BestBidOfferByOptionsListCompleted(this, new BestBidOfferByOptionsListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -1932,10 +1680,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.Get5BidOfferTFEXCompleted != null)
+			if (this._Get5BidOfferTFEXCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.Get5BidOfferTFEXCompleted(this, new Get5BidOfferTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._Get5BidOfferTFEXCompleted(this, new Get5BidOfferTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2000,10 +1748,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.GetChartImageCompleted != null)
+			if (this._GetChartImageCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.GetChartImageCompleted(this, new GetChartImageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._GetChartImageCompleted(this, new GetChartImageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2060,10 +1808,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.GetSwitchAccountInfoTFEXCompleted != null)
+			if (this._GetSwitchAccountInfoTFEXCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.GetSwitchAccountInfoTFEXCompleted(this, new GetSwitchAccountInfoTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._GetSwitchAccountInfoTFEXCompleted(this, new GetSwitchAccountInfoTFEXCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2130,10 +1878,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SeriesSaleByTimeCompleted != null)
+			if (this._SeriesSaleByTimeCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SeriesSaleByTimeCompleted(this, new SeriesSaleByTimeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SeriesSaleByTimeCompleted(this, new SeriesSaleByTimeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2194,10 +1942,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SeriesSaleByPriceCompleted != null)
+			if (this._SeriesSaleByPriceCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SeriesSaleByPriceCompleted(this, new SeriesSaleByPriceCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SeriesSaleByPriceCompleted(this, new SeriesSaleByPriceCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2268,10 +2016,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.StockInPlayCompleted != null)
+			if (this._StockInPlayCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.StockInPlayCompleted(this, new StockInPlayCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._StockInPlayCompleted(this, new StockInPlayCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2342,10 +2090,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.StockInPlayADCompleted != null)
+			if (this._StockInPlayADCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.StockInPlayADCompleted(this, new StockInPlayADCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._StockInPlayADCompleted(this, new StockInPlayADCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2410,10 +2158,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SeriesSumaryCompleted != null)
+			if (this._SeriesSumaryCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SeriesSumaryCompleted(this, new SeriesSumaryCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SeriesSumaryCompleted(this, new SeriesSumaryCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2470,10 +2218,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.TFEXBoardcastMessageCompleted != null)
+			if (this._TFEXBoardcastMessageCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.TFEXBoardcastMessageCompleted(this, new TFEXBoardcastMessageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._TFEXBoardcastMessageCompleted(this, new TFEXBoardcastMessageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2550,10 +2298,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewOrderTransactionCompleted != null)
+			if (this._ViewOrderTransactionCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewOrderTransactionCompleted(this, new ViewOrderTransactionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewOrderTransactionCompleted(this, new ViewOrderTransactionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2612,10 +2360,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewOrderByOrderNoCompleted != null)
+			if (this._ViewOrderByOrderNoCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewOrderByOrderNoCompleted(this, new ViewOrderByOrderNoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewOrderByOrderNoCompleted(this, new ViewOrderByOrderNoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2672,10 +2420,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewCustomersCreditCompleted != null)
+			if (this._ViewCustomersCreditCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewCustomersCreditCompleted(this, new ViewCustomersCreditCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewCustomersCreditCompleted(this, new ViewCustomersCreditCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2732,10 +2480,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewCustomersInfoCompleted != null)
+			if (this._ViewCustomersInfoCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewCustomersInfoCompleted(this, new ViewCustomersInfoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewCustomersInfoCompleted(this, new ViewCustomersInfoCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2792,10 +2540,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewCustomersAllCompleted != null)
+			if (this._ViewCustomersAllCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewCustomersAllCompleted(this, new ViewCustomersAllCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewCustomersAllCompleted(this, new ViewCustomersAllCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2862,10 +2610,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewOrderDealDataCompleted != null)
+			if (this._ViewOrderDealDataCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewOrderDealDataCompleted(this, new ViewOrderDealDataCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewOrderDealDataCompleted(this, new ViewOrderDealDataCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2924,10 +2672,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewCustomerCreditOnSendBoxCompleted != null)
+			if (this._ViewCustomerCreditOnSendBoxCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewCustomerCreditOnSendBoxCompleted(this, new ViewCustomerCreditOnSendBoxCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewCustomerCreditOnSendBoxCompleted(this, new ViewCustomerCreditOnSendBoxCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -2984,10 +2732,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.ViewCustomer_RiskManagementCompleted != null)
+			if (this._ViewCustomer_RiskManagementCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.ViewCustomer_RiskManagementCompleted(this, new ViewCustomer_RiskManagementCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._ViewCustomer_RiskManagementCompleted(this, new ViewCustomer_RiskManagementCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -3086,10 +2834,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SendTFEXNewOrderCompleted != null)
+			if (this._SendTFEXNewOrderCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SendTFEXNewOrderCompleted(this, new SendTFEXNewOrderCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SendTFEXNewOrderCompleted(this, new SendTFEXNewOrderCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -3160,10 +2908,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.SendTFEXCancelOrderCompleted != null)
+			if (this._SendTFEXCancelOrderCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.SendTFEXCancelOrderCompleted(this, new SendTFEXCancelOrderCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._SendTFEXCancelOrderCompleted(this, new SendTFEXCancelOrderCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -3219,10 +2967,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.WriteLogCompleted != null)
+			if (this._WriteLogCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.WriteLogCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._WriteLogCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
@@ -3273,10 +3021,10 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 			{
 				//object arg_0A_0 = null[0];
 			}
-			if (this.GetGoldSpotCompleted != null)
+			if (this._GetGoldSpotCompleted != null)
 			{
 				InvokeCompletedEventArgs invokeCompletedEventArgs = (InvokeCompletedEventArgs)arg;
-				this.GetGoldSpotCompleted(this, new GetGoldSpotCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
+				this._GetGoldSpotCompleted(this, new GetGoldSpotCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
 
