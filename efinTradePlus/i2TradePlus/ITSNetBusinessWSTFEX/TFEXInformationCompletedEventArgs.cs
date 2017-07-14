@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 	{
 		// Token: 0x06001712 RID: 5906 RVA: 0x00143C90 File Offset: 0x00142090
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TFEXInformationCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal TFEXInformationCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

@@ -340,7 +340,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600024A RID: 586 RVA: 0x0002BD9C File Offset: 0x0002A19C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmOrderFormConfirm(string message, frmOrderFormConfirm.OpenStyle openStyle)
+		public frmOrderFormConfirm(string message, frmOrderFormConfirm.OpenStyle openStyle) : base()
 		{
 			while (false)
 			{
@@ -356,7 +356,7 @@ namespace i2TradePlus
 			this._message = string.Empty;
 			this._isShowPin = false;
 			this.tmCloseForm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.openFormStyle = openStyle;
 			this._message = message;
@@ -364,7 +364,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600024B RID: 587 RVA: 0x0002BE2C File Offset: 0x0002A22C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmOrderFormConfirm(string message, frmOrderFormConfirm.OpenStyle openStyle, string pinCode)
+		public frmOrderFormConfirm(string message, frmOrderFormConfirm.OpenStyle openStyle, string pinCode) : base()
 		{
 			while (false)
 			{
@@ -380,7 +380,7 @@ namespace i2TradePlus
 			this._message = string.Empty;
 			this._isShowPin = false;
 			this.tmCloseForm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.openFormStyle = openStyle;
 			ApplicationInfo.UserPincodeLastEntry = pinCode;
@@ -389,7 +389,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600024C RID: 588 RVA: 0x0002BEC0 File Offset: 0x0002A2C0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmOrderFormConfirm(string message, string caption, frmOrderFormConfirm.OpenStyle openStyle)
+		public frmOrderFormConfirm(string message, string caption, frmOrderFormConfirm.OpenStyle openStyle) : base()
 		{
 			while (false)
 			{
@@ -405,7 +405,7 @@ namespace i2TradePlus
 			this._message = string.Empty;
 			this._isShowPin = false;
 			this.tmCloseForm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.Text = caption;
 			this.openFormStyle = openStyle;

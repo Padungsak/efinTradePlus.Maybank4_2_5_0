@@ -3271,13 +3271,13 @@ namespace i2TradePlus.FixForm
 			this._bgwVolAs = null;
 			this._volAsVisible = false;
 			this.dsSaleByPrice = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x060015F6 RID: 5622 RVA: 0x001308E0 File Offset: 0x0012ECE0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmMarketWatch(Dictionary<string, object> propertiesValue)
+		public frmMarketWatch(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -3341,7 +3341,7 @@ namespace i2TradePlus.FixForm
 			this._bgwVolAs = null;
 			this._volAsVisible = false;
 			this.dsSaleByPrice = null;
-			base..ctor(propertiesValue);
+			
 			try
 			{
 				this.InitializeComponent();

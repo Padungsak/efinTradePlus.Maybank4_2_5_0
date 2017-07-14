@@ -143,7 +143,7 @@ namespace i2TradePlus
 
 		// Token: 0x060008F9 RID: 2297 RVA: 0x000B13BC File Offset: 0x000AF7BC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTemplateInfo(frmTemplateInfo.ShowMode showMode, string templateName, bool isSetToDefaultTemplate)
+		public frmTemplateInfo(frmTemplateInfo.ShowMode showMode, string templateName, bool isSetToDefaultTemplate) : base()
 		{
 			while (false)
 			{
@@ -155,7 +155,7 @@ namespace i2TradePlus
 			this.templateName = string.Empty;
 			this.isSetToDefaultTemplate = false;
 			this.isDatasChanged = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.showMode = showMode;
 			this.templateName = templateName;

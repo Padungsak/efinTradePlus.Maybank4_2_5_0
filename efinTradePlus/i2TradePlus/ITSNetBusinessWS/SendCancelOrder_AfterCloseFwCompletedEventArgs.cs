@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06000FF4 RID: 4084 RVA: 0x000F6BB8 File Offset: 0x000F4FB8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal SendCancelOrder_AfterCloseFwCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal SendCancelOrder_AfterCloseFwCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

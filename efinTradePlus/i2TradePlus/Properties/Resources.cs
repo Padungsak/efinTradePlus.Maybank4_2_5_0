@@ -23,7 +23,7 @@ namespace i2TradePlus.Properties
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x1700002B RID: 43

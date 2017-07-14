@@ -39,14 +39,14 @@ namespace i2TradePlus
 
 		// Token: 0x060015EC RID: 5612 RVA: 0x00126AB0 File Offset: 0x00124EB0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public WebServiceFactory()
+		public WebServiceFactory() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 	}
 }

@@ -223,7 +223,7 @@ namespace i2TradePlus
 			this.valueCondition = null;
 			this.valueMessageRealtime = string.Empty;
 			this.alertType = 0;
-			base..ctor();
+			
 		}
 
 		// Token: 0x060009D2 RID: 2514 RVA: 0x000BE360 File Offset: 0x000BC760
@@ -242,7 +242,7 @@ namespace i2TradePlus
 			this.valueCondition = null;
 			this.valueMessageRealtime = string.Empty;
 			this.alertType = 0;
-			base..ctor();
+			
 			this.symbol = item.symbol;
 			this.isReaded = item.IsReaded;
 			this.fieldCondition = item.Field;

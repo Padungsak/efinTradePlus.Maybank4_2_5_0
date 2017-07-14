@@ -1322,14 +1322,14 @@ namespace i2TradePlus
 
 		// Token: 0x060007D7 RID: 2007 RVA: 0x0009143C File Offset: 0x0008F83C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public Utilities()
+		public Utilities() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 	}
 }

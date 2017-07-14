@@ -19,7 +19,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x060001F8 RID: 504 RVA: 0x00025070 File Offset: 0x00023470
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucOrderStat()
+		public ucOrderStat() : base()
 		{
 			while (false)
 			{
@@ -38,7 +38,7 @@ namespace i2TradePlus
 			this.tmCloseSplash = null;
 			this._mcPos = 0;
 			this.components = null;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

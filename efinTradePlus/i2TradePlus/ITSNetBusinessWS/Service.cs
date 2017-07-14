@@ -18,14 +18,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06000CB3 RID: 3251 RVA: 0x000E9584 File Offset: 0x000E7984
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public Service()
+		public Service() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 			this.Url = Settings.Default.efinTradePlus_ITSNetBusinessWS_Service;
 			if (this.IsLocalFileSystemWebService(this.Url))
 			{

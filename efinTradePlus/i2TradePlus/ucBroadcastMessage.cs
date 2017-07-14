@@ -178,7 +178,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000404 RID: 1028 RVA: 0x0003FABC File Offset: 0x0003DEBC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucBroadcastMessage()
+		public ucBroadcastMessage() : base()
 		{
 			while (false)
 			{
@@ -191,7 +191,7 @@ namespace i2TradePlus
 			this.tdsBroadcast = null;
 			this._isLoading = false;
 			this._isFirstOpen = true;
-			base..ctor();
+			
 			this.InitializeComponent();
 			base.SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer, true);
 			base.UpdateStyles();

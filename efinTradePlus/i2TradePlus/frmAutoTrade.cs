@@ -1861,7 +1861,7 @@ namespace i2TradePlus
 
 		// Token: 0x06001384 RID: 4996 RVA: 0x00103080 File Offset: 0x00101480
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmAutoTrade()
+		public frmAutoTrade() : base()
 		{
 			while (false)
 			{
@@ -1881,13 +1881,13 @@ namespace i2TradePlus
 			this._frmPzInfo = null;
 			this._frmPzCreateNew = null;
 			this._accType = string.Empty;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x06001385 RID: 4997 RVA: 0x00103118 File Offset: 0x00101518
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmAutoTrade(Dictionary<string, object> propertiesValue)
+		public frmAutoTrade(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -1907,7 +1907,7 @@ namespace i2TradePlus
 			this._frmPzInfo = null;
 			this._frmPzCreateNew = null;
 			this._accType = string.Empty;
-			base..ctor(propertiesValue);
+			
 			try
 			{
 				this.InitializeComponent();

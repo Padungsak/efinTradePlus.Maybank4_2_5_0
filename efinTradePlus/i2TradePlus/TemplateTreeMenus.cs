@@ -193,7 +193,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000651 RID: 1617 RVA: 0x0006DB8C File Offset: 0x0006BF8C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public TemplateTreeMenus()
+		public TemplateTreeMenus() : base()
 		{
 			while (false)
 			{
@@ -202,7 +202,7 @@ namespace i2TradePlus
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.showContextMenu = true;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.tvTemplatesList.BorderStyle = BorderStyle.None;
 			this.tvTemplatesList.ExpandAll();

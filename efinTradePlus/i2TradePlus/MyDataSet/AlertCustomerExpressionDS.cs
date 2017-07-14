@@ -23,7 +23,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x06001321 RID: 4897 RVA: 0x000FA244 File Offset: 0x000F8644
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public AlertCustomerExpressionDS()
+		public AlertCustomerExpressionDS() : base()
 		{
 			while (false)
 			{
@@ -31,7 +31,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor();
+			
 			base.BeginInit();
 			this.InitClass();
 			CollectionChangeEventHandler value = new CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x06001322 RID: 4898 RVA: 0x000FA2B0 File Offset: 0x000F86B0
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		protected AlertCustomerExpressionDS(SerializationInfo info, StreamingContext context)
+		protected AlertCustomerExpressionDS(SerializationInfo info, StreamingContext context) : base(info, context, false)
 		{
 			while (false)
 			{
@@ -51,7 +51,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor(info, context, false);
+			
 			if (base.IsBinarySerialized(info, context))
 			{
 				this.InitVars(false);
@@ -423,14 +423,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06001338 RID: 4920 RVA: 0x000FAA40 File Offset: 0x000F8E40
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public AlertCollectionDataTable()
+			public AlertCollectionDataTable() : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = "AlertCollection";
 				this.BeginInit();
 				this.InitClass();
@@ -440,14 +440,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06001339 RID: 4921 RVA: 0x000FAA80 File Offset: 0x000F8E80
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal AlertCollectionDataTable(DataTable table)
+			internal AlertCollectionDataTable(DataTable table) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = table.TableName;
 				if (table.CaseSensitive != table.DataSet.CaseSensitive)
 				{
@@ -468,14 +468,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x0600133A RID: 4922 RVA: 0x000FAB64 File Offset: 0x000F8F64
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			protected AlertCollectionDataTable(SerializationInfo info, StreamingContext context)
+			protected AlertCollectionDataTable(SerializationInfo info, StreamingContext context) : base(info, context)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(info, context);
+				
 				this.InitVars();
 			}
 
@@ -1117,14 +1117,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x0600135E RID: 4958 RVA: 0x000FB7F0 File Offset: 0x000F9BF0
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal AlertCollectionRow(DataRowBuilder rb)
+			internal AlertCollectionRow(DataRowBuilder rb) : base(rb)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(rb);
+				
 				this.tableAlertCollection = (AlertCustomerExpressionDS.AlertCollectionDataTable)base.Table;
 			}
 
@@ -1604,14 +1604,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x0600137F RID: 4991 RVA: 0x000FBEDC File Offset: 0x000FA2DC
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public AlertCollectionRowChangeEvent(AlertCustomerExpressionDS.AlertCollectionRow row, DataRowAction action)
+			public AlertCollectionRowChangeEvent(AlertCustomerExpressionDS.AlertCollectionRow row, DataRowAction action) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.eventRow = row;
 				this.eventAction = action;
 			}

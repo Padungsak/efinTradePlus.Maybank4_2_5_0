@@ -1188,7 +1188,7 @@ namespace i2TradePlus
 
 		// Token: 0x060006A0 RID: 1696 RVA: 0x00072BE0 File Offset: 0x00070FE0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucViewOrder()
+		public ucViewOrder() : base()
 		{
 			while (false)
 			{
@@ -1228,7 +1228,7 @@ namespace i2TradePlus
 			this.tmTest = null;
 			this.frmConfirm = null;
 			this._editOrderBox = null;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();
@@ -4404,7 +4404,7 @@ namespace i2TradePlus
 		{
 			// Token: 0x06000700 RID: 1792 RVA: 0x00079A90 File Offset: 0x00077E90
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public CancelItem(long orderNo, string orderDate, string orderTime, string afterClose)
+			public CancelItem(long orderNo, string orderDate, string orderTime, string afterClose) : base()
 			{
 				while (false)
 				{
@@ -4416,7 +4416,7 @@ namespace i2TradePlus
 				this.OrderTime = string.Empty;
 				this.AfterClose = "N";
 				this.Complete = false;
-				base..ctor();
+				
 				this.OrderNo = orderNo;
 				this.OrderDate = orderDate;
 				this.OrderTime = orderTime;

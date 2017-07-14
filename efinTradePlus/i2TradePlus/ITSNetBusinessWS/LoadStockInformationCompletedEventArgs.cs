@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x0600113C RID: 4412 RVA: 0x000F80D0 File Offset: 0x000F64D0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal LoadStockInformationCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal LoadStockInformationCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

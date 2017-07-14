@@ -22,7 +22,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x06000B13 RID: 2835 RVA: 0x000C9744 File Offset: 0x000C7B44
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmDcaCreateNew(List<string> holidays)
+		public frmDcaCreateNew(List<string> holidays) : base()
 		{
 			while (false)
 			{
@@ -34,7 +34,7 @@ namespace i2TradePlus
 			this._commandDca = null;
 			this._frmConfirm = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			try
 			{

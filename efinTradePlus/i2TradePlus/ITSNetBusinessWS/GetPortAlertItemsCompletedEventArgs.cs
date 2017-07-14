@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x060010EA RID: 4330 RVA: 0x000F7BBC File Offset: 0x000F5FBC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetPortAlertItemsCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetPortAlertItemsCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

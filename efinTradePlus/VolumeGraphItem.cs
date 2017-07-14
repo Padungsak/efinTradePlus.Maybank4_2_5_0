@@ -182,14 +182,14 @@ public class VolumeGraphItem
 
 	// Token: 0x060018B6 RID: 6326 RVA: 0x0014E7B8 File Offset: 0x0014CBB8
 	[MethodImpl(MethodImplOptions.NoInlining)]
-	public VolumeGraphItem()
+	public VolumeGraphItem() : base()
 	{
 		while (false)
 		{
 			//object arg_0A_0 = null[0];
 		}
 		QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-		base..ctor();
+		
 	}
 
 	// Token: 0x04000C78 RID: 3192

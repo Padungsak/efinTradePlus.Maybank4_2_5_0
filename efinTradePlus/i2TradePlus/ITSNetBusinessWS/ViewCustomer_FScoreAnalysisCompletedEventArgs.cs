@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x0600126E RID: 4718 RVA: 0x000F94BC File Offset: 0x000F78BC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal ViewCustomer_FScoreAnalysisCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal ViewCustomer_FScoreAnalysisCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

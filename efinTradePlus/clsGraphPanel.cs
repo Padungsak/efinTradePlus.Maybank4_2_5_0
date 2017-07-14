@@ -40,7 +40,7 @@ public class clsGraphPanel
 		this.m_BuyColor = Color.Lime;
 		this.m_SellColor = Color.Red;
 		this.sfDraw = new StringFormat();
-		base..ctor();
+		
 		this._graphItems = new List<VolumeGraphItem>();
 		this._itemsByStock = new List<ItemByStock>();
 		this.m_Rect = default(Rectangle);

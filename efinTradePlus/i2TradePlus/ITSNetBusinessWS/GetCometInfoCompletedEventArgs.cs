@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x060012BC RID: 4796 RVA: 0x000F99D0 File Offset: 0x000F7DD0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetCometInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetCometInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

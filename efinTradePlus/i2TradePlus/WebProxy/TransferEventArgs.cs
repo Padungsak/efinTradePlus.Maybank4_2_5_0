@@ -9,7 +9,7 @@ namespace i2TradePlus.WebProxy
 	{
 		// Token: 0x06000831 RID: 2097 RVA: 0x0009F978 File Offset: 0x0009DD78
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TransferEventArgs()
+		internal TransferEventArgs() : base()
 		{
 			while (false)
 			{
@@ -19,13 +19,13 @@ namespace i2TradePlus.WebProxy
 			this.code = 0;
 			this.text = string.Empty;
 			this.exception = null;
-			base..ctor();
+			
 			throw new Exception("ต้องใช้ แบบ มี Parameter เท่านั้น");
 		}
 
 		// Token: 0x06000832 RID: 2098 RVA: 0x0009F9B8 File Offset: 0x0009DDB8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TransferEventArgs(string text)
+		internal TransferEventArgs(string text) : base()
 		{
 			while (false)
 			{
@@ -35,7 +35,7 @@ namespace i2TradePlus.WebProxy
 			this.code = 0;
 			this.text = string.Empty;
 			this.exception = null;
-			base..ctor();
+			
 			this.code = 0;
 			this.text = text;
 			this.exception = null;
@@ -43,7 +43,7 @@ namespace i2TradePlus.WebProxy
 
 		// Token: 0x06000833 RID: 2099 RVA: 0x0009FA10 File Offset: 0x0009DE10
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TransferEventArgs(int code, string text)
+		internal TransferEventArgs(int code, string text) : base()
 		{
 			while (false)
 			{
@@ -53,7 +53,7 @@ namespace i2TradePlus.WebProxy
 			this.code = 0;
 			this.text = string.Empty;
 			this.exception = null;
-			base..ctor();
+			
 			this.code = code;
 			this.text = text;
 			if (code == -1)
@@ -64,7 +64,7 @@ namespace i2TradePlus.WebProxy
 
 		// Token: 0x06000834 RID: 2100 RVA: 0x0009FA7C File Offset: 0x0009DE7C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TransferEventArgs(Exception exception)
+		internal TransferEventArgs(Exception exception) : base()
 		{
 			while (false)
 			{
@@ -74,14 +74,14 @@ namespace i2TradePlus.WebProxy
 			this.code = 0;
 			this.text = string.Empty;
 			this.exception = null;
-			base..ctor();
+			
 			this.code = -1;
 			this.exception = exception;
 		}
 
 		// Token: 0x06000835 RID: 2101 RVA: 0x0009FACC File Offset: 0x0009DECC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TransferEventArgs(string text, Exception exception)
+		internal TransferEventArgs(string text, Exception exception) : base()
 		{
 			while (false)
 			{
@@ -91,7 +91,7 @@ namespace i2TradePlus.WebProxy
 			this.code = 0;
 			this.text = string.Empty;
 			this.exception = null;
-			base..ctor();
+			
 			this.code = -1;
 			this.text = text;
 			this.exception = exception;

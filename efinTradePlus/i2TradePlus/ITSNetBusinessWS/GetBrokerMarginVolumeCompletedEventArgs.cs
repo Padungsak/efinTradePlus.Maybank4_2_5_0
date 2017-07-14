@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001012 RID: 4114 RVA: 0x000F6DAC File Offset: 0x000F51AC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetBrokerMarginVolumeCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetBrokerMarginVolumeCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

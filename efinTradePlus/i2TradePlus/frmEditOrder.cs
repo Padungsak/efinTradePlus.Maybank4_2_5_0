@@ -283,7 +283,7 @@ namespace i2TradePlus
 
 		// Token: 0x060008A2 RID: 2210 RVA: 0x000AAD24 File Offset: 0x000A9124
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmEditOrder(frmEditOrder.OrderEditRecord recordData)
+		public frmEditOrder(frmEditOrder.OrderEditRecord recordData) : base()
 		{
 			while (false)
 			{
@@ -299,7 +299,7 @@ namespace i2TradePlus
 			this._sendResult = false;
 			this._sendResultMessage = string.Empty;
 			this._isLockPubVol = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this._record = recordData;
 			this.SetResize();

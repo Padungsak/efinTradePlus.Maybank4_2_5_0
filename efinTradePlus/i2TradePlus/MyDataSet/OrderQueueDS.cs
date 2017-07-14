@@ -23,7 +23,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x060017D8 RID: 6104 RVA: 0x00144974 File Offset: 0x00142D74
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public OrderQueueDS()
+		public OrderQueueDS() : base()
 		{
 			while (false)
 			{
@@ -31,7 +31,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor();
+			
 			base.BeginInit();
 			this.InitClass();
 			CollectionChangeEventHandler value = new CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x060017D9 RID: 6105 RVA: 0x001449E0 File Offset: 0x00142DE0
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		protected OrderQueueDS(SerializationInfo info, StreamingContext context)
+		protected OrderQueueDS(SerializationInfo info, StreamingContext context) : base(info, context, false)
 		{
 			while (false)
 			{
@@ -51,7 +51,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor(info, context, false);
+			
 			if (base.IsBinarySerialized(info, context))
 			{
 				this.InitVars(false);
@@ -423,14 +423,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x060017EF RID: 6127 RVA: 0x00145170 File Offset: 0x00143570
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public OrderRecordDataTable()
+			public OrderRecordDataTable() : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = "OrderRecord";
 				this.BeginInit();
 				this.InitClass();
@@ -440,14 +440,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x060017F0 RID: 6128 RVA: 0x001451B0 File Offset: 0x001435B0
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal OrderRecordDataTable(DataTable table)
+			internal OrderRecordDataTable(DataTable table) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = table.TableName;
 				if (table.CaseSensitive != table.DataSet.CaseSensitive)
 				{
@@ -468,14 +468,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x060017F1 RID: 6129 RVA: 0x00145294 File Offset: 0x00143694
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			protected OrderRecordDataTable(SerializationInfo info, StreamingContext context)
+			protected OrderRecordDataTable(SerializationInfo info, StreamingContext context) : base(info, context)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(info, context);
+				
 				this.InitVars();
 			}
 
@@ -1091,14 +1091,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06001814 RID: 6164 RVA: 0x00145E70 File Offset: 0x00144270
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal OrderRecordRow(DataRowBuilder rb)
+			internal OrderRecordRow(DataRowBuilder rb) : base(rb)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(rb);
+				
 				this.tableOrderRecord = (OrderQueueDS.OrderRecordDataTable)base.Table;
 			}
 
@@ -1585,14 +1585,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06001835 RID: 6197 RVA: 0x00146580 File Offset: 0x00144980
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public OrderRecordRowChangeEvent(OrderQueueDS.OrderRecordRow row, DataRowAction action)
+			public OrderRecordRowChangeEvent(OrderQueueDS.OrderRecordRow row, DataRowAction action) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.eventRow = row;
 				this.eventAction = action;
 			}

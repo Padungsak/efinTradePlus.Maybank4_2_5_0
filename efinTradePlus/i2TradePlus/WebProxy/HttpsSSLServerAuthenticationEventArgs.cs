@@ -34,7 +34,7 @@ namespace i2TradePlus.WebProxy
 
 		// Token: 0x06000C8A RID: 3210 RVA: 0x000E8E44 File Offset: 0x000E7244
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public HttpsSSLServerAuthenticationEventArgs()
+		public HttpsSSLServerAuthenticationEventArgs() : base()
 		{
 			while (false)
 			{
@@ -42,7 +42,7 @@ namespace i2TradePlus.WebProxy
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.accept = false;
-			base..ctor();
+			
 		}
 
 		// Token: 0x0400084E RID: 2126

@@ -408,7 +408,7 @@ namespace i2TradePlus
 			this.IsWidthChanged = false;
 			this.IsHeightChanged = false;
 			this._allControls = null;
-			base..ctor();
+			
 			this.SetControl();
 		}
 
@@ -432,7 +432,7 @@ namespace i2TradePlus
 			this.IsWidthChanged = false;
 			this.IsHeightChanged = false;
 			this._allControls = null;
-			base..ctor();
+			
 			this.SetControl();
 			if (!base.DesignMode)
 			{

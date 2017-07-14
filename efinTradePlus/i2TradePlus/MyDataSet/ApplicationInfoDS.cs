@@ -23,7 +23,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x0600097A RID: 2426 RVA: 0x000BCA64 File Offset: 0x000BAE64
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ApplicationInfoDS()
+		public ApplicationInfoDS() : base()
 		{
 			while (false)
 			{
@@ -31,7 +31,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor();
+			
 			base.BeginInit();
 			this.InitClass();
 			CollectionChangeEventHandler value = new CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x0600097B RID: 2427 RVA: 0x000BCAD0 File Offset: 0x000BAED0
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		protected ApplicationInfoDS(SerializationInfo info, StreamingContext context)
+		protected ApplicationInfoDS(SerializationInfo info, StreamingContext context) : base(info, context, false)
 		{
 			while (false)
 			{
@@ -51,7 +51,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor(info, context, false);
+			
 			if (base.IsBinarySerialized(info, context))
 			{
 				this.InitVars(false);
@@ -423,14 +423,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000991 RID: 2449 RVA: 0x000BD260 File Offset: 0x000BB660
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public InfoDataTable()
+			public InfoDataTable() : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = "Info";
 				this.BeginInit();
 				this.InitClass();
@@ -440,14 +440,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000992 RID: 2450 RVA: 0x000BD2A0 File Offset: 0x000BB6A0
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal InfoDataTable(DataTable table)
+			internal InfoDataTable(DataTable table) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = table.TableName;
 				if (table.CaseSensitive != table.DataSet.CaseSensitive)
 				{
@@ -468,14 +468,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000993 RID: 2451 RVA: 0x000BD384 File Offset: 0x000BB784
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			protected InfoDataTable(SerializationInfo info, StreamingContext context)
+			protected InfoDataTable(SerializationInfo info, StreamingContext context) : base(info, context)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(info, context);
+				
 				this.InitVars();
 			}
 
@@ -1024,14 +1024,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x060009B3 RID: 2483 RVA: 0x000BDE28 File Offset: 0x000BC228
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal InfoRow(DataRowBuilder rb)
+			internal InfoRow(DataRowBuilder rb) : base(rb)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(rb);
+				
 				this.tableInfo = (ApplicationInfoDS.InfoDataTable)base.Table;
 			}
 
@@ -1176,14 +1176,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x060009BE RID: 2494 RVA: 0x000BE058 File Offset: 0x000BC458
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public InfoRowChangeEvent(ApplicationInfoDS.InfoRow row, DataRowAction action)
+			public InfoRowChangeEvent(ApplicationInfoDS.InfoRow row, DataRowAction action) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.eventRow = row;
 				this.eventAction = action;
 			}

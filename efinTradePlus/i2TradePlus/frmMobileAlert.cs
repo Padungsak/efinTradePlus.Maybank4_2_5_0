@@ -18,7 +18,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x06001838 RID: 6200 RVA: 0x00146604 File Offset: 0x00144A04
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmMobileAlert()
+		public frmMobileAlert() : base()
 		{
 			while (false)
 			{
@@ -66,7 +66,7 @@ namespace i2TradePlus
 			this._isAlreadyLoadPort = false;
 			this._frmConfirm = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

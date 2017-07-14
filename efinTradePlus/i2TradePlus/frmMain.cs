@@ -86,7 +86,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000297 RID: 663 RVA: 0x0002DAA4 File Offset: 0x0002BEA4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmMain()
+		public frmMain() : base()
 		{
 			while (false)
 			{
@@ -124,7 +124,7 @@ namespace i2TradePlus
 			this._isPeekQWorking = false;
 			this._frmStopDisclaimer = null;
 			this.components = null;
-			base..ctor();
+			
 			Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 			this.InitializeComponent();
 			this.MinimumSize = new Size(800, 600);

@@ -173,7 +173,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000963 RID: 2403 RVA: 0x000B9ECC File Offset: 0x000B82CC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucIndexBox()
+		public ucIndexBox() : base()
 		{
 			while (false)
 			{
@@ -193,7 +193,7 @@ namespace i2TradePlus
 			this._goldUpdateLastTime = DateTime.MinValue;
 			this._active = false;
 			this._goldSpotValue = null;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

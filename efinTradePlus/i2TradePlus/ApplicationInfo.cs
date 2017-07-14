@@ -1316,7 +1316,7 @@ namespace i2TradePlus
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x06000614 RID: 1556 RVA: 0x00067F84 File Offset: 0x00066384
@@ -1836,7 +1836,7 @@ namespace i2TradePlus
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.IsFwOfflineOrder = false;
 				this.IsAutoStopLoss = false;
-				base..ctor();
+				
 			}
 
 			// Token: 0x040003C1 RID: 961

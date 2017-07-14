@@ -17,7 +17,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x0600017E RID: 382 RVA: 0x00016F24 File Offset: 0x00015324
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmPcPriceAlert()
+		public frmPcPriceAlert() : base()
 		{
 			while (false)
 			{
@@ -28,7 +28,7 @@ namespace i2TradePlus
 			this.tmCloseSplash = null;
 			this.frmConfirm = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

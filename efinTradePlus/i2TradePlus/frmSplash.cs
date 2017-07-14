@@ -78,7 +78,7 @@ namespace i2TradePlus
 
 		// Token: 0x060003FB RID: 1019 RVA: 0x0003F15C File Offset: 0x0003D55C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmSplash()
+		public frmSplash() : base()
 		{
 			while (false)
 			{
@@ -86,7 +86,7 @@ namespace i2TradePlus
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

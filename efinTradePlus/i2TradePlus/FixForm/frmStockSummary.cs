@@ -2812,13 +2812,13 @@ namespace i2TradePlus.FixForm
 			this._tfexAskPrice3 = 0m;
 			this._tfexAskPrice4 = 0m;
 			this._tfexAskPrice5 = 0m;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x0600070C RID: 1804 RVA: 0x00081FD4 File Offset: 0x000803D4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmStockSummary(Dictionary<string, object> propertiesValue, string currentPage)
+		public frmStockSummary(Dictionary<string, object> propertiesValue, string currentPage) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -2855,7 +2855,7 @@ namespace i2TradePlus.FixForm
 			this._tfexAskPrice3 = 0m;
 			this._tfexAskPrice4 = 0m;
 			this._tfexAskPrice5 = 0m;
-			base..ctor(propertiesValue);
+			
 			this._currentPage = currentPage;
 			this.Init();
 		}

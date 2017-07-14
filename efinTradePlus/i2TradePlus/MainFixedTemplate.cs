@@ -12,14 +12,14 @@ namespace i2TradePlus
 	{
 		// Token: 0x06000796 RID: 1942 RVA: 0x0008E8F4 File Offset: 0x0008CCF4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public MainFixedTemplate()
+		public MainFixedTemplate() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x06000797 RID: 1943 RVA: 0x0008E914 File Offset: 0x0008CD14
@@ -403,7 +403,7 @@ namespace i2TradePlus
 
 			// Token: 0x060007AB RID: 1963 RVA: 0x0008F1A4 File Offset: 0x0008D5A4
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public ControlClient(Type controlType, DockStyle controlDock, Dictionary<string, object> property)
+			public ControlClient(Type controlType, DockStyle controlDock, Dictionary<string, object> property) : base()
 			{
 				while (false)
 				{
@@ -412,7 +412,7 @@ namespace i2TradePlus
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.property = null;
 				this.formIndex = 0;
-				base..ctor();
+				
 				this.controlType = controlType;
 				this.formIndex = 0;
 				this.controlDock = controlDock;
@@ -477,7 +477,7 @@ namespace i2TradePlus
 
 			// Token: 0x060007AF RID: 1967 RVA: 0x0008F268 File Offset: 0x0008D668
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public TemplateProperty(string templateName, int hotkey)
+			public TemplateProperty(string templateName, int hotkey) : base()
 			{
 				while (false)
 				{
@@ -485,7 +485,7 @@ namespace i2TradePlus
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.tempateName = string.Empty;
-				base..ctor();
+				
 				this.tempateName = templateName;
 				this.hotkey = hotkey;
 			}

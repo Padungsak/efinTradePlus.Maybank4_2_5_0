@@ -446,7 +446,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600009E RID: 158 RVA: 0x0000B364 File Offset: 0x00009764
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmBatchOrder(Dictionary<string, object> propertiesValue)
+		public frmBatchOrder(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -474,7 +474,7 @@ namespace i2TradePlus
 			this._currSeqLineNo = 0;
 			this._lstOrder = null;
 			this._isSending = false;
-			base..ctor(propertiesValue);
+			
 			this.InitializeComponent();
 			this.sortGrid1.Rows = 100;
 		}

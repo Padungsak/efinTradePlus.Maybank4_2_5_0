@@ -586,14 +586,14 @@ namespace i2TradePlus
 
 		// Token: 0x0600063E RID: 1598 RVA: 0x0006D7B0 File Offset: 0x0006BBB0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public HotKeyManager()
+		public HotKeyManager() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x040003D5 RID: 981
@@ -663,7 +663,7 @@ namespace i2TradePlus
 
 			// Token: 0x06000643 RID: 1603 RVA: 0x0006D854 File Offset: 0x0006BC54
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public HotkeyProperty(string templateName, string templateGroup)
+			public HotkeyProperty(string templateName, string templateGroup) : base()
 			{
 				while (false)
 				{
@@ -672,7 +672,7 @@ namespace i2TradePlus
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.templateName = string.Empty;
 				this.templateGroup = string.Empty;
-				base..ctor();
+				
 				this.templateName = templateName;
 				this.templateGroup = templateGroup;
 			}

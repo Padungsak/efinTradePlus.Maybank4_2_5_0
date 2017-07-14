@@ -225,7 +225,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600003A RID: 58 RVA: 0x00007A90 File Offset: 0x00005E90
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmFTSItemInfo(long refNo)
+		public frmFTSItemInfo(long refNo) : base()
 		{
 			while (false)
 			{
@@ -234,7 +234,7 @@ namespace i2TradePlus
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.components = null;
 			this._isReloadData = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this._refNo = refNo;
 			this.Reload();

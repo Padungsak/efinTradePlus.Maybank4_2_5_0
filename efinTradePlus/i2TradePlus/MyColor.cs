@@ -51,14 +51,14 @@ namespace i2TradePlus
 
 		// Token: 0x0600017C RID: 380 RVA: 0x00016E4C File Offset: 0x0001524C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public MyColor()
+		public MyColor() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x0600017D RID: 381 RVA: 0x00016E68 File Offset: 0x00015268

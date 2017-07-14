@@ -1008,7 +1008,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600061C RID: 1564 RVA: 0x0006B0A4 File Offset: 0x000694A4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmViewOrderInfo(bool isHistory, string sendDate, long orderNumber, int yPosition, string isFwAfterClose)
+		public frmViewOrderInfo(bool isHistory, string sendDate, long orderNumber, int yPosition, string isFwAfterClose) : base()
 		{
 			while (false)
 			{
@@ -1026,7 +1026,7 @@ namespace i2TradePlus
 			this.isHistory = false;
 			this.yPosition = 0;
 			this._isFwAfterClose = "N";
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

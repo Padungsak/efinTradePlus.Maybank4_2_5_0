@@ -508,7 +508,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600155C RID: 5468 RVA: 0x0011C9D8 File Offset: 0x0011ADD8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmRiskManagement()
+		public frmRiskManagement() : base()
 		{
 			while (false)
 			{
@@ -524,7 +524,7 @@ namespace i2TradePlus
 			this._period = 0;
 			this._stopPrice = 0m;
 			this._frmConfirm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this.bgwLoadReport = new BackgroundWorker();
 			this.bgwLoadReport.WorkerReportsProgress = true;

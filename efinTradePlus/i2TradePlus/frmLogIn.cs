@@ -22,7 +22,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x060008BE RID: 2238 RVA: 0x000AC9EC File Offset: 0x000AADEC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmLogIn()
+		public frmLogIn() : base()
 		{
 			while (false)
 			{
@@ -41,7 +41,7 @@ namespace i2TradePlus
 			this._loginResultMessage = string.Empty;
 			this.frm = null;
 			this.components = null;
-			base..ctor();
+			
 			Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 			this.InitializeComponent();
 		}

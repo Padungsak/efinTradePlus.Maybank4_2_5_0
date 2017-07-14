@@ -21,7 +21,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x0600143C RID: 5180 RVA: 0x0010F564 File Offset: 0x0010D964
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmMarketInfo()
+		public frmMarketInfo() : base()
 		{
 			while (false)
 			{
@@ -40,13 +40,13 @@ namespace i2TradePlus
 			this.isLoading = true;
 			this._currentChartName = string.Empty;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x0600143D RID: 5181 RVA: 0x0010F5F4 File Offset: 0x0010D9F4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmMarketInfo(Dictionary<string, object> properties)
+		public frmMarketInfo(Dictionary<string, object> properties) : base(properties)
 		{
 			while (false)
 			{
@@ -65,7 +65,6 @@ namespace i2TradePlus
 			this.isLoading = true;
 			this._currentChartName = string.Empty;
 			this.components = null;
-			base..ctor(properties);
 			this.InitializeComponent();
 			try
 			{

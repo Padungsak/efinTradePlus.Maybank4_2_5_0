@@ -16,7 +16,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x060001CF RID: 463 RVA: 0x0001DF74 File Offset: 0x0001C374
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmViewOrderInfoTFEX(long orderNumber, string ordType, string sendDate, int yPosition)
+		public frmViewOrderInfoTFEX(long orderNumber, string ordType, string sendDate, int yPosition) : base()
 		{
 			while (false)
 			{
@@ -33,7 +33,7 @@ namespace i2TradePlus
 			this.yPosition = 0;
 			this.tdsOrderTrans = null;
 			this.components = null;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

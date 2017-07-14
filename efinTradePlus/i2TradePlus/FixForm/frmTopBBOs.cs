@@ -596,7 +596,7 @@ namespace i2TradePlus.FixForm
 
 		// Token: 0x060001A2 RID: 418 RVA: 0x0001BBFC File Offset: 0x00019FFC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTopBBOs()
+		public frmTopBBOs() : base()
 		{
 			while (false)
 			{
@@ -612,13 +612,13 @@ namespace i2TradePlus.FixForm
 			this._currentActivePanel = 0;
 			this._currFavPage = 1;
 			this._bidControl = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x060001A3 RID: 419 RVA: 0x0001BC70 File Offset: 0x0001A070
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTopBBOs(Dictionary<string, object> propertiesValue)
+		public frmTopBBOs(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -634,7 +634,7 @@ namespace i2TradePlus.FixForm
 			this._currentActivePanel = 0;
 			this._currFavPage = 1;
 			this._bidControl = null;
-			base..ctor(propertiesValue);
+			
 			this.InitializeComponent();
 			try
 			{

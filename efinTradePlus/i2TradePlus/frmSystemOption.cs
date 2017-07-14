@@ -921,7 +921,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000909 RID: 2313 RVA: 0x000B542C File Offset: 0x000B382C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmSystemOption()
+		public frmSystemOption() : base()
 		{
 			while (false)
 			{
@@ -932,7 +932,7 @@ namespace i2TradePlus
 			this.defFont = null;
 			this.passwordDescription = "   รูปแบบการกำหนด Password\r\n\r\n1. รหัสต้องมีความยาวไม่น้อยกว่า {0} ตัว\r\n2. รหัสต้องมีตัวอักษร A-Z หรือ a-z , 0-9 \r\n3. รหัสต้องมีอักขระพิเศษ เช่น @ , ! ,# ,* , |\r\n  ตัวอย่าง เช่น   Sti@123";
 			this.pincodeDescription = "   รูปแบบการกำหนด Password\r\n\r\n1. รหัสต้องมีความยาวไม่น้อยกว่า {0} ตัว";
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

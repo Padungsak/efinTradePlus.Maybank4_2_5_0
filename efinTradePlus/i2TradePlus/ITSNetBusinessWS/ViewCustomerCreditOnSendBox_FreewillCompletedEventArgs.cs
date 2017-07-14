@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001244 RID: 4676 RVA: 0x000F9200 File Offset: 0x000F7600
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal ViewCustomerCreditOnSendBox_FreewillCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal ViewCustomerCreditOnSendBox_FreewillCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

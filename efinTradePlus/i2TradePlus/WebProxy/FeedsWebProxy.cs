@@ -258,7 +258,7 @@ namespace i2TradePlus.WebProxy
 
 		// Token: 0x06000368 RID: 872 RVA: 0x0003B3A0 File Offset: 0x000397A0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal FeedsWebProxy()
+		internal FeedsWebProxy() : base()
 		{
 			while (false)
 			{
@@ -277,7 +277,7 @@ namespace i2TradePlus.WebProxy
 			this.isServiceStarted = false;
 			this.isAreadySendOnStarted = false;
 			this.isRecv = false;
-			base..ctor();
+			
 		}
 
 		// Token: 0x06000369 RID: 873 RVA: 0x0003B430 File Offset: 0x00039830

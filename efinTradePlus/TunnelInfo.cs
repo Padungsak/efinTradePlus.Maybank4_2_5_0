@@ -7,7 +7,7 @@ internal class TunnelInfo
 {
 	// Token: 0x06000951 RID: 2385 RVA: 0x000B97F8 File Offset: 0x000B7BF8
 	[MethodImpl(MethodImplOptions.NoInlining)]
-	public TunnelInfo()
+	public TunnelInfo() : base()
 	{
 		while (false)
 		{
@@ -18,12 +18,12 @@ internal class TunnelInfo
 		this.port = 0;
 		this.enableSSL = true;
 		this.isAlreadyStart = false;
-		base..ctor();
+		
 	}
 
 	// Token: 0x06000952 RID: 2386 RVA: 0x000B9838 File Offset: 0x000B7C38
 	[MethodImpl(MethodImplOptions.NoInlining)]
-	public TunnelInfo(string hostIP, int port, bool enableSSL)
+	public TunnelInfo(string hostIP, int port, bool enableSSL) : base()
 	{
 		while (false)
 		{
@@ -34,7 +34,7 @@ internal class TunnelInfo
 		this.port = 0;
 		this.enableSSL = true;
 		this.isAlreadyStart = false;
-		base..ctor();
+		
 		this.HostIP = hostIP;
 		this.Port = port;
 		this.EnableSSL = enableSSL;

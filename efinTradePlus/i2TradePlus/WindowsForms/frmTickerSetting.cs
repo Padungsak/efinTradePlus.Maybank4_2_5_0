@@ -328,7 +328,7 @@ namespace i2TradePlus.WindowsForms
 
 		// Token: 0x060001E3 RID: 483 RVA: 0x000238BC File Offset: 0x00021CBC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTickerSetting()
+		public frmTickerSetting() : base()
 		{
 			while (false)
 			{
@@ -338,13 +338,13 @@ namespace i2TradePlus.WindowsForms
 			this.components = null;
 			this._symbolList = null;
 			this._filterTickerType = 0;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x060001E4 RID: 484 RVA: 0x000238F8 File Offset: 0x00021CF8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTickerSetting(int filterType)
+		public frmTickerSetting(int filterType) : base()
 		{
 			while (false)
 			{
@@ -354,7 +354,7 @@ namespace i2TradePlus.WindowsForms
 			this.components = null;
 			this._symbolList = null;
 			this._filterTickerType = 0;
-			base..ctor();
+			
 			this.InitializeComponent();
 			this._filterTickerType = filterType;
 		}

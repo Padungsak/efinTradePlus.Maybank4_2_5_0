@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x060010BA RID: 4282 RVA: 0x000F789C File Offset: 0x000F5C9C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetHolidayCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetHolidayCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

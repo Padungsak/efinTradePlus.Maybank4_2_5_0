@@ -1828,7 +1828,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000BD9 RID: 3033 RVA: 0x000D96AC File Offset: 0x000D7AAC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucSendNewOrder()
+		public ucSendNewOrder() : base()
 		{
 			while (false)
 			{
@@ -1889,7 +1889,7 @@ namespace i2TradePlus
 			this._lastEquityStyle = 1;
 			this._lastTfexStyle = 1;
 			this._isLockPubVol = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 			base.SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer, true);
 			base.UpdateStyles();

@@ -45,7 +45,7 @@ namespace i2TradePlus.Controls
 			this.tmCloseSplash = null;
 			this._isLoading = true;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			base.SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer, true);
 			base.UpdateStyles();

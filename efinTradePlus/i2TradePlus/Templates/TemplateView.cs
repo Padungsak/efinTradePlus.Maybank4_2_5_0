@@ -86,7 +86,7 @@ namespace i2TradePlus.Templates
 
 		// Token: 0x060008F0 RID: 2288 RVA: 0x000B0A48 File Offset: 0x000AEE48
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public TemplateView(string templateName)
+		public TemplateView(string templateName) : base()
 		{
 			while (false)
 			{
@@ -97,7 +97,7 @@ namespace i2TradePlus.Templates
 			this.name = string.Empty;
 			this.formObj = null;
 			this.isFirstOpen = true;
-			base..ctor();
+			
 			this.name = templateName;
 			this.currentState = TemplateView.ContentState.New;
 		}

@@ -266,7 +266,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000929 RID: 2345 RVA: 0x000B7808 File Offset: 0x000B5C08
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmStockChart()
+		public frmStockChart() : base()
 		{
 			while (false)
 			{
@@ -284,13 +284,13 @@ namespace i2TradePlus
 			this._isLoading = false;
 			this._canRecv = false;
 			this._isSetChartParam = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x0600092A RID: 2346 RVA: 0x000B789C File Offset: 0x000B5C9C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmStockChart(Dictionary<string, object> propertiesValue, string currentPage)
+		public frmStockChart(Dictionary<string, object> propertiesValue, string currentPage) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -308,7 +308,7 @@ namespace i2TradePlus
 			this._isLoading = false;
 			this._canRecv = false;
 			this._isSetChartParam = false;
-			base..ctor(propertiesValue);
+			
 			this._currPage = currentPage;
 			this.InitializeComponent();
 			try

@@ -157,7 +157,7 @@ public class clsPermission
 		this.eDisplayBuySell = enumDisplayBuySell.Yes;
 		this.ePermission = enumPermission.Visible;
 		this.dblHistoricalDay = 30.0;
-		base..ctor();
+		
 	}
 
 	// Token: 0x04000B3F RID: 2879

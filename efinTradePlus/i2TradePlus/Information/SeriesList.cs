@@ -152,7 +152,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x060003A6 RID: 934 RVA: 0x0003C9F0 File Offset: 0x0003ADF0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public SeriesList()
+		public SeriesList() : base()
 		{
 			while (false)
 			{
@@ -161,7 +161,7 @@ namespace i2TradePlus.Information
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.items = new Dictionary<int, SeriesList.SeriesInformation>();
 			this.itemsKeySymbol = new Dictionary<string, int>();
-			base..ctor();
+			
 		}
 
 		// Token: 0x0400020E RID: 526
@@ -1060,7 +1060,7 @@ namespace i2TradePlus.Information
 
 			// Token: 0x060003E8 RID: 1000 RVA: 0x0003D4F4 File Offset: 0x0003B8F4
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public SeriesInformation()
+			public SeriesInformation() : base()
 			{
 				while (false)
 				{
@@ -1079,7 +1079,7 @@ namespace i2TradePlus.Information
 				this.fixPrice = 0m;
 				this.expireDate = null;
 				this.marketId = string.Empty;
-				base..ctor();
+				
 			}
 
 			// Token: 0x04000214 RID: 532

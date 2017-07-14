@@ -23,7 +23,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x06000A76 RID: 2678 RVA: 0x000C4794 File Offset: 0x000C2B94
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public UserWorkingProfileDS()
+		public UserWorkingProfileDS() : base()
 		{
 			while (false)
 			{
@@ -31,7 +31,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor();
+			
 			base.BeginInit();
 			this.InitClass();
 			CollectionChangeEventHandler value = new CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace i2TradePlus.MyDataSet
 		// Token: 0x06000A77 RID: 2679 RVA: 0x000C4800 File Offset: 0x000C2C00
 		[DebuggerNonUserCode]
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		protected UserWorkingProfileDS(SerializationInfo info, StreamingContext context)
+		protected UserWorkingProfileDS(SerializationInfo info, StreamingContext context) : base(info, context, false)
 		{
 			while (false)
 			{
@@ -51,7 +51,7 @@ namespace i2TradePlus.MyDataSet
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._schemaSerializationMode = SchemaSerializationMode.IncludeSchema;
-			base..ctor(info, context, false);
+			
 			if (base.IsBinarySerialized(info, context))
 			{
 				this.InitVars(false);
@@ -476,14 +476,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000A93 RID: 2707 RVA: 0x000C50BC File Offset: 0x000C34BC
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public TemplateRootsDataTable()
+			public TemplateRootsDataTable() : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = "TemplateRoots";
 				this.BeginInit();
 				this.InitClass();
@@ -493,14 +493,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000A94 RID: 2708 RVA: 0x000C50FC File Offset: 0x000C34FC
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal TemplateRootsDataTable(DataTable table)
+			internal TemplateRootsDataTable(DataTable table) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = table.TableName;
 				if (table.CaseSensitive != table.DataSet.CaseSensitive)
 				{
@@ -521,14 +521,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000A95 RID: 2709 RVA: 0x000C51E0 File Offset: 0x000C35E0
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			protected TemplateRootsDataTable(SerializationInfo info, StreamingContext context)
+			protected TemplateRootsDataTable(SerializationInfo info, StreamingContext context) : base(info, context)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(info, context);
+				
 				this.InitVars();
 			}
 
@@ -1000,14 +1000,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AB2 RID: 2738 RVA: 0x000C5A88 File Offset: 0x000C3E88
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public TemplateItemDataTable()
+			public TemplateItemDataTable() : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = "TemplateItem";
 				this.BeginInit();
 				this.InitClass();
@@ -1017,14 +1017,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AB3 RID: 2739 RVA: 0x000C5AC8 File Offset: 0x000C3EC8
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal TemplateItemDataTable(DataTable table)
+			internal TemplateItemDataTable(DataTable table) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				base.TableName = table.TableName;
 				if (table.CaseSensitive != table.DataSet.CaseSensitive)
 				{
@@ -1045,14 +1045,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AB4 RID: 2740 RVA: 0x000C5BAC File Offset: 0x000C3FAC
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			protected TemplateItemDataTable(SerializationInfo info, StreamingContext context)
+			protected TemplateItemDataTable(SerializationInfo info, StreamingContext context) : base(info, context)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(info, context);
+				
 				this.InitVars();
 			}
 
@@ -1594,14 +1594,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AD4 RID: 2772 RVA: 0x000C65E8 File Offset: 0x000C49E8
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal TemplateRootsRow(DataRowBuilder rb)
+			internal TemplateRootsRow(DataRowBuilder rb) : base(rb)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(rb);
+				
 				this.tableTemplateRoots = (UserWorkingProfileDS.TemplateRootsDataTable)base.Table;
 			}
 
@@ -1734,14 +1734,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000ADD RID: 2781 RVA: 0x000C67D4 File Offset: 0x000C4BD4
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			internal TemplateItemRow(DataRowBuilder rb)
+			internal TemplateItemRow(DataRowBuilder rb) : base(rb)
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor(rb);
+				
 				this.tableTemplateItem = (UserWorkingProfileDS.TemplateItemDataTable)base.Table;
 			}
 
@@ -2051,14 +2051,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AF2 RID: 2802 RVA: 0x000C6C60 File Offset: 0x000C5060
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public TemplateRootsRowChangeEvent(UserWorkingProfileDS.TemplateRootsRow row, DataRowAction action)
+			public TemplateRootsRowChangeEvent(UserWorkingProfileDS.TemplateRootsRow row, DataRowAction action) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.eventRow = row;
 				this.eventAction = action;
 			}
@@ -2109,14 +2109,14 @@ namespace i2TradePlus.MyDataSet
 			// Token: 0x06000AF5 RID: 2805 RVA: 0x000C6CE4 File Offset: 0x000C50E4
 			[DebuggerNonUserCode]
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public TemplateItemRowChangeEvent(UserWorkingProfileDS.TemplateItemRow row, DataRowAction action)
+			public TemplateItemRowChangeEvent(UserWorkingProfileDS.TemplateItemRow row, DataRowAction action) : base()
 			{
 				while (false)
 				{
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.eventRow = row;
 				this.eventAction = action;
 			}

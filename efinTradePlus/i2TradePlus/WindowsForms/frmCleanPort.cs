@@ -242,7 +242,7 @@ namespace i2TradePlus.WindowsForms
 
 		// Token: 0x0600088F RID: 2191 RVA: 0x000A8F50 File Offset: 0x000A7350
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmCleanPort()
+		public frmCleanPort() : base()
 		{
 			while (false)
 			{
@@ -254,7 +254,7 @@ namespace i2TradePlus.WindowsForms
 			this.tdsR2 = null;
 			this._frmConfirm = null;
 			this._isAll = false;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

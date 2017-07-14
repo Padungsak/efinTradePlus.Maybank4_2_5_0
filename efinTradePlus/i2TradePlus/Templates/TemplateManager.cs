@@ -11,7 +11,7 @@ namespace i2TradePlus.Templates
 	{
 		// Token: 0x06001889 RID: 6281 RVA: 0x0014DBD8 File Offset: 0x0014BFD8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public TemplateManager()
+		public TemplateManager() : base()
 		{
 			while (false)
 			{
@@ -23,7 +23,7 @@ namespace i2TradePlus.Templates
 			this.currentActiveTemplateView = null;
 			this.defaultTemplateName = string.Empty;
 			this.defaultTemplateGroup = string.Empty;
-			base..ctor();
+			
 			if (this.templateViews == null)
 			{
 				this.templateViews = new Dictionary<string, TemplateView>();

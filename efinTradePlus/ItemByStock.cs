@@ -82,14 +82,14 @@ public class ItemByStock
 
 	// Token: 0x0600023F RID: 575 RVA: 0x0002ADF0 File Offset: 0x000291F0
 	[MethodImpl(MethodImplOptions.NoInlining)]
-	public ItemByStock()
+	public ItemByStock() : base()
 	{
 		while (false)
 		{
 			//object arg_0A_0 = null[0];
 		}
 		QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-		base..ctor();
+		
 	}
 
 	// Token: 0x04000177 RID: 375

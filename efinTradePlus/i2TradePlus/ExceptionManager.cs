@@ -99,7 +99,7 @@ namespace i2TradePlus
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x06000497 RID: 1175 RVA: 0x0005F250 File Offset: 0x0005D650

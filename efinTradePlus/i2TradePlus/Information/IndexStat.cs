@@ -93,7 +93,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x06000337 RID: 823 RVA: 0x0003ACAC File Offset: 0x000390AC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public IndexStat()
+		public IndexStat() : base()
 		{
 			while (false)
 			{
@@ -101,7 +101,7 @@ namespace i2TradePlus.Information
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.items = new List<IndexStat.IndexItem>();
-			base..ctor();
+			
 		}
 
 		// Token: 0x040001E7 RID: 487
@@ -410,7 +410,7 @@ namespace i2TradePlus.Information
 
 			// Token: 0x0600034E RID: 846 RVA: 0x0003B084 File Offset: 0x00039484
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public IndexItem()
+			public IndexItem() : base()
 			{
 				while (false)
 				{
@@ -419,7 +419,7 @@ namespace i2TradePlus.Information
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.type = string.Empty;
 				this.isMainMarket = true;
-				base..ctor();
+				
 			}
 
 			// Token: 0x040001E8 RID: 488

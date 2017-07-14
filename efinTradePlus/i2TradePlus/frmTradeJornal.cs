@@ -75,7 +75,7 @@ namespace i2TradePlus
 
 		// Token: 0x060007DA RID: 2010 RVA: 0x00091650 File Offset: 0x0008FA50
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmTradeJornal()
+		public frmTradeJornal() : base()
 		{
 			while (false)
 			{
@@ -87,7 +87,7 @@ namespace i2TradePlus
 			this.lastFocus = -1;
 			this.isEditing = false;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			decimal.TryParse(this.tstxtAmount.Text.Replace(",", ""), out this._totalTJAmount);
 		}

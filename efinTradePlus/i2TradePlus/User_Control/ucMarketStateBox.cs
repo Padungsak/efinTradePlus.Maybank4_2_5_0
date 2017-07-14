@@ -150,7 +150,7 @@ namespace i2TradePlus.User_Control
 
 		// Token: 0x0600059E RID: 1438 RVA: 0x00065524 File Offset: 0x00063924
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucMarketStateBox()
+		public ucMarketStateBox() : base()
 		{
 			while (false)
 			{
@@ -158,7 +158,7 @@ namespace i2TradePlus.User_Control
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

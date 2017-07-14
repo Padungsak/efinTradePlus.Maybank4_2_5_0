@@ -241,7 +241,7 @@ namespace ITSNet.Wins.Controls
 
 		// Token: 0x060005CA RID: 1482 RVA: 0x00065EB0 File Offset: 0x000642B0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public LoadingCircleControl()
+		public LoadingCircleControl() : base()
 		{
 			while (false)
 			{
@@ -250,7 +250,7 @@ namespace ITSNet.Wins.Controls
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.components = null;
 			this.DEFAULT_COLOR = Color.DarkGray;
-			base..ctor();
+			
 			base.SetStyle(ControlStyles.UserPaint, true);
 			base.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 			base.SetStyle(ControlStyles.ResizeRedraw, true);

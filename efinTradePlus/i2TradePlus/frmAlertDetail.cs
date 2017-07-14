@@ -313,7 +313,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000B6C RID: 2924 RVA: 0x000D1094 File Offset: 0x000CF494
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal frmAlertDetail()
+		internal frmAlertDetail() : base()
 		{
 			while (false)
 			{
@@ -323,13 +323,13 @@ namespace i2TradePlus
 			this.components = null;
 			this.symbolLink = string.Empty;
 			this.sytemOptionForm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x06000B6D RID: 2925 RVA: 0x000D10D4 File Offset: 0x000CF4D4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal frmAlertDetail(AlertItem alertItem)
+		internal frmAlertDetail(AlertItem alertItem) : base()
 		{
 			while (false)
 			{
@@ -339,7 +339,7 @@ namespace i2TradePlus
 			this.components = null;
 			this.symbolLink = string.Empty;
 			this.sytemOptionForm = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

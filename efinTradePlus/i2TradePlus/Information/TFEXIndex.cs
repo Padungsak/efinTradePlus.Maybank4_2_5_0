@@ -510,7 +510,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x0600140F RID: 5135 RVA: 0x0010DF50 File Offset: 0x0010C350
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public TFEXIndex()
+		public TFEXIndex() : base()
 		{
 			while (false)
 			{
@@ -530,7 +530,7 @@ namespace i2TradePlus.Information
 			this.txeState = string.Empty;
 			this.txcState = string.Empty;
 			this.bboCurrency = new Dictionary<string, BBOTFEXCurrency>();
-			base..ctor();
+			
 		}
 
 		// Token: 0x04000A6A RID: 2666

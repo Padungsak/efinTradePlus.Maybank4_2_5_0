@@ -1195,7 +1195,7 @@ public class ucVolumeAtPrice : UserControl
 
 	// Token: 0x06000121 RID: 289 RVA: 0x00012460 File Offset: 0x00010860
 	[MethodImpl(MethodImplOptions.NoInlining)]
-	public ucVolumeAtPrice()
+	public ucVolumeAtPrice() : base()
 	{
 		while (false)
 		{
@@ -1205,7 +1205,7 @@ public class ucVolumeAtPrice : UserControl
 		this.oGraphPanel = new clsGraphPanel();
 		this.strEndDate = string.Empty;
 		this.eTypeMode = enumMode.Previous;
-		base..ctor();
+		
 		base.Load += new EventHandler(this.wcVolumeAtPrice_Load);
 		try
 		{

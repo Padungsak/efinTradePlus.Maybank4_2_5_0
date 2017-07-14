@@ -438,7 +438,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000A3E RID: 2622 RVA: 0x000C2D40 File Offset: 0x000C1140
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public PasswordEntryUC()
+		public PasswordEntryUC() : base()
 		{
 			while (false)
 			{
@@ -458,7 +458,7 @@ namespace i2TradePlus
 			this.isCustomer = true;
 			this.validate = PasswordEntryUC.ValidatePasswordResults.None;
 			this.isPasswordModified = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 

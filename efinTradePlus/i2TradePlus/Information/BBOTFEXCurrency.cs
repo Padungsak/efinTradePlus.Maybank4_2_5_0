@@ -134,7 +134,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x0600141A RID: 5146 RVA: 0x0010E148 File Offset: 0x0010C548
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public BBOTFEXCurrency()
+		public BBOTFEXCurrency() : base()
 		{
 			while (false)
 			{
@@ -146,7 +146,7 @@ namespace i2TradePlus.Information
 			this.askPrice = 0m;
 			this.lastDate = string.Empty;
 			this.lastTime = string.Empty;
-			base..ctor();
+			
 		}
 
 		// Token: 0x04000A7E RID: 2686

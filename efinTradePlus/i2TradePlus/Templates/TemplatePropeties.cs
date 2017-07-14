@@ -11,7 +11,7 @@ namespace i2TradePlus.Templates
 	{
 		// Token: 0x060018A2 RID: 6306 RVA: 0x0014E3A0 File Offset: 0x0014C7A0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public TemplatePropeties(TemplateView template)
+		public TemplatePropeties(TemplateView template) : base()
 		{
 			while (false)
 			{
@@ -19,7 +19,7 @@ namespace i2TradePlus.Templates
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.template = null;
-			base..ctor();
+			
 			this.template = template;
 		}
 

@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001018 RID: 4120 RVA: 0x000F6E10 File Offset: 0x000F5210
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal VerifyPincode2CompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal VerifyPincode2CompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

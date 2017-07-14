@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 	{
 		// Token: 0x06001724 RID: 5924 RVA: 0x00143DBC File Offset: 0x001421BC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetTotalMarketValueInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetTotalMarketValueInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

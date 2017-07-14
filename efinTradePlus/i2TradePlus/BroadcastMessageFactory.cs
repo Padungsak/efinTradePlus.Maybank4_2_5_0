@@ -26,7 +26,7 @@ namespace i2TradePlus
 			this.nhMessage = null;
 			this.broadcastMessageClient = null;
 			this.dgwOrderReply = null;
-			base..ctor();
+			
 			this.loMessage = new LOMessage();
 			this.pdMessage = new PDMessage();
 			this.scMessage = new SCMessage();

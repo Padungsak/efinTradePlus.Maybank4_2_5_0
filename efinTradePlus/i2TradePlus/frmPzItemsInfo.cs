@@ -446,7 +446,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000A0A RID: 2570 RVA: 0x000C0C88 File Offset: 0x000BF088
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmPzItemsInfo(long refNo, string stock)
+		public frmPzItemsInfo(long refNo, string stock) : base()
 		{
 			while (false)
 			{
@@ -463,7 +463,7 @@ namespace i2TradePlus
 			this._frmConfirm = null;
 			this._verifyResult_Pin = false;
 			this._verifyResultStr_Pin = string.Empty;
-			base..ctor();
+			
 			this.InitializeComponent();
 			try
 			{

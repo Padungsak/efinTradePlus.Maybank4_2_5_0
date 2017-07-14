@@ -83,13 +83,13 @@ namespace i2TradePlus.FixForm
 			this.bgwBestOpenPriceLoadData = null;
 			this.dsBestOpenPrice = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x0600083D RID: 2109 RVA: 0x0009FD34 File Offset: 0x0009E134
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmStockRanking(Dictionary<string, object> propertiesValue)
+		public frmStockRanking(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -126,7 +126,7 @@ namespace i2TradePlus.FixForm
 			this.bgwBestOpenPriceLoadData = null;
 			this.dsBestOpenPrice = null;
 			this.components = null;
-			base..ctor(propertiesValue);
+			
 			this.Init();
 		}
 

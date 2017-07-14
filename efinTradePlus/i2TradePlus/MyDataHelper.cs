@@ -111,14 +111,14 @@ namespace i2TradePlus
 
 		// Token: 0x06000A07 RID: 2567 RVA: 0x000BF2A8 File Offset: 0x000BD6A8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public MyDataHelper()
+		public MyDataHelper() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 		}
 
 		// Token: 0x040006B0 RID: 1712

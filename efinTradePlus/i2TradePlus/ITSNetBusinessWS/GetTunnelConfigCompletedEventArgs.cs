@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x060012C2 RID: 4802 RVA: 0x000F9A34 File Offset: 0x000F7E34
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetTunnelConfigCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetTunnelConfigCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

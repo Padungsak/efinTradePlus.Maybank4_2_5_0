@@ -131,7 +131,7 @@ namespace i2TradePlus
 			this.blinkColor = Color.Orange;
 			this._alterMessageCount = 0;
 			this.isAllowBlink = false;
-			base..ctor();
+			
 			this.InitializeComponent();
 			if (!base.DesignMode)
 			{

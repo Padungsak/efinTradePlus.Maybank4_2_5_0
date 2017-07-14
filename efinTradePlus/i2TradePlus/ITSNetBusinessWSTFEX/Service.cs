@@ -18,14 +18,14 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 	{
 		// Token: 0x06001473 RID: 5235 RVA: 0x00116E24 File Offset: 0x00115224
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public Service()
+		public Service() : base()
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor();
+			
 			this.Url = Settings.Default.i2TradePlus_ITSNetBusinessWSTFEX_Service;
 			if (this.IsLocalFileSystemWebService(this.Url))
 			{

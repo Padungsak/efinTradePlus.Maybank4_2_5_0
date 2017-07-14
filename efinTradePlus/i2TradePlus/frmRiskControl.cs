@@ -598,7 +598,7 @@ namespace i2TradePlus
 
 		// Token: 0x0600000D RID: 13 RVA: 0x00004F08 File Offset: 0x00003308
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmRiskControl()
+		public frmRiskControl() : base()
 		{
 			while (false)
 			{
@@ -613,7 +613,7 @@ namespace i2TradePlus
 			this._isUpdate = false;
 			this._isLoading = true;
 			this.tmCloseSplash = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
@@ -1783,7 +1783,7 @@ namespace i2TradePlus
 		{
 			// Token: 0x06000033 RID: 51 RVA: 0x00006FC0 File Offset: 0x000053C0
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public StockThreasholdItem(string stock, string side, decimal price, long volume)
+			public StockThreasholdItem(string stock, string side, decimal price, long volume) : base()
 			{
 				while (false)
 				{
@@ -1792,7 +1792,7 @@ namespace i2TradePlus
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 				this.stock = string.Empty;
 				this.side = string.Empty;
-				base..ctor();
+				
 				this.stock = stock;
 				this.side = side;
 				this.price = price;

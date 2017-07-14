@@ -11,7 +11,7 @@ namespace i2TradePlus.Templates
 	{
 		// Token: 0x060018A5 RID: 6309 RVA: 0x0014E49C File Offset: 0x0014C89C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public FormProperties(object form)
+		public FormProperties(object form) : base()
 		{
 			while (false)
 			{
@@ -19,7 +19,7 @@ namespace i2TradePlus.Templates
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.form = null;
-			base..ctor();
+			
 			this.form = form;
 		}
 

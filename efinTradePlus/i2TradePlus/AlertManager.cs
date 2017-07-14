@@ -83,7 +83,7 @@ namespace i2TradePlus
 			this.symbols = null;
 			this._bcMessages = new Queue<AlertManager.AlertBcItem>();
 			this.isMonitoring = false;
-			base..ctor();
+			
 		}
 
 		// Token: 0x17000285 RID: 645

@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001190 RID: 4496 RVA: 0x000F8648 File Offset: 0x000F6A48
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal TopActiveBBO_CMPRCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal TopActiveBBO_CMPRCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

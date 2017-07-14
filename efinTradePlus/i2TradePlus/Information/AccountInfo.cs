@@ -40,7 +40,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x06000811 RID: 2065 RVA: 0x0009D2C0 File Offset: 0x0009B6C0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public AccountInfo()
+		public AccountInfo() : base()
 		{
 			while (false)
 			{
@@ -58,7 +58,7 @@ namespace i2TradePlus.Information
 			this.CurrentCommRate = 0m;
 			this.CurrentTradingFee = 0m;
 			this.CurrentClearingFee = 0m;
-			base..ctor();
+			
 			this.items = new Dictionary<string, AccountInfo.ItemInfo>();
 		}
 
@@ -144,7 +144,7 @@ namespace i2TradePlus.Information
 		{
 			// Token: 0x06000814 RID: 2068 RVA: 0x0009D464 File Offset: 0x0009B864
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public ItemInfo()
+			public ItemInfo() : base()
 			{
 				while (false)
 				{
@@ -156,7 +156,7 @@ namespace i2TradePlus.Information
 				this.PcFlag = string.Empty;
 				this.Market = string.Empty;
 				this.TraderId = string.Empty;
-				base..ctor();
+				
 			}
 
 			// Token: 0x040004E2 RID: 1250

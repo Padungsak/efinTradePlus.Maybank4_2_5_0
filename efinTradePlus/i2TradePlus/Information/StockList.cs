@@ -135,7 +135,7 @@ namespace i2TradePlus.Information
 
 		// Token: 0x060009D9 RID: 2521 RVA: 0x000BE624 File Offset: 0x000BCA24
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public StockList()
+		public StockList() : base()
 		{
 			while (false)
 			{
@@ -144,7 +144,7 @@ namespace i2TradePlus.Information
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.items = new Dictionary<int, StockList.StockInformation>();
 			this.itemsName = new Dictionary<string, int>();
-			base..ctor();
+			
 		}
 
 		// Token: 0x0400069A RID: 1690
@@ -736,7 +736,7 @@ namespace i2TradePlus.Information
 
 			// Token: 0x06000A04 RID: 2564 RVA: 0x000BEE70 File Offset: 0x000BD270
 			[MethodImpl(MethodImplOptions.NoInlining)]
-			public StockInformation()
+			public StockInformation() : base()
 			{
 				while (false)
 				{
@@ -761,7 +761,7 @@ namespace i2TradePlus.Information
 				this.offerPrice1 = string.Empty;
 				this.stockBoard = string.Empty;
 				this.isCheckSpread = true;
-				base..ctor();
+				
 			}
 
 			// Token: 0x0400069C RID: 1692

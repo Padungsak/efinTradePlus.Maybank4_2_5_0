@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWSTFEX
 	{
 		// Token: 0x060017D6 RID: 6102 RVA: 0x00144910 File Offset: 0x00142D10
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetGoldSpotCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetGoldSpotCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

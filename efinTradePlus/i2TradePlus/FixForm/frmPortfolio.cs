@@ -75,13 +75,13 @@ namespace i2TradePlus.FixForm
 			this.linesPrinted_TFEX = 0;
 			this._frmConfirm = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x06000428 RID: 1064 RVA: 0x00041DC4 File Offset: 0x000401C4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmPortfolio(Dictionary<string, object> propertiesValue)
+		public frmPortfolio(Dictionary<string, object> propertiesValue) : base(propertiesValue)
 		{
 			while (false)
 			{
@@ -128,7 +128,7 @@ namespace i2TradePlus.FixForm
 			this.linesPrinted_TFEX = 0;
 			this._frmConfirm = null;
 			this.components = null;
-			base..ctor(propertiesValue);
+			
 			this.InitializeComponent();
 			try
 			{
@@ -10141,7 +10141,7 @@ namespace i2TradePlus.FixForm
 					//object arg_0A_0 = null[0];
 				}
 				QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-				base..ctor();
+				
 				this.value = value;
 				this.profit = profit;
 			}

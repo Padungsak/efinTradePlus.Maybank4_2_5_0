@@ -21,7 +21,7 @@ namespace i2TradePlus
 	{
 		// Token: 0x06000AF8 RID: 2808 RVA: 0x000C6D68 File Offset: 0x000C5168
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmPzCreateNew()
+		public frmPzCreateNew() : base()
 		{
 			while (false)
 			{
@@ -32,7 +32,7 @@ namespace i2TradePlus
 			this._commandPz = null;
 			this._frmConfirm = null;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			try
 			{

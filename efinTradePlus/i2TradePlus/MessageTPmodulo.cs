@@ -190,7 +190,7 @@ namespace i2TradePlus
 
 		// Token: 0x060004A7 RID: 1191 RVA: 0x0005FA38 File Offset: 0x0005DE38
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal MessageTPmodulo()
+		internal MessageTPmodulo() : base()
 		{
 			while (false)
 			{
@@ -209,12 +209,12 @@ namespace i2TradePlus
 			this.volume4 = 0L;
 			this.price5 = 0m;
 			this.volume5 = 0L;
-			base..ctor();
+			
 		}
 
 		// Token: 0x060004A8 RID: 1192 RVA: 0x0005FAD8 File Offset: 0x0005DED8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal MessageTPmodulo(string message)
+		internal MessageTPmodulo(string message) : base()
 		{
 			while (false)
 			{
@@ -233,7 +233,7 @@ namespace i2TradePlus
 			this.volume4 = 0L;
 			this.price5 = 0m;
 			this.volume5 = 0L;
-			base..ctor();
+			
 			this.Decode(message);
 		}
 

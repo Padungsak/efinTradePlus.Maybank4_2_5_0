@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001250 RID: 4688 RVA: 0x000F92C8 File Offset: 0x000F76C8
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal GetSwitchAccountInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal GetSwitchAccountInfoCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

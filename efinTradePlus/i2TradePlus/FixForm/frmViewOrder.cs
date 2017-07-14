@@ -17,7 +17,7 @@ namespace i2TradePlus.FixForm
 	{
 		// Token: 0x0600157C RID: 5500 RVA: 0x0011EFA0 File Offset: 0x0011D3A0
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmViewOrder()
+		public frmViewOrder() : base()
 		{
 			while (false)
 			{
@@ -26,13 +26,13 @@ namespace i2TradePlus.FixForm
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._currentPage = 0;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
 		// Token: 0x0600157D RID: 5501 RVA: 0x0011EFD4 File Offset: 0x0011D3D4
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmViewOrder(Dictionary<string, object> propertiesValue)
+		public frmViewOrder(Dictionary<string, object> propertiesValue) : base()
 		{
 			while (false)
 			{
@@ -41,7 +41,7 @@ namespace i2TradePlus.FixForm
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this._currentPage = 0;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 			if (ApplicationInfo.SupportFreewill)
 			{

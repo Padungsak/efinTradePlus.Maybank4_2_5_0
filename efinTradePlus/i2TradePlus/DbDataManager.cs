@@ -48,7 +48,7 @@ namespace i2TradePlus
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.cycle = DataCycleBase.DAY;
 			this.tds = null;
-			base..ctor();
+			
 			this.cycle = cycle;
 		}
 

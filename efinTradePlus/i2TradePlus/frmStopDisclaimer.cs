@@ -147,7 +147,7 @@ namespace i2TradePlus
 
 		// Token: 0x060001F0 RID: 496 RVA: 0x00024D4C File Offset: 0x0002314C
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public frmStopDisclaimer(bool isViewOnly)
+		public frmStopDisclaimer(bool isViewOnly) : base()
 		{
 			while (false)
 			{
@@ -159,7 +159,7 @@ namespace i2TradePlus
 			this._registerResult = string.Empty;
 			this._isViewOnly = false;
 			this.tmTest = null;
-			base..ctor();
+			
 			this._isViewOnly = isViewOnly;
 			this.InitializeComponent();
 			if (this._isViewOnly)

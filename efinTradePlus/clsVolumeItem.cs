@@ -89,7 +89,7 @@ public class clsVolumeItem
 			//object arg_0A_0 = null[0];
 		}
 		QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-		base..ctor();
+		
 		this.x = x;
 		this.y = y;
 		this.Volume = Vol;

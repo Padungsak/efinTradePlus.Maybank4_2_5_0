@@ -13,14 +13,14 @@ namespace i2TradePlus.ITSNetBusinessWS
 	{
 		// Token: 0x06001042 RID: 4162 RVA: 0x000F70CC File Offset: 0x000F54CC
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		internal DeleteStockNicknameCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState)
+		internal DeleteStockNicknameCompletedEventArgs(object[] results, Exception exception, bool cancelled, object userState) : base(exception, cancelled, userState)
 		{
 			while (false)
 			{
 				//object arg_0A_0 = null[0];
 			}
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
-			base..ctor(exception, cancelled, userState);
+			
 			this.results = results;
 		}
 

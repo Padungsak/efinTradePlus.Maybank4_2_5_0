@@ -609,7 +609,7 @@ namespace i2TradePlus
 
 		// Token: 0x060015A7 RID: 5543 RVA: 0x00122950 File Offset: 0x00120D50
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucBids()
+		public ucBids() : base()
 		{
 			while (false)
 			{
@@ -618,7 +618,7 @@ namespace i2TradePlus
 			QG1JNMDDCVMQeEY2Tq.hPhdpr4o5CbKJ();
 			this.components = null;
 			this.isLoadingData = false;
-			base..ctor();
+			
 			try
 			{
 				this.InitializeComponent();

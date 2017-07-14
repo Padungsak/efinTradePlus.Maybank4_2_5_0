@@ -53,7 +53,7 @@ namespace i2TradePlus
 
 		// Token: 0x06000219 RID: 537 RVA: 0x00028774 File Offset: 0x00026B74
 		[MethodImpl(MethodImplOptions.NoInlining)]
-		public ucTickerSlide()
+		public ucTickerSlide() : base()
 		{
 			while (false)
 			{
@@ -66,7 +66,7 @@ namespace i2TradePlus
 			this._favListPage = 1;
 			this._filterType = 0;
 			this.components = null;
-			base..ctor();
+			
 			this.InitializeComponent();
 		}
 
